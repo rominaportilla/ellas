@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* -------INDEX-------INDEX-------INDEX-------INDEX--------------INDEX-------INDEX------- */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f0f0f; }
+
+/* -------------------- HEADER ------------------------ */
+header {
+  background-color: #0f0f0f;
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 150px; }
+  header nav {
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100%; }
+
+.header__logo {
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  color: white; }
+  .header__logo span {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s; }
+  .header__logo .logo__titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 49px;
+    font-weight: bold;
+    height: 61px; }
+  .header__logo .logo__subtitulo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    padding: 0px; }
+  .header__logo:hover {
+    color: #dd0030; }
+
+.header__navbar .header__nav {
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap; }
+  .header__navbar .header__nav .menu li a {
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 19px;
+    padding: 5px;
+    margin-right: 0px;
+    transition: color 0.5s; }
+    .header__navbar .header__nav .menu li a:hover {
+      color: #dd0030; }
+
+.header__navbar .header__nav form {
+  margin-left: 100px; }
+  .header__navbar .header__nav form button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #dd0030;
+    border: 1px solid #dd0030;
+    transition: all 0.5s; }
+    .header__navbar .header__nav form button:hover {
+      background-color: #88001b;
+      border: 1px solid #88001b; }
+
+.header__navbar a {
+  text-decoration: none; }
+
+.header__navbar .icon-cart {
+  font-size: 28px;
+  color: white;
+  margin-left: 7px;
+  transition: color 0.5s; }
+  .header__navbar .icon-cart:hover {
+    color: #dd0030; }
+
+/* -------------------- HERO ------------------------ */
+.hero__index__container .hero__index {
+  /* grid-area: hero; */
+  background-image: url(../multimedia/hero4.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: left center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .hero__index__container .hero__index h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    width: 263px;
+    line-height: 1;
+    margin-left: 40px; }
+  .hero__index__container .hero__index p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    width: 263px;
+    text-align: center;
+    margin-left: 40px; }
+  .hero__index__container .hero__index button {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 18px;
+    border: none;
+    color: white;
+    background-color: #dd0030;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 71px; }
+    .hero__index__container .hero__index button:hover {
+      background-color: #88001b;
+      transform: scale(1.1, 1.1); }
+
+/* -------------------- NUEVOS PRODUCTOS ------------------------ */
+.container__nuevosproductos {
+  background-color: #0f0f0f;
+  margin: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-around; }
+  .container__nuevosproductos .titulo__nuevosproductos {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .container__nuevosproductos h3 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 38%;
+    height: 58px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    text-align: center; }
+
+.container__nuevosproductos .producto {
+  background-color: #181818;
+  height: 380px;
+  width: 16rem;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container__nuevosproductos .producto .imagen__productoUno {
+    background-image: url(../multimedia/producto1.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoUno:hover {
+      background-image: url(../multimedia/producto-hover-1.png); }
+  .container__nuevosproductos .producto .imagen__productoDos {
+    background-image: url(../multimedia/producto2.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoDos:hover {
+      background-image: url(../multimedia/producto-hover-2.png); }
+  .container__nuevosproductos .producto .imagen__productoTres {
+    background-image: url(../multimedia/producto3.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoTres:hover {
+      background-image: url(../multimedia/producto-hover-3.png); }
+  .container__nuevosproductos .producto .imagen__productoCuatro {
+    background-image: url(../multimedia/producto4.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoCuatro:hover {
+      background-image: url(../multimedia/producto-hover-4.png); }
+  .container__nuevosproductos .producto .imagen__productoCinco {
+    background-image: url(../multimedia/producto-estrella.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoCinco:hover {
+      background-image: url(../multimedia/producto-estrella-hover.png); }
+  .container__nuevosproductos .producto .imagen__productoSeis {
+    background-image: url(../multimedia/productoB.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoSeis:hover {
+      background-image: url(../multimedia/producto-hover-B.png); }
+  .container__nuevosproductos .producto .imagen__productoSiete {
+    background-image: url(../multimedia/productoC.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoSiete:hover {
+      background-image: url(../multimedia/producto-hover-C.png); }
+  .container__nuevosproductos .producto .imagen__productoOcho {
+    background-image: url(../multimedia/productoA.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px; }
+    .container__nuevosproductos .producto .imagen__productoOcho:hover {
+      background-image: url(../multimedia/producto-hover-A.png); }
+  .container__nuevosproductos .producto .card__producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .container__nuevosproductos .producto div h5 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .container__nuevosproductos .producto div p {
+    padding-bottom: 10px;
+    color: white;
+    text-align: center; }
+    .container__nuevosproductos .producto div p span {
+      text-decoration: line-through;
+      margin-left: 8px; }
+  .container__nuevosproductos .producto div a {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 8px 16px;
+    border: 3px solid #dd0030;
+    color: white;
+    background-color: #dd0030;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    .container__nuevosproductos .producto div a:hover {
+      background-color: rgba(238, 237, 237, 0.955);
+      border: 3px solid #dd0030;
+      color: #dd0030;
+      font-size: 16px; }
+
+/* -------------------- CARTAS ------------------------ */
+.container__cartas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 50px; }
+  .container__cartas div {
+    width: 350px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px; }
+    .container__cartas div .icono__carta {
+      font-size: 60px;
+      color: #dd0030;
+      margin-bottom: 15px; }
+    .container__cartas div h5 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: #fff;
+      font-size: 18px;
+      padding-bottom: 6px; }
+    .container__cartas div p {
+      font-size: 16px;
+      text-align: center;
+      color: #fff; }
+
+/* -------------------- WHATSAPP ------------------------ */
+.whatsapp__icono {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 150px; }
+
+/* -------------------- FOOTER ------------------------ */
+footer {
+  background-color: black;
+  padding: 23px;
+  height: 120px; }
+  footer .icono__footer {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0px 0px 10px; }
+  footer div {
+    padding-top: 20px; }
+    footer div p {
+      color: #c8c8c8;
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1; }
+
+@media screen and (max-width: 992px) {
+  .header__navbar .icon-cart {
+    display: none; }
+  .container__nuevosproductos h3 {
+    height: 89px; } }
+
+@media screen and (max-width: 824px) {
+  .container__cartas div {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .hero__index__container .hero__index {
+    background-image: url(../multimedia/hero-tablet.jpg);
+    background-size: cover;
+    background-position: center center; }
+  .container__nuevosproductos {
+    margin: 50px; } }
+
+@media screen and (max-width: 675px) {
+  .container__nuevosproductos {
+    margin: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center; } }
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 15px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .icono__footer {
+      font-size: 18px;
+      padding: 8px 0px 0px 8px; }
+    footer div {
+      padding-top: 10px;
+      text-align: center; }
+      footer div p {
+        font-size: 12px;
+        text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .hero__index__container .hero__index {
+    background-image: url(../multimedia/hero-mobile2.jpg);
+    background-position: left center; }
+  .container__nuevosproductos h3 {
+    font-size: 25px;
+    padding: 7px;
+    width: 48%; }
+  .container__cartas div {
+    width: 250px;
+    height: 220px;
+    padding: 10px; }
+    .container__cartas div h5 {
+      font-size: 16px; }
+    .container__cartas div p {
+      font-size: 15px; }
+  .header__navbar .icon-cart {
+    font-size: 8px; }
+  .whatsapp__icono {
+    width: 120px; } }

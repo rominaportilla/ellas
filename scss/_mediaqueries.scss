@@ -1,0 +1,93 @@
+@media screen and (max-width: 992px) {
+    .header__navbar .icon-cart{
+        display: none;
+    }
+    .container__nuevosproductos h3 {
+        height: 89px;
+    }
+    
+}
+
+@media screen and (max-width: 824px) {
+    .container__cartas div {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__index__container .hero__index{
+        background-image: url(../multimedia/hero-tablet.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .container__nuevosproductos {
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .container__nuevosproductos {
+        margin: 70px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer{
+        padding: 15px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+            .icono__footer{
+            font-size: 18px;
+            padding: 8px 0px 0px 8px ;
+            }
+
+            div{
+            padding-top: 10px;
+            text-align: center;
+                
+                p{
+                font-size: 12px;
+                text-align: center;
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 500px) {
+    .hero__index__container .hero__index{
+        background-image: url(../multimedia/hero-mobile2.jpg);
+        background-position: left center;
+    }
+    .container__nuevosproductos h3 {
+        font-size: 25px;
+        padding: 7px;
+        width: 48%;
+    }
+    .container__cartas div{
+        width: 250px;
+        height: 220px;
+        padding: 10px;
+    
+            h5{
+            font-size: 16px;
+            }
+            
+            p{
+            font-size: 15px;
+            }
+        }
+    .header__navbar .icon-cart{
+        font-size: 8px;
+    }
+    .whatsapp__icono {
+        width: 120px;
+    }
+}

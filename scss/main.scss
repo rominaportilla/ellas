@@ -1,0 +1,414 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------INDEX-------INDEX-------INDEX-------INDEX--------------INDEX-------INDEX------- */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $colorSecundario;
+}
+/* -------------------- HEADER ------------------------ */
+header{
+    background-color: $colorSecundario;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 150px;
+
+    nav{
+    background-color: $colorSecundario;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+.header__logo{
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    color: white;
+
+    span{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.5s;
+    }
+
+    .logo__titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 49px;
+    font-weight: bold;
+    height: 61px;
+    }
+
+    .logo__subtitulo{
+    font-family: $fuentePrincipal;
+    font-size: 15px;
+    padding: 0px;
+    }
+
+    &:hover{
+        color: $colorPrincipal;
+        }
+}
+
+.header__navbar .header__nav{
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .menu li a{
+    color: white;
+    font-family: $fuentePrincipal;
+    font-size: 19px;
+    padding: 5px;
+    margin-right: 0px;
+    transition: color 0.5s;
+
+        &:hover{
+        color:$colorPrincipal;
+        }
+    }
+}
+.header__navbar .header__nav form{
+    margin-left: 100px;
+    
+    button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: $colorPrincipal;
+    border: 1px solid $colorPrincipal;
+    transition: all 0.5s;
+
+        &:hover{
+        background-color: rgb(136, 0, 27);
+        border: 1px solid rgb(136, 0, 27);
+        }
+    }
+}
+
+.header__navbar{
+    a{
+        text-decoration: none;
+    }
+    .icon-cart{
+        font-size: 28px;
+        color: white;
+        margin-left: 7px;
+        transition: color 0.5s;
+        &:hover{
+            color: $colorPrincipal;
+        }
+    }
+}
+
+/* -------------------- HERO ------------------------ */
+.hero__index__container .hero__index{
+    /* grid-area: hero; */
+    background-image: url(../multimedia/hero4.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1{
+    font-family: $fuentePrincipal;
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    width: 263px;
+    line-height: 1;
+    margin-left: 40px;
+    }
+    
+    p{
+    font-family: $fuentePrincipal;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    width: 263px;
+    text-align: center;
+    margin-left: 40px;
+    }
+
+    button{
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 18px;
+    border: none;
+    color: white;
+    background-color: $colorPrincipal;
+    font-family: $fuentePrincipal;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 71px;
+    
+        &:hover{
+        background-color: rgb(136, 0, 27);
+        transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+/* -------------------- NUEVOS PRODUCTOS ------------------------ */
+.container__nuevosproductos{
+    background-color: $colorSecundario;
+    margin: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+
+    .titulo__nuevosproductos{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    h3{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 38%;
+    height: 58px;
+    font-family: $fuentePrincipal;
+    font-size: 30px;
+    text-align: center;
+    }
+}
+
+.container__nuevosproductos .producto{
+    background-color: $colorTerciario;
+    height: 380px;
+    width: 16rem;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imagen__productoUno{
+    background-image: url(../multimedia/producto1.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+        
+        &:hover{
+        background-image: url(../multimedia/producto-hover-1.png);
+        }
+    }
+    
+    .imagen__productoDos{
+    background-image: url(../multimedia/producto2.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    
+        &:hover{
+        background-image: url(../multimedia/producto-hover-2.png);
+        }
+    }
+
+    .imagen__productoTres{
+    background-image: url(../multimedia/producto3.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+        
+        &:hover{
+        background-image: url(../multimedia/producto-hover-3.png);
+        }
+    }
+
+    .imagen__productoCuatro{
+    background-image: url(../multimedia/producto4.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    
+        &:hover{
+        background-image: url(../multimedia/producto-hover-4.png);
+        }
+    }
+
+    .imagen__productoCinco{
+    background-image: url(../multimedia/producto-estrella.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+        &:hover{
+        background-image: url(../multimedia/producto-estrella-hover.png);
+        }
+    }
+
+    .imagen__productoSeis{
+    background-image: url(../multimedia/productoB.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    
+        &:hover{
+        background-image: url(../multimedia/producto-hover-B.png);
+        }
+    }
+
+    .imagen__productoSiete{
+    background-image: url(../multimedia/productoC.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+        &:hover{
+        background-image: url(../multimedia/producto-hover-C.png);
+        }
+    }
+
+    .imagen__productoOcho{
+    background-image: url(../multimedia/productoA.png);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+        &:hover{
+        background-image: url(../multimedia/producto-hover-A.png);
+        }
+    }
+    
+    .card__producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    div h5{
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    div p{
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+
+        span{
+        text-decoration: line-through;
+        margin-left: 8px;
+        }
+    }
+
+    div a{
+    font-size: 15px;
+    font-weight: normal;
+    padding: 8px 16px;
+    border: 3px solid $colorPrincipal;
+    color: white;
+    background-color: $colorPrincipal;
+    font-family: $fuentePrincipal;
+    
+        &:hover{
+        background-color: rgba(238, 237, 237, 0.955);
+        border: 3px solid $colorPrincipal ;
+        color: $colorPrincipal;
+        font-size: 16px;
+        }
+    }
+}
+
+/* -------------------- CARTAS ------------------------ */
+.container__cartas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+    
+    div{
+    width: 350px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+
+        .icono__carta{
+        font-size: 60px;
+        color: $colorPrincipal;
+        margin-bottom: 15px;
+        }
+
+        h5{
+        font-family: $fuentePrincipal;
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 6px;
+        }
+
+        p{
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        }
+    }
+}
+
+/* -------------------- WHATSAPP ------------------------ */
+.whatsapp__icono{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+}
+
+/* -------------------- FOOTER ------------------------ */
+footer{
+    background-color: black;
+    padding: 23px;
+    height: 120px;
+
+    .icono__footer{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0px 0px 10px ;
+    }
+
+    div{
+    padding-top: 20px;
+    
+        p{
+        color: rgb(200,200,200);
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1;
+        }
+    }
+}
+
+@import "mediaqueries";
