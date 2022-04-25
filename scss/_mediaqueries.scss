@@ -1,3 +1,4 @@
+/* INDEX */
 @media screen and (max-width: 992px) {
     .header__navbar .icon-cart{
         display: none;
@@ -28,9 +29,7 @@
 @media screen and (max-width: 675px) {
     .container__nuevosproductos {
         margin: 70px;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
+        @include flexbox(flex, column, space-between);
         align-items: center;
     }
 }
@@ -39,9 +38,7 @@
     footer{
         padding: 15px;
         height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexbox(flex, column, center);
         align-items: center;
         
             .icono__footer{
@@ -89,5 +86,135 @@
     }
     .whatsapp__icono {
         width: 120px;
+    }
+}
+/* COSMETICOS */
+@media screen and (max-width: 768px) {
+    .listaCategorias ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .listaCategorias li{
+        margin: 15px;
+    
+        a {
+        font-size: 17px;
+        }
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .container__cosmeticos .ordenar{
+        font-size: 15px
+    }
+}
+@media screen and (max-width: 675px) {
+    .container__cosmeticos {
+        margin: 70px;
+        @include flexbox(flex, column, space-between);
+        align-items: center;
+    
+        h3{
+        text-align: center;
+        }
+    
+        .titulo__cosmeticos h3 {
+        margin: 0px;
+        }
+        
+        .ordenar{
+        margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero__cosmeticos__container .hero__cosmeticos{
+        background-image: url(../multimedia/hero-cosmeticos-mobile.jpg);
+        background-size: cover;
+        background-position: center center;
+        
+        h1{
+        font-size: 29px;
+        height: 60px;
+        width: 196px;
+        }
+    }
+}
+
+/* ESCUELA */
+@media screen and (max-width: 900px) {
+    .curso__programa .programa {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .curso__programa .programa {
+        width: 500px;
+        height: 300px;
+        margin-bottom: 0px;
+    }
+    .curso__programa .curso__img {
+        width: 270px;
+        height: 370px;
+        margin: 10px 0px 60px 0px;
+    }
+    .curso__programa h2 {
+        padding: 10px;
+        margin-left: 20px;
+        color: #fff;
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hero__escuela__container .hero__escuela h1{
+        font-size: 29px;
+        height: 60px;
+        width: 150px;
+    }
+    .curso__programa h2 {
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 450px;
+        font-size: 38px;
+    }
+}
+
+/* CONTACTO */
+@media screen and (max-width: 1137px){
+    .container__contacto .contacto {
+        margin: 10px 10px 10px 10px;
+    }
+}
+@media screen and (max-width: 1033px) {
+    .container__contacto .contacto {
+        width: 582px;
+        
+    }
+    .container__contacto .aside__encontranos {
+        width: 270px;
+    
+        p {
+        margin: 0px;
+        }
+    }
+}
+@media screen and (max-width: 903px) {
+    .container__contacto{
+        @include flexbox(flex, column, center);
+        align-items: center;
+        
+        .aside__encontranos {
+        width: 466px;
+        height: 240px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .mapa__contacto .mapa {
+        width: 500px;
+        height: 360px;
     }
 }

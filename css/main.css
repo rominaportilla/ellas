@@ -1,3 +1,12 @@
+.btn--instagram {
+  color: #F56040; }
+
+.btn--twitter {
+  color: #55acee; }
+
+.btn--facebook {
+  color: #3a5795; }
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +14,7 @@
 
 /* -------INDEX-------INDEX-------INDEX-------INDEX--------------INDEX-------INDEX------- */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #0f0f0f; }
 
 /* -------------------- HEADER ------------------------ */
@@ -23,9 +32,7 @@ header {
 
 .header__logo {
   padding: 10px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 30px;
   width: 300px;
   color: white; }
   .header__logo span {
@@ -34,7 +41,7 @@ header {
     color: #fff;
     transition: color 0.5s; }
   .header__logo .logo__titulo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 49px;
     font-weight: bold;
     height: 61px; }
@@ -62,7 +69,7 @@ header {
 .header__navbar .header__nav form {
   margin-left: 100px; }
   .header__navbar .header__nav form button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     color: white;
     background-color: #dd0030;
@@ -85,7 +92,6 @@ header {
 
 /* -------------------- HERO ------------------------ */
 .hero__index__container .hero__index {
-  /* grid-area: hero; */
   background-image: url(../multimedia/hero4.jpg);
   height: 600px;
   width: 100%;
@@ -130,8 +136,9 @@ header {
   background-color: #0f0f0f;
   margin: 80px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-content: space-around; }
   .container__nuevosproductos .titulo__nuevosproductos {
     width: 100%;
@@ -159,87 +166,88 @@ header {
   justify-content: center;
   align-items: center; }
   .container__nuevosproductos .producto .imagen__productoUno {
-    background-image: url(../multimedia/producto1.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/producto1.png); }
     .container__nuevosproductos .producto .imagen__productoUno:hover {
       background-image: url(../multimedia/producto-hover-1.png); }
   .container__nuevosproductos .producto .imagen__productoDos {
-    background-image: url(../multimedia/producto2.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/producto2.png); }
     .container__nuevosproductos .producto .imagen__productoDos:hover {
       background-image: url(../multimedia/producto-hover-2.png); }
   .container__nuevosproductos .producto .imagen__productoTres {
-    background-image: url(../multimedia/producto3.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/producto3.png); }
     .container__nuevosproductos .producto .imagen__productoTres:hover {
       background-image: url(../multimedia/producto-hover-3.png); }
   .container__nuevosproductos .producto .imagen__productoCuatro {
-    background-image: url(../multimedia/producto4.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/producto4.png); }
     .container__nuevosproductos .producto .imagen__productoCuatro:hover {
       background-image: url(../multimedia/producto-hover-4.png); }
   .container__nuevosproductos .producto .imagen__productoCinco {
-    background-image: url(../multimedia/producto-estrella.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/producto-estrella.png); }
     .container__nuevosproductos .producto .imagen__productoCinco:hover {
       background-image: url(../multimedia/producto-estrella-hover.png); }
   .container__nuevosproductos .producto .imagen__productoSeis {
-    background-image: url(../multimedia/productoB.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/productoB.png); }
     .container__nuevosproductos .producto .imagen__productoSeis:hover {
       background-image: url(../multimedia/producto-hover-B.png); }
   .container__nuevosproductos .producto .imagen__productoSiete {
-    background-image: url(../multimedia/productoC.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/productoC.png); }
     .container__nuevosproductos .producto .imagen__productoSiete:hover {
       background-image: url(../multimedia/producto-hover-C.png); }
   .container__nuevosproductos .producto .imagen__productoOcho {
-    background-image: url(../multimedia/productoA.png);
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    background-image: url(../multimedia/productoA.png); }
     .container__nuevosproductos .producto .imagen__productoOcho:hover {
       background-image: url(../multimedia/producto-hover-A.png); }
-  .container__nuevosproductos .producto .card__producto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .container__nuevosproductos .producto div h5 {
+
+.producto .card__producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .producto .card__producto h5 {
     color: white;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-align: center; }
-  .container__nuevosproductos .producto div p {
+  .producto .card__producto p {
     padding-bottom: 10px;
     color: white;
     text-align: center; }
-    .container__nuevosproductos .producto div p span {
+    .producto .card__producto p span {
       text-decoration: line-through;
       margin-left: 8px; }
-  .container__nuevosproductos .producto div a {
+  .producto .card__producto a {
     font-size: 15px;
     font-weight: normal;
     padding: 8px 16px;
@@ -247,7 +255,7 @@ header {
     color: white;
     background-color: #dd0030;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-    .container__nuevosproductos .producto div a:hover {
+    .producto .card__producto a:hover {
       background-color: rgba(238, 237, 237, 0.955);
       border: 3px solid #dd0030;
       color: #dd0030;
@@ -256,14 +264,16 @@ header {
 /* -------------------- CARTAS ------------------------ */
 .container__cartas {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 50px; }
   .container__cartas div {
     width: 350px;
     height: 230px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 2px solid white;
     border-radius: 20px;
@@ -294,19 +304,564 @@ footer {
   background-color: black;
   padding: 23px;
   height: 120px; }
-  footer .icono__footer {
+  footer .icono__footer, footer div p {
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px 0px 0px 10px; }
   footer div {
     padding-top: 20px; }
     footer div p {
-      color: #c8c8c8;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 1; }
+      line-height: 0; }
 
+/*-------COSMETICOS-------COSMETICOS-------COSMETICOS-------COSMETICOS--------------COSMETICOS-------COSMETICOS */
+nav .header__nav .menu li .active__nav {
+  color: #dd0030; }
+
+/* -------------------- HERO ------------------------ */
+.hero__cosmeticos__container .hero__cosmeticos {
+  background-image: url(../multimedia/hero-cosmeticos.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 40px;
+  height: 570px;
+  width: 100%; }
+  .hero__cosmeticos__container .hero__cosmeticos h1 {
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-left: 20px;
+    position: relative;
+    bottom: 25px;
+    height: 74px;
+    width: 261px; }
+
+/* -------------------- CATEGORIAS ------------------------ */
+.listaCategorias ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top: 50px; }
+
+.listaCategorias li {
+  display: inline-block; }
+  .listaCategorias li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    background-color: black; }
+    .listaCategorias li a:hover {
+      background-color: #dd0030; }
+
+/* -------------------- PRODUCTOS ------------------------ */
+.container__cosmeticos {
+  margin: 0px 60px 60px 60px;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: space-between; }
+  .container__cosmeticos .titulo__cosmeticos h3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #fff;
+    font-size: 60px;
+    padding: 10px;
+    margin: 50px 0px 0px 20px; }
+  .container__cosmeticos .ordenar {
+    margin-top: 75px;
+    margin-left: 5x;
+    color: #fff; }
+  .container__cosmeticos .producto {
+    background-color: #181818;
+    height: 380px;
+    width: 16rem;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__cosmeticos .producto .card__producto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .container__cosmeticos .producto div a {
+      font-size: 15px;
+      font-weight: normal;
+      padding: 8px 16px;
+      border: 3px solid #dd0030;
+      color: white;
+      background-color: #dd0030;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    .container__cosmeticos .producto div h5 {
+      color: white;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      text-align: center; }
+    .container__cosmeticos .producto .imagen__productoUno {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/producto1.png); }
+      .container__cosmeticos .producto .imagen__productoUno:hover {
+        background-image: url(../multimedia/producto-hover-1.png); }
+    .container__cosmeticos .producto .imagen__productoDos {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/producto2.png); }
+      .container__cosmeticos .producto .imagen__productoDos:hover {
+        background-image: url(../multimedia/producto-hover-2.png); }
+    .container__cosmeticos .producto .imagen__productoTres {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/producto3.png); }
+      .container__cosmeticos .producto .imagen__productoTres:hover {
+        background-image: url(../multimedia/producto-hover-3.png); }
+    .container__cosmeticos .producto .imagen__productoCuatro {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/producto4.png); }
+      .container__cosmeticos .producto .imagen__productoCuatro:hover {
+        background-image: url(../multimedia/producto-hover-4.png); }
+  .container__cosmeticos .cosmetico {
+    background-color: #181818;
+    height: 380px;
+    width: 16rem;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__cosmeticos .cosmetico .card__producto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .container__cosmeticos .cosmetico div h5 {
+      color: white;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      text-align: center; }
+    .container__cosmeticos .cosmetico div p {
+      padding-bottom: 10px;
+      color: white;
+      text-align: center;
+      font-weight: lighter; }
+      .container__cosmeticos .cosmetico div p span {
+        text-decoration: line-through;
+        margin-left: 8px; }
+    .container__cosmeticos .cosmetico div a {
+      font-size: 15px;
+      font-weight: normal;
+      padding: 8px 16px;
+      border: 3px solid #dd0030;
+      color: white;
+      background-color: #dd0030;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      .container__cosmeticos .cosmetico div a:hover {
+        background-color: rgba(238, 237, 237, 0.955);
+        border: 3px solid #dd0030;
+        color: #dd0030;
+        font-size: 16px; }
+    .container__cosmeticos .cosmetico .imagen__cosmeticoUno {
+      background-image: url(../multimedia/producto5.png);
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px; }
+      .container__cosmeticos .cosmetico .imagen__cosmeticoUno:hover {
+        background-image: url(../multimedia/cosmetico-hover-uno.png); }
+    .container__cosmeticos .cosmetico .imagen__cosmeticoDos {
+      background-image: url(../multimedia/producto6.png);
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px; }
+      .container__cosmeticos .cosmetico .imagen__cosmeticoDos:hover {
+        background-image: url(../multimedia/cosmetico-hover-dos.png); }
+    .container__cosmeticos .cosmetico .imagen__cosmeticoTres {
+      background-image: url(../multimedia/producto7.png);
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px; }
+      .container__cosmeticos .cosmetico .imagen__cosmeticoTres:hover {
+        background-image: url(../multimedia/cosmetico-hover-tres.png); }
+    .container__cosmeticos .cosmetico .imagen__cosmeticoCuatro {
+      background-image: url(../multimedia/producto8.png);
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px; }
+      .container__cosmeticos .cosmetico .imagen__cosmeticoCuatro:hover {
+        background-image: url(../multimedia/cosmetico-hover-cuatro.png); }
+
+/* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
+/* -------------------- HERO ------------------------ */
+.hero__escuela__container .hero__escuela {
+  width: 100%; }
+  .hero__escuela__container .hero__escuela h1 {
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 40px;
+    position: relative;
+    bottom: 25px;
+    z-index: 2; }
+  .hero__escuela__container .hero__escuela iframe {
+    position: relative;
+    margin: 0px;
+    bottom: 45px;
+    height: 450px;
+    width: 100%; }
+
+/* -------------------- PROGRAMA ------------------------ */
+.curso__programa {
+  display: flex;
+  justify-content: center; }
+  .curso__programa h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 100px; }
+  .curso__programa .programa {
+    background: linear-gradient(228deg, #a7394e 18%, #883f73 57%, #e4bb6c 100%);
+    color: white;
+    width: 600px;
+    height: 400px;
+    padding: 37px;
+    overflow: auto;
+    display: inline-block;
+    margin: 30px 0px 60px 0px; }
+  .curso__programa div h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 10px; }
+  .curso__programa button {
+    position: relative;
+    left: 30%;
+    top: 7px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 10px;
+    cursor: pointer; }
+    .curso__programa button:hover {
+      background-color: black;
+      color: white; }
+
+@keyframes imagenCurso {
+  0% {
+    background-image: url(../multimedia/cursoMaquillaje3.jpg);
+    background-position: center;
+    background-size: cover; }
+  25% {
+    background-image: url(../multimedia/cursoMaquillaje4.jpg);
+    background-position: center;
+    background-size: cover; }
+  50% {
+    background-image: url(../multimedia/cursoMaquillaje4.jpg);
+    background-position: center;
+    background-size: cover; }
+  75% {
+    background-image: url(../multimedia/cursoMaquillaje3.jpg);
+    background-position: center;
+    background-size: cover; }
+  100% {
+    background-image: url(../multimedia/cursoMaquillaje3.jpg);
+    background-position: center;
+    background-size: cover; } }
+
+.curso__programa .curso__img {
+  width: 300px;
+  height: 400px;
+  margin: 30px 0px 60px 0px;
+  animation-duration: 10s;
+  animation-name: imagenCurso;
+  animation-iteration-count: infinite; }
+
+/*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
+/* -------------------- HERO ------------------------ */
+.hero__servicios__container .hero__servicios {
+  background-image: url(../multimedia/servicios3.jpeg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 40px;
+  height: 570px;
+  width: 100%; }
+  .hero__servicios__container .hero__servicios h1 {
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-left: 20px;
+    position: relative;
+    bottom: 25px; }
+
+/* -------------------- CATEGORIAS ------------------------ */
+.listaCategorias ul {
+  flex-wrap: wrap; }
+
+.listaCategorias li a {
+  padding: 10px 10px; }
+
+/* -------------------- info ------------------------ */
+.titulo__servicios {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+  .titulo__servicios h2 {
+    font-size: 40px;
+    padding: 4px;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 600px; }
+  .titulo__servicios h3 {
+    font-size: 35px;
+    padding: 4px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    color: #fff;
+    width: 500px; }
+
+.card__servicios__container {
+  background-color: #181818;
+  border-radius: 15px;
+  margin-left: 200px; }
+  .card__servicios__container .moda__img img {
+    width: 322px;
+    height: 440px;
+    margin: 10px; }
+  .card__servicios__container .moda__text p {
+    margin-top: 50px;
+    margin-right: 24px;
+    color: #fff; }
+  .card__servicios__container .card__servicios {
+    display: flex;
+    justify-content: center; }
+    .card__servicios__container .card__servicios .moda__form div {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .card__servicios__container .card__servicios .moda__form div .email label {
+        color: #fff; }
+      .card__servicios__container .card__servicios .moda__form div .reservarFecha {
+        width: 50%;
+        color: white;
+        background-color: #dd0030;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 17px;
+        border: 2px solid black;
+        padding: 4px;
+        cursor: pointer;
+        transition: all 2s; }
+        .card__servicios__container .card__servicios .moda__form div .reservarFecha:hover {
+          background-color: #cb8c30; }
+
+/*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
+/* -------------------- NOSOTRAS ------------------------ */
+.hero__nosotras__container .hero__nosotras {
+  background-image: url(../multimedia/nosotras3.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 40px;
+  height: 570px;
+  width: 100%; }
+  .hero__nosotras__container .hero__nosotras h2 {
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-left: 20px;
+    position: relative;
+    bottom: 25px; }
+  .hero__nosotras__container .hero__nosotras h3 {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 224px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.container__nosotras {
+  display: flex;
+  justify-content: center; }
+  .container__nosotras p {
+    width: 910px;
+    text-align: center;
+    padding: 40px;
+    margin: 10px 30px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    color: #fff;
+    font-family: "Montserrat", sans-serif; }
+
+/* -------------------- ELLAS ------------------------ */
+.nuestraMision__container .nuestraMision {
+  background-image: url(../multimedia/mision5.jpeg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 40px;
+  width: 100%; }
+  .nuestraMision__container .nuestraMision h2 {
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-left: 20px;
+    position: relative;
+    bottom: 25px; }
+  .nuestraMision__container .nuestraMision h3 {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 224px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.container__ellas {
+  display: flex;
+  justify-content: center; }
+  .container__ellas p {
+    text-align: center;
+    padding: 40px;
+    margin: 10px 30px;
+    animation-duration: 5s;
+    animation-name: aparecerDos;
+    animation-iteration-count: infinite;
+    width: 800px;
+    color: #fff; }
+
+/*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
+/* -------------------- HERO ------------------------ */
+.hero__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center; }
+  .hero__contacto h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+    border: 3px solid black;
+    display: inline-block;
+    width: 153px;
+    position: relative;
+    top: 10px;
+    right: 254px;
+    margin-top: 60px; }
+  .hero__contacto h3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #dd0030;
+    color: white;
+    font-size: 28px;
+    padding: 20px;
+    width: 510px;
+    margin-bottom: 60px; }
+
+/* -------------------- CONTACTO ------------------------ */
+.container__contacto .contacto {
+  width: 650px;
+  height: 390px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px 10px 10px 114px;
+  border: 4px solid black;
+  border-radius: 15px; }
+  .container__contacto .contacto h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 50px; }
+  .container__contacto .contacto form div .mensaje {
+    width: 100%;
+    height: 150px; }
+  .container__contacto .contacto div .enviarMensaje {
+    width: 100%;
+    color: white;
+    background-color: #dd0030;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 17px;
+    border: 2px solid black;
+    padding: 4px; }
+
+/* -------------------- ASIDE ------------------------ */
+.container__contacto .aside__encontranos {
+  width: 333px;
+  height: 390px;
+  color: white;
+  background-color: black;
+  margin: 10px 10px 0px 20px;
+  padding: 50px;
+  line-height: 1.8;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container__contacto .aside__encontranos h4 {
+    padding: 18px 0px; }
+  .container__contacto .aside__encontranos div .redes {
+    padding: 0px 12px 22px 12px;
+    cursor: pointer; }
+    .container__contacto .aside__encontranos div .redes:hover {
+      transform: scale(1.3, 1.3); }
+  .container__contacto .aside__encontranos p {
+    margin: 0px 30px; }
+
+/* -------------------- IFRAME ------------------------ */
+.mapa__contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 460px; }
+  .mapa__contacto .mapa {
+    width: 800px;
+    height: 400px; }
+
+/* INDEX */
 @media screen and (max-width: 992px) {
   .header__navbar .icon-cart {
     display: none; }
@@ -329,7 +884,7 @@ footer {
   .container__nuevosproductos {
     margin: 70px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center; } }
 
@@ -341,7 +896,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    footer .icono__footer {
+    footer .icono__footer, footer div p {
       font-size: 18px;
       padding: 8px 0px 0px 8px; }
     footer div {
@@ -371,3 +926,102 @@ footer {
     font-size: 8px; }
   .whatsapp__icono {
     width: 120px; } }
+
+/* COSMETICOS */
+@media screen and (max-width: 768px) {
+  .listaCategorias ul {
+    display: flex;
+    flex-flow: row wrap; }
+  .listaCategorias li {
+    margin: 15px; }
+    .listaCategorias li a {
+      font-size: 17px; } }
+
+@media screen and (max-width: 700px) {
+  .container__cosmeticos .ordenar {
+    font-size: 15px; } }
+
+@media screen and (max-width: 675px) {
+  .container__cosmeticos {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .container__cosmeticos h3 {
+      text-align: center; }
+    .container__cosmeticos .titulo__cosmeticos h3 {
+      margin: 0px; }
+    .container__cosmeticos .ordenar {
+      margin-top: 10px; } }
+
+@media screen and (max-width: 500px) {
+  .hero__cosmeticos__container .hero__cosmeticos {
+    background-image: url(../multimedia/hero-cosmeticos-mobile.jpg);
+    background-size: cover;
+    background-position: center center; }
+    .hero__cosmeticos__container .hero__cosmeticos h1 {
+      font-size: 29px;
+      height: 60px;
+      width: 196px; } }
+
+/* ESCUELA */
+@media screen and (max-width: 900px) {
+  .curso__programa .programa {
+    width: 400px; } }
+
+@media screen and (max-width: 700px) {
+  .curso__programa .programa {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 0px; }
+  .curso__programa .curso__img {
+    width: 270px;
+    height: 370px;
+    margin: 10px 0px 60px 0px; }
+  .curso__programa h2 {
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 500px; } }
+
+@media screen and (max-width: 500px) {
+  .hero__escuela__container .hero__escuela h1 {
+    font-size: 29px;
+    height: 60px;
+    width: 150px; }
+  .curso__programa h2 {
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 450px;
+    font-size: 38px; } }
+
+/* CONTACTO */
+@media screen and (max-width: 1137px) {
+  .container__contacto .contacto {
+    margin: 10px 10px 10px 10px; } }
+
+@media screen and (max-width: 1033px) {
+  .container__contacto .contacto {
+    width: 582px; }
+  .container__contacto .aside__encontranos {
+    width: 270px; }
+    .container__contacto .aside__encontranos p {
+      margin: 0px; } }
+
+@media screen and (max-width: 903px) {
+  .container__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__contacto .aside__encontranos {
+      width: 466px;
+      height: 240px; } }
+
+@media screen and (max-width: 768px) {
+  .mapa__contacto .mapa {
+    width: 500px;
+    height: 360px; } }

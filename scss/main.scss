@@ -1,18 +1,19 @@
 @import "variables";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* -------INDEX-------INDEX-------INDEX-------INDEX--------------INDEX-------INDEX------- */
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: "Montserrat", sans-serif;
     background-color: $colorSecundario;
 }
+
 /* -------------------- HEADER ------------------------ */
-header{
+header {
     background-color: $colorSecundario;
     border-bottom: 2px solid black;
     position: sticky;
@@ -20,366 +21,332 @@ header{
     z-index: 1000;
     height: 150px;
 
-    nav{
-    background-color: $colorSecundario;
-    width: 100%;
-    height: 100%;
+    nav {
+        background-color: $colorSecundario;
+        width: 100%;
+        height: 100%;
     }
 }
 
-.header__logo{
+.header__logo {
     padding: 10px;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 30px;
     width: 300px;
     color: white;
 
-    span{
+    span {
         display: block;
         text-decoration: none;
         color: #fff;
         transition: color 0.5s;
     }
 
-    .logo__titulo{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 49px;
-    font-weight: bold;
-    height: 61px;
+    .logo__titulo {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        font-size: 49px;
+        font-weight: bold;
+        height: 61px;
     }
 
-    .logo__subtitulo{
-    font-family: $fuentePrincipal;
-    font-size: 15px;
-    padding: 0px;
+    .logo__subtitulo {
+        font-family: $fuentePrincipal;
+        font-size: 15px;
+        padding: 0px;
     }
 
-    &:hover{
+    &:hover {
         color: $colorPrincipal;
-        }
+    }
 }
 
-.header__navbar .header__nav{
+.header__navbar .header__nav {
     padding: 10px;
     display: flex;
     flex-flow: row nowrap;
 
-    .menu li a{
-    color: white;
-    font-family: $fuentePrincipal;
-    font-size: 19px;
-    padding: 5px;
-    margin-right: 0px;
-    transition: color 0.5s;
+    .menu li a {
+        color: white;
+        font-family: $fuentePrincipal;
+        font-size: 19px;
+        padding: 5px;
+        margin-right: 0px;
+        transition: color 0.5s;
 
-        &:hover{
-        color:$colorPrincipal;
+        &:hover {
+            color: $colorPrincipal;
         }
     }
 }
-.header__navbar .header__nav form{
+
+.header__navbar .header__nav form {
     margin-left: 100px;
-    
-    button{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: white;
-    background-color: $colorPrincipal;
-    border: 1px solid $colorPrincipal;
-    transition: all 0.5s;
 
-        &:hover{
-        background-color: rgb(136, 0, 27);
-        border: 1px solid rgb(136, 0, 27);
+    button {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: $colorPrincipal;
+        border: 1px solid $colorPrincipal;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: rgb(136, 0, 27);
+            border: 1px solid rgb(136, 0, 27);
         }
     }
 }
 
-.header__navbar{
-    a{
+.header__navbar {
+    a {
         text-decoration: none;
     }
-    .icon-cart{
+
+    .icon-cart {
         font-size: 28px;
         color: white;
         margin-left: 7px;
         transition: color 0.5s;
-        &:hover{
+
+        &:hover {
             color: $colorPrincipal;
         }
     }
 }
 
 /* -------------------- HERO ------------------------ */
-.hero__index__container .hero__index{
-    /* grid-area: hero; */
+.hero__index__container .hero__index {
     background-image: url(../multimedia/hero4.jpg);
     height: 600px;
     width: 100%;
     background-size: cover;
-    background-position: left center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    h1{
-    font-family: $fuentePrincipal;
-    color: white;
-    font-size: 75px;
-    text-align: center;
-    width: 263px;
-    line-height: 1;
-    margin-left: 40px;
-    }
-    
-    p{
-    font-family: $fuentePrincipal;
-    color: white;
-    font-size: 25px;
-    padding: 10px;
-    width: 263px;
-    text-align: center;
-    margin-left: 40px;
+    background-position: left center; 
+    @include flexbox(flex, column, center);
+
+    h1 {
+        font-family: $fuentePrincipal;
+        color: white;
+        font-size: 75px;
+        text-align: center;
+        width: 263px;
+        line-height: 1;
+        margin-left: 40px;
     }
 
-    button{
-    font-size: 18px;
-    font-weight: normal;
-    padding: 10px 18px;
-    border: none;
-    color: white;
-    background-color: $colorPrincipal;
-    font-family: $fuentePrincipal;
-    cursor: pointer;
-    width: 200px;
-    margin-left: 71px;
-    
-        &:hover{
-        background-color: rgb(136, 0, 27);
-        transform: scale(1.1, 1.1);
+    p {
+        font-family: $fuentePrincipal;
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+        width: 263px;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    button {
+        font-size: 18px;
+        font-weight: normal;
+        padding: 10px 18px;
+        border: none;
+        color: white;
+        background-color: $colorPrincipal;
+        font-family: $fuentePrincipal;
+        cursor: pointer;
+        width: 200px;
+        margin-left: 71px;
+
+        &:hover {
+            background-color: rgb(136, 0, 27);
+            transform: scale(1.1, 1.1);
         }
     }
 }
 
 /* -------------------- NUEVOS PRODUCTOS ------------------------ */
-.container__nuevosproductos{
+.container__nuevosproductos {
     background-color: $colorSecundario;
     margin: 80px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include flexbox(flex, row, space-between);
+    flex-wrap: wrap;
     align-content: space-around;
 
-    .titulo__nuevosproductos{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    .titulo__nuevosproductos {
+        width: 100%;
+        height: 100px;
+        @include flexbox(flex, row, center);
     }
 
-    h3{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    width: 38%;
-    height: 58px;
-    font-family: $fuentePrincipal;
-    font-size: 30px;
-    text-align: center;
+    h3 {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 38%;
+        height: 58px;
+        font-family: $fuentePrincipal;
+        font-size: 30px;
+        text-align: center;
     }
 }
 
-.container__nuevosproductos .producto{
+.container__nuevosproductos .producto {
     background-color: $colorTerciario;
     height: 380px;
     width: 16rem;
     margin-top: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(flex, column, center);
     align-items: center;
 
-    .imagen__productoUno{
-    background-image: url(../multimedia/producto1.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-        
-        &:hover{
-        background-image: url(../multimedia/producto-hover-1.png);
-        }
-    }
-    
-    .imagen__productoDos{
-    background-image: url(../multimedia/producto2.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    
-        &:hover{
-        background-image: url(../multimedia/producto-hover-2.png);
+    .imagen__productoUno {
+        @include imagen-producto;
+        background-image: url(../multimedia/producto1.png);
+
+        &:hover {
+            background-image: url(../multimedia/producto-hover-1.png);
         }
     }
 
-    .imagen__productoTres{
-    background-image: url(../multimedia/producto3.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-        
-        &:hover{
-        background-image: url(../multimedia/producto-hover-3.png);
+    .imagen__productoDos {
+        @include imagen-producto;
+        background-image: url(../multimedia/producto2.png);
+
+        &:hover {
+            background-image: url(../multimedia/producto-hover-2.png);
         }
     }
 
-    .imagen__productoCuatro{
-    background-image: url(../multimedia/producto4.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    
-        &:hover{
-        background-image: url(../multimedia/producto-hover-4.png);
+    .imagen__productoTres {
+        @include imagen-producto;
+        background-image: url(../multimedia/producto3.png);
+
+        &:hover {
+            background-image: url(../multimedia/producto-hover-3.png);
         }
     }
 
-    .imagen__productoCinco{
-    background-image: url(../multimedia/producto-estrella.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
+    .imagen__productoCuatro {
+        @include imagen-producto;
+        background-image: url(../multimedia/producto4.png);
 
-        &:hover{
-        background-image: url(../multimedia/producto-estrella-hover.png);
+        &:hover {
+            background-image: url(../multimedia/producto-hover-4.png);
         }
     }
 
-    .imagen__productoSeis{
-    background-image: url(../multimedia/productoB.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    
-        &:hover{
-        background-image: url(../multimedia/producto-hover-B.png);
+    .imagen__productoCinco {
+        @include imagen-producto;
+        background-image: url(../multimedia/producto-estrella.png);
+
+        &:hover {
+            background-image: url(../multimedia/producto-estrella-hover.png);
         }
     }
 
-    .imagen__productoSiete{
-    background-image: url(../multimedia/productoC.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
+    .imagen__productoSeis {
+        @include imagen-producto;
+        background-image: url(../multimedia/productoB.png);
 
-        &:hover{
-        background-image: url(../multimedia/producto-hover-C.png);
+        &:hover {
+            background-image: url(../multimedia/producto-hover-B.png);
         }
     }
 
-    .imagen__productoOcho{
-    background-image: url(../multimedia/productoA.png);
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
+    .imagen__productoSiete {
+        @include imagen-producto;
+        background-image: url(../multimedia/productoC.png);
 
-        &:hover{
-        background-image: url(../multimedia/producto-hover-A.png);
-        }
-    }
-    
-    .card__producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
-
-    div h5{
-    color: white;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    }
-
-    div p{
-    padding-bottom: 10px;
-    color: white;
-    text-align: center;
-
-        span{
-        text-decoration: line-through;
-        margin-left: 8px;
+        &:hover {
+            background-image: url(../multimedia/producto-hover-C.png);
         }
     }
 
-    div a{
-    font-size: 15px;
-    font-weight: normal;
-    padding: 8px 16px;
-    border: 3px solid $colorPrincipal;
-    color: white;
-    background-color: $colorPrincipal;
-    font-family: $fuentePrincipal;
-    
-        &:hover{
-        background-color: rgba(238, 237, 237, 0.955);
-        border: 3px solid $colorPrincipal ;
-        color: $colorPrincipal;
-        font-size: 16px;
+    .imagen__productoOcho {
+        @include imagen-producto;
+        background-image: url(../multimedia/productoA.png);
+
+        &:hover {
+            background-image: url(../multimedia/producto-hover-A.png);
+        }
+    }
+}
+
+.producto .card__producto {
+    @include flexbox(flex, column, center);
+
+    h5 {
+        color: white;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p {
+        padding-bottom: 10px;
+        color: white;
+        text-align: center;
+
+        span {
+            text-decoration: line-through;
+            margin-left: 8px;
+        }
+    }
+
+    a {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 8px 16px;
+        border: 3px solid $colorPrincipal;
+        color: white;
+        background-color: $colorPrincipal;
+        font-family: $fuentePrincipal;
+
+        &:hover {
+            background-color: rgba(238, 237, 237, 0.955);
+            border: 3px solid $colorPrincipal;
+            color: $colorPrincipal;
+            font-size: 16px;
         }
     }
 }
 
 /* -------------------- CARTAS ------------------------ */
-.container__cartas{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+.container__cartas {
+    @include flexbox(flex, row, space-evenly);
+    flex-wrap: wrap;
     margin: 50px;
-    
-    div{
-    width: 350px;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 20px;
 
-        .icono__carta{
-        font-size: 60px;
-        color: $colorPrincipal;
-        margin-bottom: 15px;
+    div {
+        width: 350px;
+        height: 230px;
+        @include flexbox(flex, column, center);
+        align-items: center;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 20px;
+
+        .icono__carta {
+            font-size: 60px;
+            color: $colorPrincipal;
+            margin-bottom: 15px;
         }
 
-        h5{
-        font-family: $fuentePrincipal;
-        color: #fff;
-        font-size: 18px;
-        padding-bottom: 6px;
+        h5 {
+            font-family: $fuentePrincipal;
+            color: #fff;
+            font-size: 18px;
+            padding-bottom: 6px;
         }
 
-        p{
-        font-size: 16px;
-        text-align: center;
-        color: #fff;
+        p {
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
         }
     }
 }
 
 /* -------------------- WHATSAPP ------------------------ */
-.whatsapp__icono{
+.whatsapp__icono {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -387,27 +354,689 @@ header{
 }
 
 /* -------------------- FOOTER ------------------------ */
-footer{
+footer {
     background-color: black;
     padding: 23px;
     height: 120px;
 
-    .icono__footer{
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 0px 0px 10px ;
+    .icono__footer {
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 0px 0px 10px;
     }
 
-    div{
-    padding-top: 20px;
-    
-        p{
-        color: rgb(200,200,200);
-        font-family: 'Roboto', sans-serif;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 1;
+    div {
+        padding-top: 20px;
+
+        p {
+            @extend .icono__footer;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            line-height: 0;
         }
+    }
+}
+
+/*-------COSMETICOS-------COSMETICOS-------COSMETICOS-------COSMETICOS--------------COSMETICOS-------COSMETICOS */
+nav .header__nav .menu li .active__nav {
+    color: $colorPrincipal;
+}
+
+/* -------------------- HERO ------------------------ */
+.hero__cosmeticos__container .hero__cosmeticos {
+    background-image: url(../multimedia/hero-cosmeticos.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+    height: 570px;
+    width: 100%;
+
+    h1 {
+        color: map-get($estilos, color);
+        background-color: map-get($estilos, background);
+        padding: map-get($estilos, padding);
+        display: map-get($estilos, display);
+        font-family: map-get($estilos, font);
+        font-size: map-get($estilos, fontsize);
+        border: map-get($estilos, border);
+        margin-left: 20px;
+        position: relative;
+        bottom: 25px;
+        height: 74px;
+        width: 261px;
+    }
+}
+
+/* -------------------- CATEGORIAS ------------------------ */
+.listaCategorias ul {
+    @include flexbox(flex, row, space-evenly);
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.listaCategorias li {
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 50px;
+        font-family: $fuentePrincipal;
+        font-size: 20px;
+        background-color: black;
+
+        &:hover {
+            background-color: $colorPrincipal;
+        }
+    }
+}
+
+/* -------------------- PRODUCTOS ------------------------ */
+.container__cosmeticos {
+    margin: 0px 60px 60px 60px;
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: space-between;
+
+    .titulo__cosmeticos h3 {
+        font-family: $fuentePrincipal;
+        color: #fff;
+        font-size: 60px;
+        padding: 10px;
+        margin: 50px 0px 0px 20px;
+    }
+
+    .ordenar {
+        margin-top: 75px;
+        margin-left: 5x;
+        color: #fff;
+    }
+
+    .producto {
+        background-color: $colorTerciario;
+        height: 380px;
+        width: 16rem;
+        margin-top: 18px;
+        @include flexbox(flex, column, center);
+        align-items: center;
+
+        .card__producto {
+            @include flexbox(flex, column, center);
+        }
+
+        div a {
+            font-size: 15px;
+            font-weight: normal;
+            padding: 8px 16px;
+            border: 3px solid $colorPrincipal;
+            color: white;
+            background-color: $colorPrincipal;
+            font-family: $fuentePrincipal;
+        }
+
+        div h5 {
+            color: white;
+            font-size: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .imagen__productoUno {
+            @include imagen-producto;
+            background-image: url(../multimedia/producto1.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-1.png);
+            }
+        }
+    
+        .imagen__productoDos {
+            @include imagen-producto;
+            background-image: url(../multimedia/producto2.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-2.png);
+            }
+        }
+    
+        .imagen__productoTres {
+            @include imagen-producto;
+            background-image: url(../multimedia/producto3.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-3.png);
+            }
+        }
+    
+        .imagen__productoCuatro {
+            @include imagen-producto;
+            background-image: url(../multimedia/producto4.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-4.png);
+            }
+        }
+    }
+
+    .cosmetico {
+        background-color: $colorTerciario;
+        height: 380px;
+        width: 16rem;
+        margin-top: 18px;
+        @include flexbox(flex, column, center);
+        align-items: center;
+
+        .card__producto {
+            @include flexbox(flex, column, center);
+        }
+
+        div h5 {
+            color: white;
+            font-size: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p {
+            padding-bottom: 10px;
+            color: white;
+            text-align: center;
+            font-weight: lighter;
+
+            span {
+                text-decoration: line-through;
+                margin-left: 8px;
+            }
+        }
+
+        div a {
+            font-size: 15px;
+            font-weight: normal;
+            padding: 8px 16px;
+            border: 3px solid $colorPrincipal;
+            color: white;
+            background-color: $colorPrincipal;
+            font-family: $fuentePrincipal;
+
+            &:hover {
+                background-color: rgba(238, 237, 237, 0.955);
+                border: 3px solid $colorPrincipal;
+                color: $colorPrincipal;
+                font-size: 16px;
+            }
+        }
+
+        .imagen__cosmeticoUno {
+            background-image: url(../multimedia/producto5.png);
+            @include imagen-producto;
+
+            &:hover {
+                background-image: url(../multimedia/cosmetico-hover-uno.png);
+            }
+        }
+
+        .imagen__cosmeticoDos {
+            background-image: url(../multimedia/producto6.png);
+            @include imagen-producto;
+
+            &:hover {
+                background-image: url(../multimedia/cosmetico-hover-dos.png);
+            }
+        }
+
+        .imagen__cosmeticoTres {
+            background-image: url(../multimedia/producto7.png);
+            @include imagen-producto;
+
+            &:hover {
+                background-image: url(../multimedia/cosmetico-hover-tres.png);
+            }
+        }
+
+        .imagen__cosmeticoCuatro {
+            background-image: url(../multimedia/producto8.png);
+            @include imagen-producto;
+
+            &:hover {
+                background-image: url(../multimedia/cosmetico-hover-cuatro.png);
+            }
+        }
+    }
+}
+
+/* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
+/* -------------------- HERO ------------------------ */
+.hero__escuela__container .hero__escuela {
+    width: 100%;
+
+    h1 {
+        color: map-get($estilos, color);
+        background-color: map-get($estilos, background);
+        padding: map-get($estilos, padding);
+        display: map-get($estilos, display);
+        font-family: map-get($estilos, font);
+        font-size: map-get($estilos, fontsize);
+        border: map-get($estilos, border);
+        margin-left: 20px;
+        margin-top: 40px;
+        position: relative;
+        bottom: 25px;
+        z-index: 2;
+    }
+
+    iframe {
+        position: relative;
+        margin: 0px;
+        bottom: 45px;
+        height: 450px;
+        width: 100%;
+    }
+}
+
+/* -------------------- PROGRAMA ------------------------ */
+.curso__programa {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-family: $fuentePrincipal;
+        font-size: 40px;
+        padding: 10px;
+        margin-left: 20px;
+        color: #fff;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    .programa {
+        background: linear-gradient(228deg, rgb(167, 57, 78) 18%, rgb(136, 63, 115) 57%, rgb(228, 187, 108) 100%);
+        color: white;
+        width: 600px;
+        height: 400px;
+        padding: 37px;
+        overflow: auto;
+        display: inline-block;
+        margin: 30px 0px 60px 0px;
+    }
+
+    div h6 {
+        font-family: "Roboto", sans-serif;
+        font-size: 25px;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    button {
+        position: relative;
+        left: 30%;
+        top: 7px;
+        padding: 10px;
+        border: 2px solid black;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: $fuentePrincipal;
+        margin-top: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+@keyframes imagenCurso {
+    0% {
+        background-image: url(../multimedia/cursoMaquillaje3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url(../multimedia/cursoMaquillaje4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(../multimedia/cursoMaquillaje4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(../multimedia/cursoMaquillaje3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../multimedia/cursoMaquillaje3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.curso__programa .curso__img {
+    width: 300px;
+    height: 400px;
+    margin: 30px 0px 60px 0px;
+    animation-duration: 10s;
+    animation-name: imagenCurso;
+    animation-iteration-count: infinite;
+}
+
+/*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
+/* -------------------- HERO ------------------------ */
+.hero__servicios__container .hero__servicios {
+    background-image: url(../multimedia/servicios3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+    height: 570px;
+    width: 100%;
+
+    h1 {
+        color: map-get($estilos, color);
+        background-color: map-get($estilos, background);
+        padding: map-get($estilos, padding);
+        display: map-get($estilos, display);
+        font-family: map-get($estilos, font);
+        font-size: map-get($estilos, fontsize);
+        border: map-get($estilos, border);
+        margin-left: 20px;
+        position: relative;
+        bottom: 25px;
+    }
+}
+
+/* -------------------- CATEGORIAS ------------------------ */
+.listaCategorias ul {
+    flex-wrap: wrap;
+}
+
+.listaCategorias li a {
+    padding: 10px 10px;
+}
+
+/* -------------------- info ------------------------ */
+.titulo__servicios {
+    font-family: $fuentePrincipal;
+
+    h2 {
+        font-size: 40px;
+        padding: 4px;
+        color: #fff;
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 600px;
+    }
+
+    h3 {
+        font-size: 35px;
+        padding: 4px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+        color: #fff;
+        width: 500px;
+    }
+}
+
+.card__servicios__container {
+    background-color: $colorTerciario;
+    border-radius: 15px;
+    margin-left: 200px;
+
+    .moda__img img {
+        width: 322px;
+        height: 440px;
+        margin: 10px;
+    }
+
+    .moda__text p {
+        margin-top: 50px;
+        margin-right: 24px;
+        color: #fff;
+    }
+
+    .card__servicios {
+        display: flex;
+        justify-content: center;
+
+        .moda__form div {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .email label {
+                color: #fff;
+            }
+
+            .reservarFecha {
+                width: 50%;
+                color: white;
+                background-color: $colorPrincipal;
+                font-family: $fuentePrincipal;
+                font-size: 17px;
+                border: 2px solid black;
+                padding: 4px;
+                cursor: pointer;
+                transition: all 2s;
+
+                &:hover {
+                    background-color: rgb(203, 140, 48);
+                }
+            }
+        }
+    }
+}
+
+/*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
+/* -------------------- NOSOTRAS ------------------------ */
+.hero__nosotras__container .hero__nosotras {
+    background-image: url(../multimedia/nosotras3.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+    height: 570px;
+    width: 100%;
+
+    h2 {
+        color: map-get($estilos, color);
+        background-color: map-get($estilos, background);
+        padding: map-get($estilos, padding);
+        display: map-get($estilos, display);
+        font-family: map-get($estilos, font);
+        font-size: map-get($estilos, fontsize);
+        border: map-get($estilos, border);
+        margin-left: 20px;
+        position: relative;
+        bottom: 25px;
+    }
+
+    h3 {
+        color: rgba(255, 255, 255, 0.3);
+        font-family: $fuentePrincipal;
+        font-size: 224px;
+        height: 468px;
+        @include flexbox(flex, column, center);
+        align-items: center;
+    }
+}
+
+.container__nosotras {
+    display: flex;
+    justify-content: center;
+
+    p {
+        width: 910px;
+        text-align: center;
+        padding: 40px;
+        margin: 10px 30px;
+        animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+/* -------------------- ELLAS ------------------------ */
+.nuestraMision__container .nuestraMision {
+    background-image: url(../multimedia/mision5.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+    width: 100%;
+
+    h2 {
+        color: map-get($estilos, color);
+        background-color: map-get($estilos, background);
+        padding: map-get($estilos, padding);
+        display: map-get($estilos, display);
+        font-family: map-get($estilos, font);
+        font-size: map-get($estilos, fontsize);
+        border: map-get($estilos, border);
+        margin-left: 20px;
+        position: relative;
+        bottom: 25px;
+    }
+
+    h3 {
+        color: rgba(255, 255, 255, 0.3);
+        font-family: $fuentePrincipal;
+        font-size: 224px;
+        height: 468px;
+        @include flexbox(flex, column, center);
+        align-items: center;
+    }
+}
+
+.container__ellas {
+    display: flex;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        padding: 40px;
+        margin: 10px 30px;
+        animation-duration: 5s;
+        animation-name: aparecerDos;
+        animation-iteration-count: infinite;
+        width: 800px;
+        color: #fff;
+    }
+}
+
+/*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
+/* -------------------- HERO ------------------------ */
+.hero__contacto {
+    @include flexbox(flex, column, center);
+    flex-wrap: nowrap;
+    align-items: center;
+
+    h2 {
+        font-family: $fuentePrincipal;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        padding: 10px;
+        border: 3px solid black;
+        display: inline-block;
+        width: 153px;
+        position: relative;
+        top: 10px;
+        right: 254px;
+        margin-top: 60px;
+    }
+
+    h3 {
+        font-family: $fuentePrincipal;
+        background-color: $colorPrincipal;
+        color: white;
+        font-size: 28px;
+        padding: 20px;
+        width: 510px;
+        margin-bottom: 60px;
+    }
+}
+
+/* -------------------- CONTACTO ------------------------ */
+.container__contacto .contacto {
+    width: 650px;
+    height: 390px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px 10px 10px 114px;
+    border: 4px solid black;
+    border-radius: 15px;
+
+    h1 {
+        font-family: $fuentePrincipal;
+        font-size: 50px;
+    }
+
+    form div .mensaje {
+        width: 100%;
+        height: 150px;
+    }
+
+    div .enviarMensaje {
+        width: 100%;
+        color: white;
+        background-color: $colorPrincipal;
+        font-family: $fuentePrincipal;
+        font-size: 17px;
+        border: 2px solid black;
+        padding: 4px;
+    }
+}
+
+/* -------------------- ASIDE ------------------------ */
+.container__contacto .aside__encontranos {
+    width: 333px;
+    height: 390px;
+    color: white;
+    background-color: black;
+    margin: 10px 10px 0px 20px;
+    padding: 50px;
+    line-height: 1.8;
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    @include flexbox(flex, column, center);
+    align-items: center;
+
+    h4 {
+        padding: 18px 0px;
+    }
+
+    div .redes {
+        padding: 0px 12px 22px 12px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.3, 1.3);
+        }
+    }
+
+    p {
+        margin: 0px 30px;
+    }
+}
+
+/* -------------------- IFRAME ------------------------ */
+.mapa__contacto {
+    @include flexbox(flex, row, center);
+    align-items: center;
+    width: 100%;
+    height: 460px;
+
+    .mapa {
+        width: 800px;
+        height: 400px;
     }
 }
 
