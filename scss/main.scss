@@ -19,7 +19,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 150px;
+    height: 140px;
 
     nav {
         background-color: $colorSecundario;
@@ -42,8 +42,7 @@ header {
     }
 
     .logo__titulo {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         font-size: 49px;
         font-weight: bold;
         height: 61px;
@@ -115,49 +114,149 @@ header {
 }
 
 /* -------------------- HERO ------------------------ */
-.hero__index__container .hero__index {
-    background-image: url(../multimedia/hero4.jpg);
+.carousel__index__container .carousel__index{
     height: 600px;
     width: 100%;
-    background-size: cover;
-    background-position: left center; 
-    @include flexbox(flex, column, center);
+    padding: 0px;
 
-    h1 {
-        font-family: $fuentePrincipal;
-        color: white;
-        font-size: 75px;
-        text-align: center;
-        width: 263px;
-        line-height: 1;
-        margin-left: 40px;
+    .carousel__indexUno{
+        background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06785416803440125) 53%, rgba(0,0,0,0.7233163529083508) 81%)
+        ,url(../multimedia/hero4.jpg);
+        @include hero-carousel;
+        h1 {
+            font-family: $fuentePrincipal;
+            color: white;
+            font-size: 80px;
+            text-align: center;
+            width: 263px;
+            line-height: 1;
+            margin-left: 60px;
+            margin-top: 80px;
+        }
+    
+        p {
+            font-family: $fuentePrincipal;
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+            width: 263px;
+            text-align: center;
+            margin-left: 60px;
+        }
+    
+        button {
+            font-size: 18px;
+            font-weight: normal;
+            padding: 10px 18px;
+            border: none;
+            background-color: $colorPrincipal;
+            font-family: $fuentePrincipal;
+            cursor: pointer;
+            width: 200px;
+            margin-left: 91px;
+    
+            &:hover {
+                background-color: rgb(136, 0, 27);
+                transform: scale(1.1, 1.1);
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
+    .carousel__indexDos{
+        background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06785416803440125) 53%, rgba(0,0,0,0.7233163529083508) 81%)
+        ,url(../multimedia/floresAmarillas.jpg);
+        @include hero-carousel;
+        h1 {
+            font-family: $fuentePrincipal;
+            color: white;
+            font-size: 70px;
+            text-align: left;
+            width: 263px;
+            line-height: 1;
+            margin-left: 40px;
+            margin-top: 290px;
+        }
+    
+        p {
+            font-family: $fuentePrincipal;
+            color: white;
+            font-size: 25px;
+            width: 300px;
+            text-align: left;
+            margin-left: 50px;
+        }
+    
+        button {
+            font-size: 18px;
+            font-weight: normal;
+            padding: 8px 16px;
+            border: none;
+            background-color: $colorPrincipal;
+            font-family: $fuentePrincipal;
+            cursor: pointer;
+            width: 190px;
+            margin-left: 50px;
+    
+            &:hover {
+                background-color: rgb(136, 0, 27);
+                transform: scale(1.1, 1.1);
+            }
 
-    p {
-        font-family: $fuentePrincipal;
-        color: white;
-        font-size: 25px;
-        padding: 10px;
-        width: 263px;
-        text-align: center;
-        margin-left: 40px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
+    .carousel__indexTres{
+        background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06785416803440125) 53%, rgba(0,0,0,0.7233163529083508) 81%)
+        ,url(../multimedia/serviciohero.jpg);
+        @include hero-carousel;
 
-    button {
-        font-size: 18px;
-        font-weight: normal;
-        padding: 10px 18px;
-        border: none;
-        color: white;
-        background-color: $colorPrincipal;
-        font-family: $fuentePrincipal;
-        cursor: pointer;
-        width: 200px;
-        margin-left: 71px;
+        h1 {
+            font-family: $fuentePrincipal;
+            color: white;
+            font-size: 60px;
+            text-align: left;
+            width: 640px;
+            line-height: 1;
+            margin-left: 40px;
+            margin-top: 99px;
+        }
+    
+        p {
+            font-family: $fuentePrincipal;
+            color: white;
+            font-size: 25px;
+            width: 300px;
+            text-align: left;
+            margin-left: 50px;
+        }
+    
+        button {
+            font-size: 18px;
+            font-weight: normal;
+            padding: 8px 16px;
+            border: none;
+            background-color: $colorPrincipal;
+            font-family: $fuentePrincipal;
+            cursor: pointer;
+            width: 150px;
+            margin-left: 50px;
+    
+            &:hover {
+                background-color: rgb(136, 0, 27);
+                transform: scale(1.1, 1.1);
+            }
 
-        &:hover {
-            background-color: rgb(136, 0, 27);
-            transform: scale(1.1, 1.1);
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
@@ -170,6 +269,7 @@ header {
     flex-wrap: wrap;
     align-content: space-around;
 
+    
     .titulo__nuevosproductos {
         width: 100%;
         height: 100px;
@@ -185,6 +285,18 @@ header {
         font-family: $fuentePrincipal;
         font-size: 30px;
         text-align: center;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+
+    .verCatalogo{
+        font-family: $fuentePrincipal;
+        font-size: 25px;
+        margin-top: 20px;
+        text-align: right;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 
@@ -301,13 +413,12 @@ header {
         font-family: $fuentePrincipal;
 
         &:hover {
-            background-color: rgba(238, 237, 237, 0.955);
-            border: 3px solid $colorPrincipal;
-            color: $colorPrincipal;
+            box-shadow: 0 0 20px #fff;
             font-size: 16px;
         }
     }
 }
+
 
 /* -------------------- CARTAS ------------------------ */
 .container__cartas {
@@ -320,7 +431,7 @@ header {
         height: 230px;
         @include flexbox(flex, column, center);
         align-items: center;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid rgb(100, 100, 100);
         border-radius: 20px;
         padding: 20px;
 
@@ -341,6 +452,7 @@ header {
             font-size: 16px;
             text-align: center;
             color: #fff;
+            font-family: 'Raleway', sans-serif;
         }
     }
 }
@@ -384,11 +496,16 @@ nav .header__nav .menu li .active__nav {
 
 /* -------------------- HERO ------------------------ */
 .hero__cosmeticos__container .hero__cosmeticos {
-    background-image: url(../multimedia/hero-cosmeticos.jpg);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5),
+    )
+    ,url(../multimedia/hero-cosmeticos.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
-    height: 570px;
+    height: 550px;
     width: 100%;
 
     h1 {
@@ -404,6 +521,25 @@ nav .header__nav .menu li .active__nav {
         bottom: 25px;
         height: 74px;
         width: 261px;
+    }
+    h2 {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: $fuentePrincipal;
+        font-size: 120px;
+        @include flexbox(flex, column, center);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        text-align: right;
+        line-height: 1;
+        margin-right: 15px;
+    }
+    p {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: $fuentePrincipal;
+        font-size: 40px;
+        @include flexbox(flex, column, center);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        text-align: right;
+        margin-right: 15px;
     }
 }
 
@@ -517,6 +653,33 @@ nav .header__nav .menu li .active__nav {
                 background-image: url(../multimedia/producto-hover-4.png);
             }
         }
+
+        .imagen__productoSeis {
+            @include imagen-producto;
+            background-image: url(../multimedia/productoB.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-B.png);
+            }
+        }
+    
+        .imagen__productoSiete {
+            @include imagen-producto;
+            background-image: url(../multimedia/productoC.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-C.png);
+            }
+        }
+    
+        .imagen__productoOcho {
+            @include imagen-producto;
+            background-image: url(../multimedia/productoA.png);
+    
+            &:hover {
+                background-image: url(../multimedia/producto-hover-A.png);
+            }
+        }
     }
 
     .cosmetico {
@@ -609,6 +772,16 @@ nav .header__nav .menu li .active__nav {
 /* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5),
+    )
+    ,url(../multimedia/servicios3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+    height: 550px;
     width: 100%;
 
     h1 {
@@ -620,122 +793,121 @@ nav .header__nav .menu li .active__nav {
         font-size: map-get($estilos, fontsize);
         border: map-get($estilos, border);
         margin-left: 20px;
-        margin-top: 40px;
+        height: 74px;
+        width: 199px;
         position: relative;
         bottom: 25px;
-        z-index: 2;
     }
-
-    iframe {
-        position: relative;
-        margin: 0px;
-        bottom: 45px;
-        height: 450px;
-        width: 100%;
+    h2 {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: $fuentePrincipal;
+        font-size: 105px;
+        @include flexbox(flex, column, center);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        line-height: 1;
+        margin-left: 15px;
+    }
+    p {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: $fuentePrincipal;
+        font-size: 40px;
+        @include flexbox(flex, column, center);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        margin-left: 15px;
+        line-height: 1;
     }
 }
 
 /* -------------------- PROGRAMA ------------------------ */
-.curso__programa {
+.curso__container {
+    width: 100%;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
-
-    h2 {
+    .curso__programa{
+        width: 80%;
+        background-color: $colorTerciario;
+        padding: 0;
+        height: 460px;
+        .programa {
+            padding: 25px;
+            div {
+                color: #fff;
+                h2 {
+                    font-family: $fuentePrincipal;
+                    font-size: 40px;
+                }
+                p{
+                    overflow: auto;
+                    height: 280px;
+                }
+                button {
+                    position: relative;
+                    left: 35%;
+                    padding: 10px;
+                    border: 2px solid black;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: $fuentePrincipal;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .volver{
         font-family: $fuentePrincipal;
-        font-size: 40px;
-        padding: 10px;
-        margin-left: 20px;
-        color: #fff;
-        margin-top: 50px;
-        margin-left: 100px;
-    }
-
-    .programa {
-        background: linear-gradient(228deg, rgb(167, 57, 78) 18%, rgb(136, 63, 115) 57%, rgb(228, 187, 108) 100%);
-        color: white;
-        width: 600px;
-        height: 400px;
-        padding: 37px;
-        overflow: auto;
-        display: inline-block;
-        margin: 30px 0px 60px 0px;
-    }
-
-    div h6 {
-        font-family: "Roboto", sans-serif;
         font-size: 25px;
-        color: white;
-        padding-bottom: 10px;
-    }
-
-    button {
-        position: relative;
-        left: 30%;
-        top: 7px;
-        padding: 10px;
-        border: 2px solid black;
-        font-size: 16px;
-        font-weight: bold;
-        font-family: $fuentePrincipal;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: black;
+        margin-top: 20px;
+        margin-left: 40px;
+        text-align: left;
+        a{
+            text-decoration: none;
             color: white;
         }
     }
 }
-
-@keyframes imagenCurso {
-    0% {
-        background-image: url(../multimedia/cursoMaquillaje3.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    25% {
-        background-image: url(../multimedia/cursoMaquillaje4.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    50% {
-        background-image: url(../multimedia/cursoMaquillaje4.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    75% {
-        background-image: url(../multimedia/cursoMaquillaje3.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    100% {
-        background-image: url(../multimedia/cursoMaquillaje3.jpg);
-        background-position: center;
-        background-size: cover;
+.curso__programa .curso__img {
+    animation-name: imagenCurso;
+    @include cursoAnimacion;
+}
+.tallerNovias{
+    margin-top: 30px;
+    .curso__programa .taller__img{
+        animation-name: imagenTaller;
+        @include cursoAnimacion;
     }
 }
-
-.curso__programa .curso__img {
-    width: 300px;
-    height: 400px;
-    margin: 30px 0px 60px 0px;
-    animation-duration: 10s;
-    animation-name: imagenCurso;
-    animation-iteration-count: infinite;
+.tallerMarketing{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    .curso__programa{
+        .marketing__img{
+            animation-name: imagenMarketing;
+            @include cursoAnimacion;
+        }
+        .programa div p{
+            height: 230px;
+        }
+    } 
 }
 
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
 /* -------------------- HERO ------------------------ */
 .hero__servicios__container .hero__servicios {
-    background-image: url(../multimedia/servicios3.jpeg);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5),
+    )
+    ,url(../multimedia/hero-escuela.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
-    height: 570px;
+    height: 550px;
     width: 100%;
 
     h1 {
@@ -749,6 +921,19 @@ nav .header__nav .menu li .active__nav {
         margin-left: 20px;
         position: relative;
         bottom: 25px;
+    }
+    h2 {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: $fuentePrincipal;
+        font-size: 90px;
+        @include flexbox(flex, column, center);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        line-height: 1;
+        margin-right: 15px;
+        text-align: right;
+        span{
+            font-size: 130px;
+        }
     }
 }
 
@@ -762,82 +947,79 @@ nav .header__nav .menu li .active__nav {
 }
 
 /* -------------------- info ------------------------ */
-.titulo__servicios {
-    font-family: $fuentePrincipal;
-
-    h2 {
-        font-size: 40px;
-        padding: 4px;
-        color: #fff;
-        margin-top: 50px;
-        margin-left: 100px;
-        width: 600px;
-    }
-
-    h3 {
-        font-size: 35px;
-        padding: 4px;
-        margin-left: 100px;
-        margin-bottom: 50px;
-        color: #fff;
-        width: 500px;
-    }
-}
-
-.card__servicios__container {
-    background-color: $colorTerciario;
-    border-radius: 15px;
-    margin-left: 200px;
-
-    .moda__img img {
-        width: 322px;
-        height: 440px;
-        margin: 10px;
-    }
-
-    .moda__text p {
-        margin-top: 50px;
-        margin-right: 24px;
-        color: #fff;
-    }
-
-    .card__servicios {
-        display: flex;
-        justify-content: center;
-
-        .moda__form div {
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-            .email label {
-                color: #fff;
+.servicios__container {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    .servicios__info{
+        width: 90%;
+        background-color: $colorTerciario;
+        padding: 0;
+        height: 500px;
+        .imagen{
+            
+            .novias__img{
+                background-image: url(../multimedia/moda__img.jpg);
+                height: 500px;
+                background-position: center;
+                background-size: cover;
             }
-
-            .reservarFecha {
-                width: 50%;
-                color: white;
-                background-color: $colorPrincipal;
-                font-family: $fuentePrincipal;
-                font-size: 17px;
-                border: 2px solid black;
-                padding: 4px;
-                cursor: pointer;
-                transition: all 2s;
-
-                &:hover {
-                    background-color: rgb(203, 140, 48);
+        }
+        .info {
+            padding: 35px;
+            div {
+                color: #fff;
+                h2 {
+                    font-family: $fuentePrincipal;
+                    font-size: 42px;
+                }
+                h3{
+                    font-family: $fuentePrincipal;
+                    font-size: 32px;
+                }
+                p{
+                    overflow: auto;
+                    height: 280px;
+                }
+                button {
+                    position: relative;
+                    left: 35%;
+                    padding: 10px;
+                    border: 2px solid black;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: $fuentePrincipal;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
                 }
             }
         }
     }
+    .volver{
+        font-family: $fuentePrincipal;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 40px;
+        text-align: left;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
-
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
 /* -------------------- NOSOTRAS ------------------------ */
 .hero__nosotras__container .hero__nosotras {
-    background-image: url(../multimedia/nosotras3.jpg);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5),
+    )
+    ,url(../multimedia/nosotras3.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -860,7 +1042,8 @@ nav .header__nav .menu li .active__nav {
     h3 {
         color: rgba(255, 255, 255, 0.3);
         font-family: $fuentePrincipal;
-        font-size: 224px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        font-size: 210px;
         height: 468px;
         @include flexbox(flex, column, center);
         align-items: center;
@@ -937,6 +1120,8 @@ nav .header__nav .menu li .active__nav {
     @include flexbox(flex, column, center);
     flex-wrap: nowrap;
     align-items: center;
+    height: 330px;
+    background-color: #000;
 
     h2 {
         font-family: $fuentePrincipal;
@@ -961,69 +1146,111 @@ nav .header__nav .menu li .active__nav {
         padding: 20px;
         width: 510px;
         margin-bottom: 60px;
+        border: 2px solid #000;
+        position: relative;
+
+        span{
+            position: absolute;
+            right: 0;
+            width: 0;
+            background: $colorPrincipal;
+            border-left: 1px solid white;
+            animation: maquina 5s infinite alternate steps(36);
+        }
     }
 }
 
 /* -------------------- CONTACTO ------------------------ */
-.container__contacto .contacto {
-    width: 650px;
-    height: 390px;
-    background-color: white;
-    padding: 20px;
-    margin: 10px 10px 10px 114px;
-    border: 4px solid black;
-    border-radius: 15px;
-
-    h1 {
-        font-family: $fuentePrincipal;
-        font-size: 50px;
-    }
-
-    form div .mensaje {
-        width: 100%;
-        height: 150px;
-    }
-
-    div .enviarMensaje {
-        width: 100%;
-        color: white;
-        background-color: $colorPrincipal;
-        font-family: $fuentePrincipal;
-        font-size: 17px;
-        border: 2px solid black;
-        padding: 4px;
-    }
+.container__contacto{
+    width: 100%;
+    height: 470px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        
+        h1 {
+            font-family: $fuentePrincipal;
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        .form__contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            form {
+                width: 55%;
+                padding: 30px 25px 20px 25px;
+                p{
+                    font-size: 17px;
+                    font-family: "Roboto", sans-serif;
+                    margin-bottom: 10px;
+                    input{
+                        font-size: 16px;
+                    }
+                    textarea{
+                        @extend input
+                    }
+                }
+                .mensaje{
+                    width: 100%;
+                }
+                .enviarMensaje {
+                    color: white;
+                    background-color: $colorPrincipal;
+                    font-family: $fuentePrincipal;
+                    font-size: 18px;
+                    border: none;
+                    padding: 4px;
+                    width: 200px;
+                    height: 37px;
+                    box-shadow: 0 0 25px $colorPrincipal;
+                }
+            }
+        }
 }
 
-/* -------------------- ASIDE ------------------------ */
-.container__contacto .aside__encontranos {
-    width: 333px;
-    height: 390px;
+.info__contacto {
     color: white;
-    background-color: black;
-    margin: 10px 10px 0px 20px;
-    padding: 50px;
-    line-height: 1.8;
-    border-radius: 15px;
-    font-family: "Roboto", sans-serif;
-    @include flexbox(flex, column, center);
-    align-items: center;
-
+    margin: 25px 0px 0px 0px;
     h4 {
-        padding: 18px 0px;
+        font-family: $fuentePrincipal;
+        text-align: center;
+        font-size: 27px;
     }
-
-    div .redes {
-        padding: 0px 12px 22px 12px;
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.3, 1.3);
-        }
-    }
-
     p {
-        margin: 0px 30px;
+        text-align: center;
+        font-size: 18px;
+        .redes {
+            padding: 20px 12px 10px 12px;
+            cursor: pointer;
+            font-size: 32px;
+            text-shadow: 0 0 20px #fff;
+            &:hover {
+                transform: scale(1.3, 1.3);
+            }
+        }
+        .facebook{
+            text-shadow: 0 0 20px #3a5795;
+        }
+        .twitter{
+            text-shadow: 0 0 20px #55acee;
+        }
+        .instagram{
+            text-shadow: 0 0 20px  #E1306C;
+        }
     }
 }
 
@@ -1039,5 +1266,6 @@ nav .header__nav .menu li .active__nav {
         height: 400px;
     }
 }
+
 
 @import "mediaqueries";

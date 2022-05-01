@@ -4,6 +4,12 @@ $colorTerciario: #181818;
 
 $fuentePrincipal: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+@mixin hero-carousel{
+    height: 600px;
+    background-size: cover;
+    background-position: left center;
+} 
+
 @mixin flexbox($flex, $direction, $justify) {
     display: $flex;
     flex-direction: $direction;
@@ -17,8 +23,99 @@ $fuentePrincipal: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 200px;
 }
 
+@mixin curso {
+    background-position: center;
+    background-size: cover;
+}
+@keyframes imagenCurso {
+    0% {
+        background-image: url(../multimedia/cursoMaquillaje3.jpg);
+        @include curso;
+    }
+
+    25% {
+        background-image: url(../multimedia/cursoMaquillaje4.jpg);
+        @include curso;
+    }
+
+    50% {
+        background-image: url(../multimedia/cursoMaquillaje4.jpg);
+        @include curso;
+    }
+
+    75% {
+        background-image: url(../multimedia/cursoMaquillaje3.jpg);
+        @include curso;
+    }
+
+    100% {
+        background-image: url(../multimedia/cursoMaquillaje3.jpg);
+        @include curso;
+    }
+}
+
+@keyframes imagenTaller {
+    0% {
+        background-image: url(../multimedia/tallerNovias.jpg);
+        @include curso;
+    }
+
+    25% {
+        background-image: url(../multimedia/tallerNovias2.jpg);
+        @include curso;
+    }
+
+    50% {
+        background-image: url(../multimedia/tallerNovias.jpg);
+        @include curso;
+    }
+
+    75% {
+        background-image: url(../multimedia/tallerNovias2.jpg);
+        @include curso;
+    }
+
+    100% {
+        background-image: url(../multimedia/tallerNovias.jpg);
+        @include curso;
+    }
+}
+
+@keyframes imagenMarketing {
+    0% {
+        background-image: url(../multimedia/marketing.jpg);
+        @include curso;
+    }
+
+    25% {
+        background-image: url(../multimedia/marketing2.jpg);
+        @include curso;
+    }
+
+    50% {
+        background-image: url(../multimedia/marketing.jpg);
+        @include curso;
+    }
+
+    75% {
+        background-image: url(../multimedia/marketing2.jpg);
+        @include curso;
+    }
+
+    100% {
+        background-image: url(../multimedia/marketing.jpg);
+        @include curso;
+    }
+}
+
+@mixin cursoAnimacion {
+    height: 460px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
 $redes: (
-        instagram: #F56040,
+        instagram:  #E1306C,
         twitter: #55acee,
         facebook:  #3a5795
 );
@@ -38,3 +135,12 @@ $estilos: (
     fontsize: 40px,
     border: 2px solid black
 );
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}

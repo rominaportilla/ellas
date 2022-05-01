@@ -1,11 +1,83 @@
+@keyframes imagenCurso {
+  0% {
+    background-image: url(../multimedia/cursoMaquillaje3.jpg);
+    background-position: center;
+    background-size: cover; }
+  25% {
+    background-image: url(../multimedia/cursoMaquillaje4.jpg);
+    background-position: center;
+    background-size: cover; }
+  50% {
+    background-image: url(../multimedia/cursoMaquillaje4.jpg);
+    background-position: center;
+    background-size: cover; }
+  75% {
+    background-image: url(../multimedia/cursoMaquillaje3.jpg);
+    background-position: center;
+    background-size: cover; }
+  100% {
+    background-image: url(../multimedia/cursoMaquillaje3.jpg);
+    background-position: center;
+    background-size: cover; } }
+
+@keyframes imagenTaller {
+  0% {
+    background-image: url(../multimedia/tallerNovias.jpg);
+    background-position: center;
+    background-size: cover; }
+  25% {
+    background-image: url(../multimedia/tallerNovias2.jpg);
+    background-position: center;
+    background-size: cover; }
+  50% {
+    background-image: url(../multimedia/tallerNovias.jpg);
+    background-position: center;
+    background-size: cover; }
+  75% {
+    background-image: url(../multimedia/tallerNovias2.jpg);
+    background-position: center;
+    background-size: cover; }
+  100% {
+    background-image: url(../multimedia/tallerNovias.jpg);
+    background-position: center;
+    background-size: cover; } }
+
+@keyframes imagenMarketing {
+  0% {
+    background-image: url(../multimedia/marketing.jpg);
+    background-position: center;
+    background-size: cover; }
+  25% {
+    background-image: url(../multimedia/marketing2.jpg);
+    background-position: center;
+    background-size: cover; }
+  50% {
+    background-image: url(../multimedia/marketing.jpg);
+    background-position: center;
+    background-size: cover; }
+  75% {
+    background-image: url(../multimedia/marketing2.jpg);
+    background-position: center;
+    background-size: cover; }
+  100% {
+    background-image: url(../multimedia/marketing.jpg);
+    background-position: center;
+    background-size: cover; } }
+
 .btn--instagram {
-  color: #F56040; }
+  color: #E1306C; }
 
 .btn--twitter {
   color: #55acee; }
 
 .btn--facebook {
   color: #3a5795; }
+
+@keyframes maquina {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
 
 * {
   margin: 0;
@@ -24,7 +96,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 150px; }
+  height: 140px; }
   header nav {
     background-color: #0f0f0f;
     width: 100%;
@@ -41,7 +113,7 @@ header {
     color: #fff;
     transition: color 0.5s; }
   .header__logo .logo__titulo {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 49px;
     font-weight: bold;
     height: 61px; }
@@ -91,45 +163,122 @@ header {
     color: #dd0030; }
 
 /* -------------------- HERO ------------------------ */
-.hero__index__container .hero__index {
-  background-image: url(../multimedia/hero4.jpg);
+.carousel__index__container .carousel__index {
   height: 600px;
   width: 100%;
-  background-size: cover;
-  background-position: left center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .hero__index__container .hero__index h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: white;
-    font-size: 75px;
-    text-align: center;
-    width: 263px;
-    line-height: 1;
-    margin-left: 40px; }
-  .hero__index__container .hero__index p {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: white;
-    font-size: 25px;
-    padding: 10px;
-    width: 263px;
-    text-align: center;
-    margin-left: 40px; }
-  .hero__index__container .hero__index button {
-    font-size: 18px;
-    font-weight: normal;
-    padding: 10px 18px;
-    border: none;
-    color: white;
-    background-color: #dd0030;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    cursor: pointer;
-    width: 200px;
-    margin-left: 71px; }
-    .hero__index__container .hero__index button:hover {
-      background-color: #88001b;
-      transform: scale(1.1, 1.1); }
+  padding: 0px; }
+  .carousel__index__container .carousel__index .carousel__indexUno {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/hero4.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: left center; }
+    .carousel__index__container .carousel__index .carousel__indexUno h1 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+      font-size: 80px;
+      text-align: center;
+      width: 263px;
+      line-height: 1;
+      margin-left: 60px;
+      margin-top: 80px; }
+    .carousel__index__container .carousel__index .carousel__indexUno p {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+      font-size: 25px;
+      padding: 10px;
+      width: 263px;
+      text-align: center;
+      margin-left: 60px; }
+    .carousel__index__container .carousel__index .carousel__indexUno button {
+      font-size: 18px;
+      font-weight: normal;
+      padding: 10px 18px;
+      border: none;
+      background-color: #dd0030;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      cursor: pointer;
+      width: 200px;
+      margin-left: 91px; }
+      .carousel__index__container .carousel__index .carousel__indexUno button:hover {
+        background-color: #88001b;
+        transform: scale(1.1, 1.1); }
+      .carousel__index__container .carousel__index .carousel__indexUno button a {
+        text-decoration: none;
+        color: white; }
+  .carousel__index__container .carousel__index .carousel__indexDos {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/floresAmarillas.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: left center; }
+    .carousel__index__container .carousel__index .carousel__indexDos h1 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+      font-size: 70px;
+      text-align: left;
+      width: 263px;
+      line-height: 1;
+      margin-left: 40px;
+      margin-top: 290px; }
+    .carousel__index__container .carousel__index .carousel__indexDos p {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+      font-size: 25px;
+      width: 300px;
+      text-align: left;
+      margin-left: 50px; }
+    .carousel__index__container .carousel__index .carousel__indexDos button {
+      font-size: 18px;
+      font-weight: normal;
+      padding: 8px 16px;
+      border: none;
+      background-color: #dd0030;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      cursor: pointer;
+      width: 190px;
+      margin-left: 50px; }
+      .carousel__index__container .carousel__index .carousel__indexDos button:hover {
+        background-color: #88001b;
+        transform: scale(1.1, 1.1); }
+      .carousel__index__container .carousel__index .carousel__indexDos button a {
+        text-decoration: none;
+        color: white; }
+  .carousel__index__container .carousel__index .carousel__indexTres {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/serviciohero.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: left center; }
+    .carousel__index__container .carousel__index .carousel__indexTres h1 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+      font-size: 60px;
+      text-align: left;
+      width: 640px;
+      line-height: 1;
+      margin-left: 40px;
+      margin-top: 99px; }
+    .carousel__index__container .carousel__index .carousel__indexTres p {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+      font-size: 25px;
+      width: 300px;
+      text-align: left;
+      margin-left: 50px; }
+    .carousel__index__container .carousel__index .carousel__indexTres button {
+      font-size: 18px;
+      font-weight: normal;
+      padding: 8px 16px;
+      border: none;
+      background-color: #dd0030;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      cursor: pointer;
+      width: 150px;
+      margin-left: 50px; }
+      .carousel__index__container .carousel__index .carousel__indexTres button:hover {
+        background-color: #88001b;
+        transform: scale(1.1, 1.1); }
+      .carousel__index__container .carousel__index .carousel__indexTres button a {
+        text-decoration: none;
+        color: white; }
 
 /* -------------------- NUEVOS PRODUCTOS ------------------------ */
 .container__nuevosproductos {
@@ -154,7 +303,16 @@ header {
     height: 58px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 30px;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8); }
+  .container__nuevosproductos .verCatalogo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: right; }
+    .container__nuevosproductos .verCatalogo a {
+      text-decoration: none;
+      color: white; }
 
 .container__nuevosproductos .producto {
   background-color: #181818;
@@ -256,9 +414,7 @@ header {
     background-color: #dd0030;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
     .producto .card__producto a:hover {
-      background-color: rgba(238, 237, 237, 0.955);
-      border: 3px solid #dd0030;
-      color: #dd0030;
+      box-shadow: 0 0 20px #fff;
       font-size: 16px; }
 
 /* -------------------- CARTAS ------------------------ */
@@ -275,7 +431,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid #646464;
     border-radius: 20px;
     padding: 20px; }
     .container__cartas div .icono__carta {
@@ -290,7 +446,8 @@ header {
     .container__cartas div p {
       font-size: 16px;
       text-align: center;
-      color: #fff; }
+      color: #fff;
+      font-family: 'Raleway', sans-serif; }
 
 /* -------------------- WHATSAPP ------------------------ */
 .whatsapp__icono {
@@ -321,11 +478,11 @@ nav .header__nav .menu li .active__nav {
 
 /* -------------------- HERO ------------------------ */
 .hero__cosmeticos__container .hero__cosmeticos {
-  background-image: url(../multimedia/hero-cosmeticos.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/hero-cosmeticos.jpg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
-  height: 570px;
+  height: 550px;
   width: 100%; }
   .hero__cosmeticos__container .hero__cosmeticos h1 {
     color: #000;
@@ -340,6 +497,27 @@ nav .header__nav .menu li .active__nav {
     bottom: 25px;
     height: 74px;
     width: 261px; }
+  .hero__cosmeticos__container .hero__cosmeticos h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    line-height: 1;
+    margin-right: 15px; }
+  .hero__cosmeticos__container .hero__cosmeticos p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: right;
+    margin-right: 15px; }
 
 /* -------------------- CATEGORIAS ------------------------ */
 .listaCategorias ul {
@@ -436,6 +614,30 @@ nav .header__nav .menu li .active__nav {
       background-image: url(../multimedia/producto4.png); }
       .container__cosmeticos .producto .imagen__productoCuatro:hover {
         background-image: url(../multimedia/producto-hover-4.png); }
+    .container__cosmeticos .producto .imagen__productoSeis {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/productoB.png); }
+      .container__cosmeticos .producto .imagen__productoSeis:hover {
+        background-image: url(../multimedia/producto-hover-B.png); }
+    .container__cosmeticos .producto .imagen__productoSiete {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/productoC.png); }
+      .container__cosmeticos .producto .imagen__productoSiete:hover {
+        background-image: url(../multimedia/producto-hover-C.png); }
+    .container__cosmeticos .producto .imagen__productoOcho {
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../multimedia/productoA.png); }
+      .container__cosmeticos .producto .imagen__productoOcho:hover {
+        background-image: url(../multimedia/producto-hover-A.png); }
   .container__cosmeticos .cosmetico {
     background-color: #181818;
     height: 380px;
@@ -512,6 +714,11 @@ nav .header__nav .menu li .active__nav {
 /* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/servicios3.jpeg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 40px;
+  height: 550px;
   width: 100%; }
   .hero__escuela__container .hero__escuela h1 {
     color: #000;
@@ -522,96 +729,107 @@ nav .header__nav .menu li .active__nav {
     font-size: 40px;
     border: 2px solid black;
     margin-left: 20px;
-    margin-top: 40px;
+    height: 74px;
+    width: 199px;
     position: relative;
-    bottom: 25px;
-    z-index: 2; }
-  .hero__escuela__container .hero__escuela iframe {
-    position: relative;
-    margin: 0px;
-    bottom: 45px;
-    height: 450px;
-    width: 100%; }
-
-/* -------------------- PROGRAMA ------------------------ */
-.curso__programa {
-  display: flex;
-  justify-content: center; }
-  .curso__programa h2 {
+    bottom: 25px; }
+  .hero__escuela__container .hero__escuela h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    line-height: 1;
+    margin-left: 15px; }
+  .hero__escuela__container .hero__escuela p {
+    color: rgba(255, 255, 255, 0.6);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 40px;
-    padding: 10px;
-    margin-left: 20px;
-    color: #fff;
-    margin-top: 50px;
-    margin-left: 100px; }
-  .curso__programa .programa {
-    background: linear-gradient(228deg, #a7394e 18%, #883f73 57%, #e4bb6c 100%);
-    color: white;
-    width: 600px;
-    height: 400px;
-    padding: 37px;
-    overflow: auto;
-    display: inline-block;
-    margin: 30px 0px 60px 0px; }
-  .curso__programa div h6 {
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-    color: white;
-    padding-bottom: 10px; }
-  .curso__programa button {
-    position: relative;
-    left: 30%;
-    top: 7px;
-    padding: 10px;
-    border: 2px solid black;
-    font-size: 16px;
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-left: 15px;
+    line-height: 1; }
+
+/* -------------------- PROGRAMA ------------------------ */
+.curso__container {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; }
+  .curso__container .curso__programa {
+    width: 80%;
+    background-color: #181818;
+    padding: 0;
+    height: 460px; }
+    .curso__container .curso__programa .programa {
+      padding: 25px; }
+      .curso__container .curso__programa .programa div {
+        color: #fff; }
+        .curso__container .curso__programa .programa div h2 {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-size: 40px; }
+        .curso__container .curso__programa .programa div p {
+          overflow: auto;
+          height: 280px; }
+        .curso__container .curso__programa .programa div button {
+          position: relative;
+          left: 35%;
+          padding: 10px;
+          border: 2px solid black;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          cursor: pointer; }
+          .curso__container .curso__programa .programa div button:hover {
+            background-color: black;
+            color: white; }
+  .curso__container .volver {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    margin-top: 10px;
-    cursor: pointer; }
-    .curso__programa button:hover {
-      background-color: black;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: left; }
+    .curso__container .volver a {
+      text-decoration: none;
       color: white; }
 
-@keyframes imagenCurso {
-  0% {
-    background-image: url(../multimedia/cursoMaquillaje3.jpg);
-    background-position: center;
-    background-size: cover; }
-  25% {
-    background-image: url(../multimedia/cursoMaquillaje4.jpg);
-    background-position: center;
-    background-size: cover; }
-  50% {
-    background-image: url(../multimedia/cursoMaquillaje4.jpg);
-    background-position: center;
-    background-size: cover; }
-  75% {
-    background-image: url(../multimedia/cursoMaquillaje3.jpg);
-    background-position: center;
-    background-size: cover; }
-  100% {
-    background-image: url(../multimedia/cursoMaquillaje3.jpg);
-    background-position: center;
-    background-size: cover; } }
-
 .curso__programa .curso__img {
-  width: 300px;
-  height: 400px;
-  margin: 30px 0px 60px 0px;
-  animation-duration: 10s;
   animation-name: imagenCurso;
+  height: 460px;
+  animation-duration: 10s;
   animation-iteration-count: infinite; }
+
+.tallerNovias {
+  margin-top: 30px; }
+  .tallerNovias .curso__programa .taller__img {
+    animation-name: imagenTaller;
+    height: 460px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; }
+
+.tallerMarketing {
+  margin-top: 30px;
+  margin-bottom: 70px; }
+  .tallerMarketing .curso__programa .marketing__img {
+    animation-name: imagenMarketing;
+    height: 460px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; }
+  .tallerMarketing .curso__programa .programa div p {
+    height: 230px; }
 
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
 /* -------------------- HERO ------------------------ */
 .hero__servicios__container .hero__servicios {
-  background-image: url(../multimedia/servicios3.jpeg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/hero-escuela.jpg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
-  height: 570px;
+  height: 550px;
   width: 100%; }
   .hero__servicios__container .hero__servicios h1 {
     color: #000;
@@ -624,6 +842,19 @@ nav .header__nav .menu li .active__nav {
     margin-left: 20px;
     position: relative;
     bottom: 25px; }
+  .hero__servicios__container .hero__servicios h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    line-height: 1;
+    margin-right: 15px;
+    text-align: right; }
+    .hero__servicios__container .hero__servicios h2 span {
+      font-size: 130px; }
 
 /* -------------------- CATEGORIAS ------------------------ */
 .listaCategorias ul {
@@ -633,62 +864,60 @@ nav .header__nav .menu li .active__nav {
   padding: 10px 10px; }
 
 /* -------------------- info ------------------------ */
-.titulo__servicios {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-  .titulo__servicios h2 {
-    font-size: 40px;
-    padding: 4px;
-    color: #fff;
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 600px; }
-  .titulo__servicios h3 {
-    font-size: 35px;
-    padding: 4px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    color: #fff;
-    width: 500px; }
-
-.card__servicios__container {
-  background-color: #181818;
-  border-radius: 15px;
-  margin-left: 200px; }
-  .card__servicios__container .moda__img img {
-    width: 322px;
-    height: 440px;
-    margin: 10px; }
-  .card__servicios__container .moda__text p {
-    margin-top: 50px;
-    margin-right: 24px;
-    color: #fff; }
-  .card__servicios__container .card__servicios {
-    display: flex;
-    justify-content: center; }
-    .card__servicios__container .card__servicios .moda__form div {
-      height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
-      .card__servicios__container .card__servicios .moda__form div .email label {
+.servicios__container {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; }
+  .servicios__container .servicios__info {
+    width: 90%;
+    background-color: #181818;
+    padding: 0;
+    height: 500px; }
+    .servicios__container .servicios__info .imagen .novias__img {
+      background-image: url(../multimedia/moda__img.jpg);
+      height: 500px;
+      background-position: center;
+      background-size: cover; }
+    .servicios__container .servicios__info .info {
+      padding: 35px; }
+      .servicios__container .servicios__info .info div {
         color: #fff; }
-      .card__servicios__container .card__servicios .moda__form div .reservarFecha {
-        width: 50%;
-        color: white;
-        background-color: #dd0030;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 17px;
-        border: 2px solid black;
-        padding: 4px;
-        cursor: pointer;
-        transition: all 2s; }
-        .card__servicios__container .card__servicios .moda__form div .reservarFecha:hover {
-          background-color: #cb8c30; }
+        .servicios__container .servicios__info .info div h2 {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-size: 42px; }
+        .servicios__container .servicios__info .info div h3 {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-size: 32px; }
+        .servicios__container .servicios__info .info div p {
+          overflow: auto;
+          height: 280px; }
+        .servicios__container .servicios__info .info div button {
+          position: relative;
+          left: 35%;
+          padding: 10px;
+          border: 2px solid black;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          cursor: pointer; }
+          .servicios__container .servicios__info .info div button:hover {
+            background-color: black;
+            color: white; }
+  .servicios__container .volver {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: left; }
+    .servicios__container .volver a {
+      text-decoration: none;
+      color: white; }
 
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
 /* -------------------- NOSOTRAS ------------------------ */
 .hero__nosotras__container .hero__nosotras {
-  background-image: url(../multimedia/nosotras3.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/nosotras3.jpg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
@@ -708,7 +937,8 @@ nav .header__nav .menu li .active__nav {
   .hero__nosotras__container .hero__nosotras h3 {
     color: rgba(255, 255, 255, 0.3);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 224px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    font-size: 210px;
     height: 468px;
     display: flex;
     flex-direction: column;
@@ -777,7 +1007,9 @@ nav .header__nav .menu li .active__nav {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  align-items: center; }
+  align-items: center;
+  height: 330px;
+  background-color: #000; }
   .hero__contacto h2 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: white;
@@ -798,56 +1030,89 @@ nav .header__nav .menu li .active__nav {
     font-size: 28px;
     padding: 20px;
     width: 510px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    border: 2px solid #000;
+    position: relative; }
+    .hero__contacto h3 span {
+      position: absolute;
+      right: 0;
+      width: 0;
+      background: #dd0030;
+      border-left: 1px solid white;
+      animation: maquina 5s infinite alternate steps(36); }
 
 /* -------------------- CONTACTO ------------------------ */
-.container__contacto .contacto {
-  width: 650px;
-  height: 390px;
-  background-color: white;
-  padding: 20px;
-  margin: 10px 10px 10px 114px;
-  border: 4px solid black;
-  border-radius: 15px; }
-  .container__contacto .contacto h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 50px; }
-  .container__contacto .contacto form div .mensaje {
-    width: 100%;
-    height: 150px; }
-  .container__contacto .contacto div .enviarMensaje {
-    width: 100%;
-    color: white;
-    background-color: #dd0030;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 17px;
-    border: 2px solid black;
-    padding: 4px; }
-
-/* -------------------- ASIDE ------------------------ */
-.container__contacto .aside__encontranos {
-  width: 333px;
-  height: 390px;
-  color: white;
-  background-color: black;
-  margin: 10px 10px 0px 20px;
-  padding: 50px;
-  line-height: 1.8;
-  border-radius: 15px;
-  font-family: "Roboto", sans-serif;
+.container__contacto {
+  width: 100%;
+  height: 470px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .container__contacto .aside__encontranos h4 {
-    padding: 18px 0px; }
-  .container__contacto .aside__encontranos div .redes {
-    padding: 0px 12px 22px 12px;
-    cursor: pointer; }
-    .container__contacto .aside__encontranos div .redes:hover {
-      transform: scale(1.3, 1.3); }
-  .container__contacto .aside__encontranos p {
-    margin: 0px 30px; }
+  flex-direction: column; }
+  .container__contacto h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px; }
+  .container__contacto p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.2; }
+  .container__contacto .form__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__contacto .form__contacto form {
+      width: 55%;
+      padding: 30px 25px 20px 25px; }
+      .container__contacto .form__contacto form p {
+        font-size: 17px;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px; }
+        .container__contacto .form__contacto form p input, .container__contacto .form__contacto form p textarea {
+          font-size: 16px; }
+      .container__contacto .form__contacto form .mensaje {
+        width: 100%; }
+      .container__contacto .form__contacto form .enviarMensaje {
+        color: white;
+        background-color: #dd0030;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 18px;
+        border: none;
+        padding: 4px;
+        width: 200px;
+        height: 37px;
+        box-shadow: 0 0 25px #dd0030; }
+
+.info__contacto {
+  color: white;
+  margin: 25px 0px 0px 0px; }
+  .info__contacto h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    font-size: 27px; }
+  .info__contacto p {
+    text-align: center;
+    font-size: 18px; }
+    .info__contacto p .redes {
+      padding: 20px 12px 10px 12px;
+      cursor: pointer;
+      font-size: 32px;
+      text-shadow: 0 0 20px #fff; }
+      .info__contacto p .redes:hover {
+        transform: scale(1.3, 1.3); }
+    .info__contacto p .facebook {
+      text-shadow: 0 0 20px #3a5795; }
+    .info__contacto p .twitter {
+      text-shadow: 0 0 20px #55acee; }
+    .info__contacto p .instagram {
+      text-shadow: 0 0 20px  #E1306C; }
 
 /* -------------------- IFRAME ------------------------ */
 .mapa__contacto {
