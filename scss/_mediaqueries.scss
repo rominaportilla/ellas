@@ -1,10 +1,25 @@
 /* INDEX */
-@media screen and (max-width: 992px) {
-    .header__navbar .icon-cart{
-        display: none;
+@media screen and (max-width: 1300px) {
+    .container__nuevosproductos {
+        margin: 80px 40px;
     }
-    .container__nuevosproductos h3 {
-        height: 89px;
+}
+@media screen and (max-width: 1128px) {
+    .container__nuevosproductos {
+        margin: 80px 6px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .header__navbar{
+        .header__nav{
+            display: none;
+        }
+        .icono-cart{
+            display: none;
+        }
+    }
+    .header__logo{
+        margin: 0;
     }
     
 }
@@ -15,11 +30,20 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .hero__index__container .hero__index{
-        background-image: url(../multimedia/hero-tablet.jpg);
-        background-size: cover;
-        background-position: center center;
+@media screen and (max-width: 900px) {
+    .carousel__index__container .carousel__index {
+        .carousel__indexUno{
+            background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06785416803440125) 53%, rgba(0,0,0,0.7233163529083508) 81%)
+            ,url(../multimedia/hero-tablet.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+        .carousel__indexDos{
+            background-position: center left;
+        }
+        .carousel__indexTres{
+            background-position: center right;
+        }
     }
     .container__nuevosproductos {
         margin: 50px;
@@ -28,9 +52,17 @@
 
 @media screen and (max-width: 675px) {
     .container__nuevosproductos {
-        margin: 70px;
-        @include flexbox(flex, column, space-between);
+        margin: 30px;
         align-items: center;
+
+        .titulo__nuevosproductos {
+            height: 60px;
+        }
+    }
+}
+@media screen and (max-width: 596px) {
+    .container__nuevosproductos{
+        @include flexbox(flex, column, space-between);
     }
 }
 
@@ -63,29 +95,65 @@
         background-image: url(../multimedia/hero-mobile2.jpg);
         background-position: left center;
     }
-    .container__nuevosproductos h3 {
-        font-size: 25px;
-        padding: 7px;
-        width: 48%;
-    }
-    .container__cartas div{
-        width: 250px;
-        height: 220px;
-        padding: 10px;
-    
-            h5{
-            font-size: 16px;
-            }
-            
-            p{
-            font-size: 15px;
-            }
+    .container__cartas {
+        margin: 10px;
+        div{
+            width: 351px;
+            height: 200px;
+            padding: 10px;
+            margin-top: 6px;
+                h5{
+                font-size: 16px;
+                }
+                p{
+                font-size: 15px;
+                }
+                .icono__carta {
+                    font-size: 50px;
+                }
         }
+    }
     .header__navbar .icon-cart{
         font-size: 8px;
     }
     .whatsapp__icono {
         width: 120px;
+    }
+}
+@media screen and (max-width: 428px) {
+    .header__logo {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .container__nuevosproductos h3 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 381px) {
+    .container__cartas div .icono__carta {
+        font-size: 37px;
+        margin-bottom: 3px;
+    }
+}
+@media screen and (max-width: 358px) {
+    .container__nuevosproductos h3 {
+        padding: 8px;
+        height: 71px;
+    }
+}
+@media screen and (max-width: 328px) {
+    .header__navbar{
+        padding: 10px;
+    }
+    .header__logo {
+        .logo__titulo {
+            font-size: 46px;
+            height: 55px;
+        }
+        .logo__subtitulo{
+            font-size: 14px;
+        }
     }
 }
 /* COSMETICOS */
@@ -110,7 +178,7 @@
 }
 @media screen and (max-width: 675px) {
     .container__cosmeticos {
-        margin: 70px;
+        margin: 10px;
         @include flexbox(flex, column, space-between);
         align-items: center;
     
@@ -143,45 +211,129 @@
 }
 
 /* ESCUELA */
-@media screen and (max-width: 900px) {
-    .curso__programa .programa {
-        width: 400px;
+@media screen and (max-width: 967px) {
+    .curso__container .curso__programa .programa div h2 {
+        font-size: 37px;
+    }
+    .curso__container .curso__programa .programa div p {
+        overflow: auto;
+        height: 266px;
     }
 }
-@media screen and (max-width: 700px) {
-    .curso__programa .programa {
-        width: 500px;
-        height: 300px;
-        margin-bottom: 0px;
+@media screen and (max-width: 907px) {
+    .curso__container .curso__programa .programa div h2 {
+        font-size: 33px;
+    }
+    .curso__container .curso__programa .programa div p {
+        overflow: auto;
+        height: 251px;
+        font-size: 16px;
+    }
+    .curso__container .curso__programa .programa div button {
+        position: relative;
+        left: 25%;
+        padding: 7px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .curso__container{
+        margin-top: 26px;
+        .curso__programa .programa div {
+            padding: 0;
+            h2 {
+                font-size: 27px;
+            }
+            p {
+                height: 110px;
+            }
+            button {
+                padding: 5px;
+                font-size: 15px;
+            }
+        }
     }
     .curso__programa .curso__img {
-        width: 270px;
-        height: 370px;
-        margin: 10px 0px 60px 0px;
+        height: 200px;
     }
-    .curso__programa h2 {
-        padding: 10px;
-        margin-left: 20px;
-        color: #fff;
-        margin-top: 50px;
-        margin-left: 100px;
-        width: 500px;
+    .tallerNovias .curso__programa .taller__img {
+        height: 200px;
+    }
+    .tallerMarketing .curso__programa .marketing__img {
+        height: 200px;
     }
 }
-@media screen and (max-width: 500px) {
-    .hero__escuela__container .hero__escuela h1{
-        font-size: 29px;
-        height: 60px;
-        width: 150px;
+@media screen and (max-width: 441px) {
+    .curso__container .curso__programa .programa div h2 {
+        font-size: 20px;
     }
-    .curso__programa h2 {
-        margin-left: 20px;
-        margin-top: 0px;
-        width: 450px;
-        font-size: 38px;
+    .curso__container .curso__programa .programa div button {
+        font-size: 14px;
     }
 }
-
+/* NOSOTRAS */
+@media screen and (max-width: 1116px) {
+    .hero__nosotras__container .hero__nosotras h3 {
+        font-size: 161px;
+    }
+    .nuestraMision__container .nuestraMision h3 {
+        font-size: 161px;
+    }
+}
+@media screen and (max-width: 895px) {
+    .hero__nosotras__container .hero__nosotras h3 {
+        font-size: 130px;
+    }
+    .nuestraMision__container .nuestraMision h3 {
+        font-size: 130px;
+    }
+    .container__nosotras p {
+        width: 700px;
+        padding: 20px;
+    }
+    .container__ellas p {
+        padding: 20px;
+        width: 700px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .hero__nosotras__container .hero__nosotras h3 {
+        font-size: 100px;
+    }
+    .nuestraMision__container .nuestraMision h3 {
+        font-size: 100px;
+    }
+    .container__nosotras p {
+        width: 499px;
+        font-size: 15px;
+    }
+    .container__ellas p {
+        width: 499px;
+        font-size: 15px;
+    }
+    .hero__nosotras__container .hero__nosotras h2 {
+        font-size: 30px;
+    }
+    .nuestraMision__container .nuestraMision h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .hero__nosotras__container .hero__nosotras h3 {
+        font-size: 72px;
+    }
+    .nuestraMision__container .nuestraMision h3 {
+        font-size: 72px;
+    }
+    .container__nosotras p {
+        width: 345px;
+        font-size: 14px;
+    }
+    .container__ellas p {
+        width: 345px;
+        font-size: 14px;
+    }
+    
+}
 /* CONTACTO */
 @media screen and (max-width: 1137px){
     .container__contacto .contacto {
@@ -216,5 +368,45 @@
     .mapa__contacto .mapa {
         width: 500px;
         height: 360px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero__contacto h2{
+        position: relative;
+        top: 10px;
+        right: 0px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .hero__contacto h3 {
+        font-size: 24px;
+        padding: 17px;
+        width: 440px;
+    }
+    .hero__contacto h2 {
+        font-size: 27px;
+        padding: 8px;
+        width: 130px;
+    }
+}
+@media screen and (max-width: 516px) {
+    .container__contacto {
+        h1 {
+            font-size: 39px;    }
+        p {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+    }
+    .info__contacto{
+        h4 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 16px;
+    }
+    }
+    .mapa__contacto {
+        height: 387px;
     }
 }

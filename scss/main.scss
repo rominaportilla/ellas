@@ -78,10 +78,7 @@ header {
     }
 }
 
-.header__navbar .header__nav form {
-    margin-left: 100px;
-
-    button {
+.header__navbar .header__nav form button{
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
         color: white;
@@ -93,7 +90,6 @@ header {
             background-color: rgb(136, 0, 27);
             border: 1px solid rgb(136, 0, 27);
         }
-    }
 }
 
 .header__navbar {
@@ -280,7 +276,7 @@ header {
         color: white;
         background-color: black;
         padding: 10px;
-        width: 38%;
+        width: 100%;
         height: 58px;
         font-family: $fuentePrincipal;
         font-size: 30px;
@@ -496,12 +492,7 @@ nav .header__nav .menu li .active__nav {
 
 /* -------------------- HERO ------------------------ */
 .hero__cosmeticos__container .hero__cosmeticos {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5),
-    )
-    ,url(../multimedia/hero-cosmeticos.jpg);
+    background-image: url(../multimedia/hero-cosmeticos.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -724,9 +715,7 @@ nav .header__nav .menu li .active__nav {
             font-family: $fuentePrincipal;
 
             &:hover {
-                background-color: rgba(238, 237, 237, 0.955);
-                border: 3px solid $colorPrincipal;
-                color: $colorPrincipal;
+                box-shadow: 0 0 20px #fff;
                 font-size: 16px;
             }
         }
@@ -772,12 +761,7 @@ nav .header__nav .menu li .active__nav {
 /* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5),
-    )
-    ,url(../multimedia/servicios3.jpeg);
+    background-image: url(../multimedia/servicios3.jpeg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -898,12 +882,7 @@ nav .header__nav .menu li .active__nav {
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
 /* -------------------- HERO ------------------------ */
 .hero__servicios__container .hero__servicios {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5),
-    )
-    ,url(../multimedia/hero-escuela.jpg);
+    background-image: url(../multimedia/hero-escuela.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -960,11 +939,24 @@ nav .header__nav .menu li .active__nav {
         .imagen{
             
             .novias__img{
+                background-image: url(../multimedia/novias__imgDos.jpg);
+                height: 500px;
+                background-position: center;
+                background-size: cover;
+            }
+            .eventos__img{
+                background-image: url(../multimedia/eventos__img.jpg);
+                height: 500px;
+                background-position: center;
+                background-size: cover;
+            }
+            .moda__img{
                 background-image: url(../multimedia/moda__img.jpg);
                 height: 500px;
                 background-position: center;
                 background-size: cover;
             }
+
         }
         .info {
             padding: 35px;
@@ -1014,12 +1006,7 @@ nav .header__nav .menu li .active__nav {
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
 /* -------------------- NOSOTRAS ------------------------ */
 .hero__nosotras__container .hero__nosotras {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5),
-    )
-    ,url(../multimedia/nosotras3.jpg);
+    background-image: url(../multimedia/nosotras3.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -1042,7 +1029,6 @@ nav .header__nav .menu li .active__nav {
     h3 {
         color: rgba(255, 255, 255, 0.3);
         font-family: $fuentePrincipal;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
         font-size: 210px;
         height: 468px;
         @include flexbox(flex, column, center);
@@ -1163,7 +1149,7 @@ nav .header__nav .menu li .active__nav {
 /* -------------------- CONTACTO ------------------------ */
 .container__contacto{
     width: 100%;
-    height: 470px;
+    height: 600px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -1192,7 +1178,7 @@ nav .header__nav .menu li .active__nav {
             align-items: center;
             form {
                 width: 55%;
-                padding: 30px 25px 20px 25px;
+                padding: 0px 25px 20px 25px;
                 p{
                     font-size: 17px;
                     font-family: "Roboto", sans-serif;
@@ -1224,7 +1210,7 @@ nav .header__nav .menu li .active__nav {
 
 .info__contacto {
     color: white;
-    margin: 25px 0px 0px 0px;
+    margin: 0px;
     h4 {
         font-family: $fuentePrincipal;
         text-align: center;

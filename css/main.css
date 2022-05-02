@@ -138,18 +138,16 @@ header {
     .header__navbar .header__nav .menu li a:hover {
       color: #dd0030; }
 
-.header__navbar .header__nav form {
-  margin-left: 100px; }
-  .header__navbar .header__nav form button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: white;
-    background-color: #dd0030;
-    border: 1px solid #dd0030;
-    transition: all 0.5s; }
-    .header__navbar .header__nav form button:hover {
-      background-color: #88001b;
-      border: 1px solid #88001b; }
+.header__navbar .header__nav form button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #dd0030;
+  border: 1px solid #dd0030;
+  transition: all 0.5s; }
+  .header__navbar .header__nav form button:hover {
+    background-color: #88001b;
+    border: 1px solid #88001b; }
 
 .header__navbar a {
   text-decoration: none; }
@@ -299,7 +297,7 @@ header {
     color: white;
     background-color: black;
     padding: 10px;
-    width: 38%;
+    width: 100%;
     height: 58px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 30px;
@@ -478,7 +476,7 @@ nav .header__nav .menu li .active__nav {
 
 /* -------------------- HERO ------------------------ */
 .hero__cosmeticos__container .hero__cosmeticos {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/hero-cosmeticos.jpg);
+  background-image: url(../multimedia/hero-cosmeticos.jpg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
@@ -674,9 +672,7 @@ nav .header__nav .menu li .active__nav {
       background-color: #dd0030;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
       .container__cosmeticos .cosmetico div a:hover {
-        background-color: rgba(238, 237, 237, 0.955);
-        border: 3px solid #dd0030;
-        color: #dd0030;
+        box-shadow: 0 0 20px #fff;
         font-size: 16px; }
     .container__cosmeticos .cosmetico .imagen__cosmeticoUno {
       background-image: url(../multimedia/producto5.png);
@@ -714,7 +710,7 @@ nav .header__nav .menu li .active__nav {
 /* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/servicios3.jpeg);
+  background-image: url(../multimedia/servicios3.jpeg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
@@ -825,7 +821,7 @@ nav .header__nav .menu li .active__nav {
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
 /* -------------------- HERO ------------------------ */
 .hero__servicios__container .hero__servicios {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/hero-escuela.jpg);
+  background-image: url(../multimedia/hero-escuela.jpg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
@@ -875,6 +871,16 @@ nav .header__nav .menu li .active__nav {
     padding: 0;
     height: 500px; }
     .servicios__container .servicios__info .imagen .novias__img {
+      background-image: url(../multimedia/novias__imgDos.jpg);
+      height: 500px;
+      background-position: center;
+      background-size: cover; }
+    .servicios__container .servicios__info .imagen .eventos__img {
+      background-image: url(../multimedia/eventos__img.jpg);
+      height: 500px;
+      background-position: center;
+      background-size: cover; }
+    .servicios__container .servicios__info .imagen .moda__img {
       background-image: url(../multimedia/moda__img.jpg);
       height: 500px;
       background-position: center;
@@ -917,7 +923,7 @@ nav .header__nav .menu li .active__nav {
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
 /* -------------------- NOSOTRAS ------------------------ */
 .hero__nosotras__container .hero__nosotras {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/nosotras3.jpg);
+  background-image: url(../multimedia/nosotras3.jpg);
   background-size: cover;
   background-position: center center;
   margin-top: 40px;
@@ -937,7 +943,6 @@ nav .header__nav .menu li .active__nav {
   .hero__nosotras__container .hero__nosotras h3 {
     color: rgba(255, 255, 255, 0.3);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     font-size: 210px;
     height: 468px;
     display: flex;
@@ -1044,7 +1049,7 @@ nav .header__nav .menu li .active__nav {
 /* -------------------- CONTACTO ------------------------ */
 .container__contacto {
   width: 100%;
-  height: 470px;
+  height: 600px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -1070,7 +1075,7 @@ nav .header__nav .menu li .active__nav {
     align-items: center; }
     .container__contacto .form__contacto form {
       width: 55%;
-      padding: 30px 25px 20px 25px; }
+      padding: 0px 25px 20px 25px; }
       .container__contacto .form__contacto form p {
         font-size: 17px;
         font-family: "Roboto", sans-serif;
@@ -1092,7 +1097,7 @@ nav .header__nav .menu li .active__nav {
 
 .info__contacto {
   color: white;
-  margin: 25px 0px 0px 0px; }
+  margin: 0px; }
   .info__contacto h4 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-align: center;
@@ -1127,31 +1132,50 @@ nav .header__nav .menu li .active__nav {
     height: 400px; }
 
 /* INDEX */
+@media screen and (max-width: 1300px) {
+  .container__nuevosproductos {
+    margin: 80px 40px; } }
+
+@media screen and (max-width: 1128px) {
+  .container__nuevosproductos {
+    margin: 80px 6px; } }
+
 @media screen and (max-width: 992px) {
-  .header__navbar .icon-cart {
+  .header__navbar .header__nav {
     display: none; }
-  .container__nuevosproductos h3 {
-    height: 89px; } }
+  .header__navbar .icono-cart {
+    display: none; }
+  .header__logo {
+    margin: 0; } }
 
 @media screen and (max-width: 824px) {
   .container__cartas div {
     margin-top: 20px; } }
 
-@media screen and (max-width: 768px) {
-  .hero__index__container .hero__index {
-    background-image: url(../multimedia/hero-tablet.jpg);
+@media screen and (max-width: 900px) {
+  .carousel__index__container .carousel__index .carousel__indexUno {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/hero-tablet.jpg);
     background-size: cover;
     background-position: center center; }
+  .carousel__index__container .carousel__index .carousel__indexDos {
+    background-position: center left; }
+  .carousel__index__container .carousel__index .carousel__indexTres {
+    background-position: center right; }
   .container__nuevosproductos {
     margin: 50px; } }
 
 @media screen and (max-width: 675px) {
   .container__nuevosproductos {
-    margin: 70px;
+    margin: 30px;
+    align-items: center; }
+    .container__nuevosproductos .titulo__nuevosproductos {
+      height: 60px; } }
+
+@media screen and (max-width: 596px) {
+  .container__nuevosproductos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center; } }
+    justify-content: space-between; } }
 
 @media screen and (max-width: 576px) {
   footer {
@@ -1175,22 +1199,50 @@ nav .header__nav .menu li .active__nav {
   .hero__index__container .hero__index {
     background-image: url(../multimedia/hero-mobile2.jpg);
     background-position: left center; }
-  .container__nuevosproductos h3 {
-    font-size: 25px;
-    padding: 7px;
-    width: 48%; }
-  .container__cartas div {
-    width: 250px;
-    height: 220px;
-    padding: 10px; }
-    .container__cartas div h5 {
-      font-size: 16px; }
-    .container__cartas div p {
-      font-size: 15px; }
+  .container__cartas {
+    margin: 10px; }
+    .container__cartas div {
+      width: 351px;
+      height: 200px;
+      padding: 10px;
+      margin-top: 6px; }
+      .container__cartas div h5 {
+        font-size: 16px; }
+      .container__cartas div p {
+        font-size: 15px; }
+      .container__cartas div .icono__carta {
+        font-size: 50px; }
   .header__navbar .icon-cart {
     font-size: 8px; }
   .whatsapp__icono {
     width: 120px; } }
+
+@media screen and (max-width: 428px) {
+  .header__logo {
+    width: 200px; } }
+
+@media screen and (max-width: 410px) {
+  .container__nuevosproductos h3 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 381px) {
+  .container__cartas div .icono__carta {
+    font-size: 37px;
+    margin-bottom: 3px; } }
+
+@media screen and (max-width: 358px) {
+  .container__nuevosproductos h3 {
+    padding: 8px;
+    height: 71px; } }
+
+@media screen and (max-width: 328px) {
+  .header__navbar {
+    padding: 10px; }
+  .header__logo .logo__titulo {
+    font-size: 46px;
+    height: 55px; }
+  .header__logo .logo__subtitulo {
+    font-size: 14px; } }
 
 /* COSMETICOS */
 @media screen and (max-width: 768px) {
@@ -1208,7 +1260,7 @@ nav .header__nav .menu li .active__nav {
 
 @media screen and (max-width: 675px) {
   .container__cosmeticos {
-    margin: 70px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1231,37 +1283,96 @@ nav .header__nav .menu li .active__nav {
       width: 196px; } }
 
 /* ESCUELA */
-@media screen and (max-width: 900px) {
-  .curso__programa .programa {
-    width: 400px; } }
+@media screen and (max-width: 967px) {
+  .curso__container .curso__programa .programa div h2 {
+    font-size: 37px; }
+  .curso__container .curso__programa .programa div p {
+    overflow: auto;
+    height: 266px; } }
 
-@media screen and (max-width: 700px) {
-  .curso__programa .programa {
-    width: 500px;
-    height: 300px;
-    margin-bottom: 0px; }
+@media screen and (max-width: 907px) {
+  .curso__container .curso__programa .programa div h2 {
+    font-size: 33px; }
+  .curso__container .curso__programa .programa div p {
+    overflow: auto;
+    height: 251px;
+    font-size: 16px; }
+  .curso__container .curso__programa .programa div button {
+    position: relative;
+    left: 25%;
+    padding: 7px; } }
+
+@media screen and (max-width: 768px) {
+  .curso__container {
+    margin-top: 26px; }
+    .curso__container .curso__programa .programa div {
+      padding: 0; }
+      .curso__container .curso__programa .programa div h2 {
+        font-size: 27px; }
+      .curso__container .curso__programa .programa div p {
+        height: 110px; }
+      .curso__container .curso__programa .programa div button {
+        padding: 5px;
+        font-size: 15px; }
   .curso__programa .curso__img {
-    width: 270px;
-    height: 370px;
-    margin: 10px 0px 60px 0px; }
-  .curso__programa h2 {
-    padding: 10px;
-    margin-left: 20px;
-    color: #fff;
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 500px; } }
+    height: 200px; }
+  .tallerNovias .curso__programa .taller__img {
+    height: 200px; }
+  .tallerMarketing .curso__programa .marketing__img {
+    height: 200px; } }
 
-@media screen and (max-width: 500px) {
-  .hero__escuela__container .hero__escuela h1 {
-    font-size: 29px;
-    height: 60px;
-    width: 150px; }
-  .curso__programa h2 {
-    margin-left: 20px;
-    margin-top: 0px;
-    width: 450px;
-    font-size: 38px; } }
+@media screen and (max-width: 441px) {
+  .curso__container .curso__programa .programa div h2 {
+    font-size: 20px; }
+  .curso__container .curso__programa .programa div button {
+    font-size: 14px; } }
+
+/* NOSOTRAS */
+@media screen and (max-width: 1116px) {
+  .hero__nosotras__container .hero__nosotras h3 {
+    font-size: 161px; }
+  .nuestraMision__container .nuestraMision h3 {
+    font-size: 161px; } }
+
+@media screen and (max-width: 895px) {
+  .hero__nosotras__container .hero__nosotras h3 {
+    font-size: 130px; }
+  .nuestraMision__container .nuestraMision h3 {
+    font-size: 130px; }
+  .container__nosotras p {
+    width: 700px;
+    padding: 20px; }
+  .container__ellas p {
+    padding: 20px;
+    width: 700px; } }
+
+@media screen and (max-width: 730px) {
+  .hero__nosotras__container .hero__nosotras h3 {
+    font-size: 100px; }
+  .nuestraMision__container .nuestraMision h3 {
+    font-size: 100px; }
+  .container__nosotras p {
+    width: 499px;
+    font-size: 15px; }
+  .container__ellas p {
+    width: 499px;
+    font-size: 15px; }
+  .hero__nosotras__container .hero__nosotras h2 {
+    font-size: 30px; }
+  .nuestraMision__container .nuestraMision h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 430px) {
+  .hero__nosotras__container .hero__nosotras h3 {
+    font-size: 72px; }
+  .nuestraMision__container .nuestraMision h3 {
+    font-size: 72px; }
+  .container__nosotras p {
+    width: 345px;
+    font-size: 14px; }
+  .container__ellas p {
+    width: 345px;
+    font-size: 14px; } }
 
 /* CONTACTO */
 @media screen and (max-width: 1137px) {
@@ -1290,3 +1401,32 @@ nav .header__nav .menu li .active__nav {
   .mapa__contacto .mapa {
     width: 500px;
     height: 360px; } }
+
+@media screen and (max-width: 700px) {
+  .hero__contacto h2 {
+    position: relative;
+    top: 10px;
+    right: 0px; } }
+
+@media screen and (max-width: 530px) {
+  .hero__contacto h3 {
+    font-size: 24px;
+    padding: 17px;
+    width: 440px; }
+  .hero__contacto h2 {
+    font-size: 27px;
+    padding: 8px;
+    width: 130px; } }
+
+@media screen and (max-width: 516px) {
+  .container__contacto h1 {
+    font-size: 39px; }
+  .container__contacto p {
+    font-size: 17px;
+    margin-bottom: 15px; }
+  .info__contacto h4 {
+    font-size: 25px; }
+  .info__contacto p {
+    font-size: 16px; }
+  .mapa__contacto {
+    height: 387px; } }

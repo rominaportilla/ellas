@@ -16,8 +16,7 @@
     <link rel="shortcut icon" href="../multimedia/favicon3.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../css/iconos.css">
     <script src="https://kit.fontawesome.com/ff338c4dd2.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -61,15 +60,14 @@
                     </form>
                 </div>
 
-                <a href="#"><span class="icon-cart"></span></a>
+                <a class="icono-cart" href="#"><span class="icon-cart"></span></a>
             </div>
         </nav>
     </header>
 
-    <section class="row hero__servicios__container">
+    <section class="row hero__servicios__container" id="categoriasDos">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero__servicios">
             <h1>SERVICIOS</h1>
-            <h2>TE ACOMPAÑAMOS <br> EN TU <br> <span>DIA ESPECIAL</span></h2>
         </div>
     </section>
 
@@ -123,17 +121,17 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 volver">
-            <a href="#categorias">↑ volver</a>
+            <a href="#categoriasDos">↑ volver</a>
         </div>
     </section>
 
-    <section class="row curso__container">
-        <div class="card mb-3 curso__programa">
+    <section class="row servicios__container">
+        <div class="card mb-3 servicios__info">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-4 imagen">
                     <div class="eventos__img"></div>
                 </div>
-                <div class="col-md-8 programa">
+                <div class="col-md-8 info">
                     <div class="card-body">
                         <h2 class="card-title">EVENTOS</h2>
                         <h3 class="card-title">Maquillaje & Peinado</h3>
@@ -188,36 +186,36 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 volver">
-            <a href="#categorias">↑ volver</a>
+            <a href="#categoriasDos">↑ volver</a>
         </div>
     </section>
 
-    <section class="row curso__container">
-        <div class="card mb-3 curso__programa">
+    <section class="row servicios__container">
+        <div class="card mb-3 servicios__info">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-md-4 imagen">
                     <div class="moda__img"></div>
                 </div>
-                <div class="col-md-8 programa">
+                <div class="col-md-8 info">
                     <div class="card-body">
                         <h2 class="card-title">MODA & PRODUCCIONES</h2>
                         <h3 class="card-title">Maquillaje & Peinado</h3>
                         <p class="card-text">Un equipo de artistas de gran talento que hace años crea tendencias en
-                            maquillaje y peinados para producciones de moda, novias y eventos sociales. <br>
+                            maquillaje y peinados para producciones de moda, novias y eventos sociales. 
                             Hace ya más de 22 años que Bettina Frúmboli trabaja como makeup artist y supo convertir lo
                             que comenzó como un hobby en una carrera exitosa. Hoy es una de las maquilladoras más
                             buscada por celebridades como: Marcela Kloosterboer, Oriana Sabatini, Eugenia La China
-                            Suárez, Valentina Zenere, Julieta Cardinali, Emilia Attías, entre tantas otras. <br>
+                            Suárez, Valentina Zenere, Julieta Cardinali, Emilia Attías, entre tantas otras. 
 
                             Somos un equipo de profesionales que nos enfocamos 100% en los resultados. Sabemos
                             perfectamente cuál es el maquillaje o peinado más apropiado para cada estilo de mujer y
-                            nuestro compromiso con el trabajo es garantía de calidad. <br>
+                            nuestro compromiso con el trabajo es garantía de calidad. 
                             Hemos trabajado con los mejores fotógrafos y productores de moda del país. Nos enfocamos
-                            100% en los looks y la estética buscada. <br>
-                            Acerca de este servicio: <br>
+                            100% en los looks y la estética buscada. 
+                            Acerca de este servicio: 
                             Contamos con books para visualizar los trabajos de nuestro staff de maquilladoras y
                             peinadoras, para seleccionar la más apropiada según experiencia y presupuesto disponible.
-                            <br>
+                            
 
                             En todos los casos, los talentos de nuestro Estudio tienen amplia experiencia y han aportado
                             su creatividad a producciones de moda, notas editoriales, celebrities y portadas de
@@ -228,7 +226,7 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 volver">
-            <a href="#categorias">↑ volver</a>
+            <a href="#categoriasDos">↑ volver</a>
         </div>
     </section>
 
@@ -248,12 +246,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
