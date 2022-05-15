@@ -14,17 +14,17 @@ body {
 
 /* -------------------- HEADER ------------------------ */
 header {
-    background-color: $colorSecundario;
-    border-bottom: 2px solid black;
+    background-color:#0f0f0f00;
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 140px;
+    height: 174px;
 
     nav {
-        background-color: $colorSecundario;
+        background-color: #0f0f0fe3;
         width: 100%;
-        height: 100%;
+        border-bottom: 2px solid black;
+        /* height: 100%; */ /* ESTO ME SACÓ EL BACKGROUND DEL SUBMENU */
     }
 }
 
@@ -61,8 +61,8 @@ header {
 
 .header__navbar .header__nav {
     padding: 10px;
-    display: flex;
-    flex-flow: row nowrap;
+    /* display: flex;
+    flex-flow: row nowrap; */ /* ESTO ME ROMPIO EL HEADER */
 
     .menu li a {
         color: white;
@@ -127,7 +127,7 @@ header {
             width: 263px;
             line-height: 1;
             margin-left: 60px;
-            margin-top: 80px;
+            margin-top: 120px;
         }
     
         p {
@@ -221,7 +221,7 @@ header {
             width: 640px;
             line-height: 1;
             margin-left: 40px;
-            margin-top: 99px;
+            margin-top: 90px;
         }
     
         p {
@@ -260,7 +260,7 @@ header {
 /* -------------------- NUEVOS PRODUCTOS ------------------------ */
 .container__nuevosproductos {
     background-color: $colorSecundario;
-    margin: 80px;
+    margin: 80px 80px 50px 80px;
     @include flexbox(flex, row, space-between);
     flex-wrap: wrap;
     align-content: space-around;
@@ -270,18 +270,11 @@ header {
         width: 100%;
         height: 100px;
         @include flexbox(flex, row, center);
+        padding: 0;
     }
 
     h3 {
-        color: white;
-        background-color: black;
-        padding: 10px;
-        width: 100%;
-        height: 58px;
-        font-family: $fuentePrincipal;
-        font-size: 30px;
-        text-align: center;
-        text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        @include h3-index
     }
 
     .verCatalogo{
@@ -292,6 +285,9 @@ header {
         a{
             text-decoration: none;
             color: white;
+        }
+        &:hover{
+            text-shadow: 0 0 30px #fff;
         }
     }
 }
@@ -409,13 +405,49 @@ header {
         font-family: $fuentePrincipal;
 
         &:hover {
-            box-shadow: 0 0 20px #fff;
+            box-shadow: 0 0 25px $colorPrincipal;
             font-size: 16px;
         }
     }
 }
 
-
+.container-article-aside {
+    margin: 40px;
+    .article-aside{
+        padding: 10px;
+        text-align: right;
+        h3{
+            @include h3-index
+        }
+        p{
+            font-family: $fuentePrincipal;
+            font-size: 40px;
+            color: #fff;
+            line-height: 1;
+            margin-top: 20px;
+            span{
+                background-color: $colorPrincipal;
+                display: inline-block;
+            }
+        }
+        img{
+            width: 100%;
+            height: 450px;
+            margin: 0px 0px 15px 0px;
+            filter:opacity(90%);
+        }
+        a{
+            font-family: $fuentePrincipal;
+            font-size: 25px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                text-shadow: 0 0 30px #fff;
+            }
+        }
+    } 
+}
 /* -------------------- CARTAS ------------------------ */
 .container__cartas {
     @include flexbox(flex, row, space-evenly);
@@ -427,7 +459,7 @@ header {
         height: 230px;
         @include flexbox(flex, column, center);
         align-items: center;
-        border: 2px solid rgb(100, 100, 100);
+        border: 2px solid #00000059;
         border-radius: 20px;
         padding: 20px;
 
@@ -488,6 +520,7 @@ footer {
 /*-------COSMETICOS-------COSMETICOS-------COSMETICOS-------COSMETICOS--------------COSMETICOS-------COSMETICOS */
 nav .header__nav .menu li .active__nav {
     color: $colorPrincipal;
+    text-shadow: 0 0 15px $colorPrincipal;
 }
 
 /* -------------------- HERO ------------------------ */
@@ -513,27 +546,19 @@ nav .header__nav .menu li .active__nav {
         height: 74px;
         width: 261px;
     }
-    h2 {
-        color: rgba(255, 255, 255, 0.6);
-        font-family: $fuentePrincipal;
-        font-size: 120px;
-        @include flexbox(flex, column, center);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        text-align: right;
-        line-height: 1;
-        margin-right: 15px;
-    }
-    p {
-        color: rgba(255, 255, 255, 0.6);
-        font-family: $fuentePrincipal;
-        font-size: 40px;
-        @include flexbox(flex, column, center);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        text-align: right;
-        margin-right: 15px;
+    p{
+        @include p-hero;
+        .p-uno{
+            @include p-hero-estilos ($colorSecundario, 30px, 221px, 102px, 672px)
+        }
+        .p-dos{
+            @include p-hero-estilos( $colorSecundario, 35px, 301px, 140px, 672px)
+        }
+        .p-tres{
+            @include p-hero-estilos( $colorPrincipal, 45px, 274px, 187px, 726px)
+        }
     }
 }
-
 /* -------------------- CATEGORIAS ------------------------ */
 .listaCategorias ul {
     @include flexbox(flex, row, space-evenly);
@@ -543,6 +568,7 @@ nav .header__nav .menu li .active__nav {
 
 .listaCategorias li {
     display: inline-block;
+    
 
     a {
         text-decoration: none;
@@ -551,16 +577,27 @@ nav .header__nav .menu li .active__nav {
         font-family: $fuentePrincipal;
         font-size: 20px;
         background-color: black;
+        width: 30%;
 
         &:hover {
             background-color: $colorPrincipal;
+            box-shadow: 0 0 30px $colorPrincipal;
         }
     }
 }
-
+.ordenar {
+    margin-top: 50px;
+    color: #fff;
+    select{
+        font-weight: bold;
+        option{
+            @extend select
+        }
+    }
+}
 /* -------------------- PRODUCTOS ------------------------ */
 .container__cosmeticos {
-    margin: 0px 60px 60px 60px;
+    margin: 0px 60px 30px 60px;
     background-color: $colorSecundario;
     display: flex;
     justify-content: space-between;
@@ -573,10 +610,20 @@ nav .header__nav .menu li .active__nav {
         margin: 50px 0px 0px 20px;
     }
 
-    .ordenar {
-        margin-top: 75px;
-        margin-left: 5x;
-        color: #fff;
+    .volver{
+        font-family: $fuentePrincipal;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 40px;
+        text-align: left;
+        width: 90%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
     }
 
     .producto {
@@ -671,6 +718,88 @@ nav .header__nav .menu li .active__nav {
                 background-image: url(../multimedia/producto-hover-A.png);
             }
         }
+
+        .rostroUno{
+            @include imagen-producto;
+            background-image: url(../multimedia/rostroUno.png);
+
+            &:hover{
+                background-image: url(../multimedia/rostro-uno.png);
+            }
+        }
+
+        .rostroDos {
+            @include imagen-producto;
+            background-image: url(../multimedia/rostroDos.png);
+
+            &:hover{
+                background-image: url(../multimedia/rostro-dos.png);
+            }
+        }
+
+        .rostroTres{
+            @include imagen-producto;
+            background-image: url(../multimedia/rostroTres.png);
+
+            &:hover{
+                background-image: url(../multimedia/rostro-tres.png);
+            }
+        }
+
+        .rostroCuatro{
+            @include imagen-producto;
+            background-image: url(../multimedia/rostroCuatro.png);
+
+            &:hover{
+                background-image: url(../multimedia/rostro-cuatro.png);
+            }
+        }
+
+        .productoD{
+            @include imagen-producto;
+            background-image: url(../multimedia/productoD.png);
+
+            &:hover{
+                background-image: url(../multimedia/producto-D.png);
+            }
+        }
+
+        .productoE{
+            @include imagen-producto;
+            background-image: url(../multimedia/productoE.png);
+
+            &:hover{
+                background-image: url(../multimedia/producto-hover-A.png);
+            }
+        }
+
+        .productoF{
+            @include imagen-producto;
+            background-image: url(../multimedia/productoF.png);
+
+            &:hover{
+                background-image: url(../multimedia/producto-F.png);
+            }
+        }
+
+        .productoG{
+            @include imagen-producto;
+            background-image: url(../multimedia/productoG.png);
+
+            &:hover{
+                background-image: url(../multimedia/producto-hover-B.png);
+            }
+        }
+
+        .productoH{
+            @include imagen-producto;
+            background-image: url(../multimedia/productoH.png);
+
+            &:hover{
+                background-image: url(../multimedia/producto-H.png);
+            }
+        }
+
     }
 
     .cosmetico {
@@ -715,7 +844,7 @@ nav .header__nav .menu li .active__nav {
             font-family: $fuentePrincipal;
 
             &:hover {
-                box-shadow: 0 0 20px #fff;
+                box-shadow: 0 0 25px $colorPrincipal;
                 font-size: 16px;
             }
         }
@@ -761,7 +890,7 @@ nav .header__nav .menu li .active__nav {
 /* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
-    background-image: url(../multimedia/servicios3.jpeg);
+    background-image: url(../multimedia/studio-ellas.jpg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -782,30 +911,25 @@ nav .header__nav .menu li .active__nav {
         position: relative;
         bottom: 25px;
     }
-    h2 {
-        color: rgba(255, 255, 255, 0.6);
-        font-family: $fuentePrincipal;
-        font-size: 105px;
-        @include flexbox(flex, column, center);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        line-height: 1;
-        margin-left: 15px;
-    }
-    p {
-        color: rgba(255, 255, 255, 0.6);
-        font-family: $fuentePrincipal;
-        font-size: 40px;
-        @include flexbox(flex, column, center);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        margin-left: 15px;
-        line-height: 1;
+    
+    p{
+        @include p-hero;
+        .p-uno{
+            @include p-hero-estilos ($colorSecundario, 28px, 233px, 127px, 508px)
+        }
+        .p-dos{
+            @include p-hero-estilos( $colorPrincipal, 34px, 426px, 166px, 426px)
+        }
+        .p-tres{
+            @include p-hero-estilos( $colorSecundario, 28px, 121px, 210px, 565px)
+        }
     }
 }
 
 /* -------------------- PROGRAMA ------------------------ */
 .curso__container {
     width: 100%;
-    margin-top: 70px;
+    margin: 70px 0px;
     display: flex;
     justify-content: center;
     .curso__programa{
@@ -821,14 +945,23 @@ nav .header__nav .menu li .active__nav {
                     font-family: $fuentePrincipal;
                     font-size: 40px;
                 }
-                p{
+                .texto{
                     overflow: auto;
                     height: 280px;
+                    background-color: #282828;
+                    padding: 25px;
+                    p{
+                        font-weight: bold;
+                        span{
+                            background-color: rgba(255, 255, 41, 0.4);
+                        }
+                    }
                 }
                 button {
                     position: relative;
+                    top: 10px;
                     left: 35%;
-                    padding: 10px;
+                    padding: 8px;
                     border: 2px solid black;
                     font-size: 16px;
                     font-weight: bold;
@@ -846,11 +979,13 @@ nav .header__nav .menu li .active__nav {
         font-family: $fuentePrincipal;
         font-size: 25px;
         margin-top: 20px;
-        margin-left: 40px;
         text-align: left;
         a{
             text-decoration: none;
             color: white;
+        }
+        &:hover{
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
         }
     }
 }
@@ -873,7 +1008,7 @@ nav .header__nav .menu li .active__nav {
             animation-name: imagenMarketing;
             @include cursoAnimacion;
         }
-        .programa div p{
+        .programa div .texto{
             height: 230px;
         }
     } 
@@ -882,7 +1017,7 @@ nav .header__nav .menu li .active__nav {
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
 /* -------------------- HERO ------------------------ */
 .hero__servicios__container .hero__servicios {
-    background-image: url(../multimedia/hero-escuela.jpg);
+    background-image: url(../multimedia/servicios3.jpeg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
@@ -901,17 +1036,16 @@ nav .header__nav .menu li .active__nav {
         position: relative;
         bottom: 25px;
     }
-    h2 {
-        color: rgba(255, 255, 255, 0.6);
-        font-family: $fuentePrincipal;
-        font-size: 90px;
-        @include flexbox(flex, column, center);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        line-height: 1;
-        margin-right: 15px;
-        text-align: right;
-        span{
-            font-size: 130px;
+    p{
+        @include p-hero;
+        .p-uno{
+            @include p-hero-estilos ($colorSecundario, 30px, 265px, 216px, 222px)
+        }
+        .p-dos{
+            @include p-hero-estilos ($colorSecundario, 25px, 75px, 254px, 412px)
+        }
+        .p-tres{
+            @include p-hero-estilos ($colorPrincipal, 47px, 299px, 288px, 188px)
         }
     }
 }
@@ -929,6 +1063,7 @@ nav .header__nav .menu li .active__nav {
 .servicios__container {
     width: 100%;
     margin-top: 70px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     .servicios__info{
@@ -939,44 +1074,59 @@ nav .header__nav .menu li .active__nav {
         .imagen{
             
             .novias__img{
-                background-image: url(../multimedia/novias__imgDos.jpg);
-                height: 500px;
-                background-position: center;
-                background-size: cover;
+                animation-name: imagenNovias;
+                @include serviciosAnimacion;
             }
             .eventos__img{
-                background-image: url(../multimedia/eventos__img.jpg);
-                height: 500px;
-                background-position: center;
-                background-size: cover;
+                animation-name: imagenEventos;
+                @include serviciosAnimacion;
             }
             .moda__img{
-                background-image: url(../multimedia/moda__img.jpg);
-                height: 500px;
-                background-position: center;
-                background-size: cover;
+                animation-name: imagenModa;
+                @include serviciosAnimacion;
             }
 
         }
         .info {
-            padding: 35px;
+            padding: 15px 35px;
             div {
                 color: #fff;
                 h2 {
                     font-family: $fuentePrincipal;
                     font-size: 42px;
+                    margin-bottom: 0;
                 }
                 h3{
                     font-family: $fuentePrincipal;
                     font-size: 32px;
                 }
-                p{
+                .texto{
                     overflow: auto;
                     height: 280px;
+                    background-color: #282828;
+                    padding: 22px;
+                    .intro{
+                        text-align: center;
+                    }
+                    p{
+                        font-weight: bold;
+                        span{
+                            background-color:rgba(255, 255, 41, 0.4);
+                        }
+                    }
+                    h6{
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                }
+                .texto-moda{
+                    overflow: none;
+                    height: 260px;
                 }
                 button {
                     position: relative;
-                    left: 35%;
+                    top: 15px;
+                    left: 45%;
                     padding: 10px;
                     border: 2px solid black;
                     font-size: 16px;
@@ -1001,6 +1151,9 @@ nav .header__nav .menu li .active__nav {
             text-decoration: none;
             color: white;
         }
+        &:hover{
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
     }
 }
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
@@ -1010,7 +1163,7 @@ nav .header__nav .menu li .active__nav {
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
-    height: 570px;
+    height: 550px;
     width: 100%;
 
     h2 {
@@ -1025,31 +1178,98 @@ nav .header__nav .menu li .active__nav {
         position: relative;
         bottom: 25px;
     }
-
-    h3 {
-        color: rgba(255, 255, 255, 0.3);
-        font-family: $fuentePrincipal;
-        font-size: 210px;
-        height: 468px;
-        @include flexbox(flex, column, center);
-        align-items: center;
-    }
 }
 
 .container__nosotras {
-    display: flex;
-    justify-content: center;
-
+    @include flexbox(flex, row, center);
+    h3{
+        font-family: $fuentePrincipal;
+        color: #fff;
+        text-align: center;
+        font-size: 78px;
+        padding: 25px 0px 0px 0px;
+        margin: 0;
+    }
     p {
         width: 910px;
         text-align: center;
-        padding: 40px;
-        margin: 10px 30px;
-        animation-duration: 5s;
-        animation-name: aparecer;
-        animation-iteration-count: infinite;
+        padding: 0px;
+        margin: 0px 30px;
         color: #fff;
         font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        .resaltar{
+            background-color: $colorPrincipal;
+        }
+        .enfasis{
+            font-family: $fuentePrincipal;
+            font-size: 28px;
+        }
+    }
+}
+
+.instagram__nosotras {
+    margin: 40px;
+    display: flex;
+    .instagram__iframeUno{
+        width: 400px;
+        height: 533px;
+        position: relative;
+        top: 37px;
+    }
+    .instagram__iframeDos{
+        width: 400px;
+        height: 610px;
+    }
+    .instagram__iframeTres{
+        width: 400px;
+        height: 609px;
+    }
+    .instagram__iframeCuatro{
+        width: 400px;
+        height: 609px;
+        position: relative;
+        bottom: 14px;
+    }
+    .followUs{
+        padding-top: 213px;
+        width: 250px;
+        position: relative;
+        h4{
+            font-family: $fuentePrincipal;
+            font-size: 72px;
+            color: #fff;
+            text-shadow: 0 0 20px #fff;
+            line-height: 0.6;
+            span{
+                font-size: 154px;
+                color: $colorPrincipal;
+                text-shadow: 0 0 20px $colorPrincipal;
+            }
+        }
+        .click{
+            font-size: 50px;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.908);
+            position: absolute;
+            left: 186px;
+            top: 330px;
+        }
+    }
+    .redesClick{
+        @include flexbox(flex, column, space-evenly);
+        align-items:center;
+        width: 354px;
+        height: 578px;
+        .click{
+            font-size: 36px;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.592);
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
     }
 }
 
@@ -1059,6 +1279,7 @@ nav .header__nav .menu li .active__nav {
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
+    height: 480px;
     width: 100%;
 
     h2 {
@@ -1073,30 +1294,34 @@ nav .header__nav .menu li .active__nav {
         position: relative;
         bottom: 25px;
     }
-
-    h3 {
-        color: rgba(255, 255, 255, 0.3);
-        font-family: $fuentePrincipal;
-        font-size: 224px;
-        height: 468px;
-        @include flexbox(flex, column, center);
-        align-items: center;
-    }
 }
 
 .container__ellas {
-    display: flex;
-    justify-content: center;
-
-    p {
-        text-align: center;
-        padding: 40px;
-        margin: 10px 30px;
-        animation-duration: 5s;
-        animation-name: aparecerDos;
-        animation-iteration-count: infinite;
-        width: 800px;
+    @include flexbox(flex, row, center);
+    margin-bottom: 70px;
+    h3{
+        font-family: $fuentePrincipal;
         color: #fff;
+        text-align: center;
+        font-size: 78px;
+        padding: 25px 0px 0px 0px;
+        margin: 0;
+    }
+    p {
+        width: 910px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px 30px 0px 30px;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        .resaltar{
+            background-color: $colorPrincipal;
+        }
+        .enfasis{
+            font-family: $fuentePrincipal;
+            font-size: 28px;
+        }
     }
 }
 
@@ -1106,7 +1331,7 @@ nav .header__nav .menu li .active__nav {
     @include flexbox(flex, column, center);
     flex-wrap: nowrap;
     align-items: center;
-    height: 330px;
+    height: 290px;
     background-color: #000;
 
     h2 {
@@ -1149,15 +1374,14 @@ nav .header__nav .menu li .active__nav {
 /* -------------------- CONTACTO ------------------------ */
 .container__contacto{
     width: 100%;
-    height: 600px;
+    height: 658px;
+    margin: 0px;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-        
+    @include flexbox (flex, column, center);
+    align-items: center;
         h1 {
             font-family: $fuentePrincipal;
-            font-size: 50px;
+            font-size: 54px;
             color: #fff;
             text-align: center;
             margin-top: 0px;
@@ -1171,81 +1395,92 @@ nav .header__nav .menu li .active__nav {
             margin-bottom: 30px;
             line-height: 1.2;
         }
-        .form__contacto {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            form {
-                width: 55%;
-                padding: 0px 25px 20px 25px;
-                p{
-                    font-size: 17px;
-                    font-family: "Roboto", sans-serif;
-                    margin-bottom: 10px;
-                    input{
-                        font-size: 16px;
-                    }
-                    textarea{
-                        @extend input
-                    }
+        form {
+            @include flexbox(flex, column, space-evenly);
+            height: 452px;
+            background-color: $colorTerciario;
+            padding: 42px 30px;
+            border-radius: 20px;
+            width: 633px;
+            input{
+                font-size: 17px;
+                color: #fff;
+                font-weight: bold;
+                padding: 4px;
+                font-family: "Roboto", sans-serif;
+                background-color: #80808017;
+            }
+            select{
+                font-size: 17px;
+                font-weight: bold;
+                padding: 4px;
+                font-family: "Roboto", sans-serif;
+                background-color: #80808017;
+                color: rgba(255, 255, 255, 0.45);
+                option{
+                    color: #000;
+                    font-weight: bold;
                 }
-                .mensaje{
-                    width: 100%;
-                }
-                .enviarMensaje {
-                    color: white;
-                    background-color: $colorPrincipal;
-                    font-family: $fuentePrincipal;
-                    font-size: 18px;
-                    border: none;
-                    padding: 4px;
-                    width: 200px;
-                    height: 37px;
-                    box-shadow: 0 0 25px $colorPrincipal;
-                }
+            }
+            textarea{
+                font-size: 17px;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                padding: 4px;
+                font-family: "Roboto", sans-serif;
+                background-color: #80808017;
+            }
+            .enviarMensaje {
+                color: white;
+                background-color: $colorPrincipal;
+                font-family: $fuentePrincipal;
+                font-size: 18px;
+                border: none;
+                padding: 4px;
+                height: 37px;
+                margin-top: 15px;
+                box-shadow: 0 0 25px $colorPrincipal;
             }
         }
 }
 
 .info__contacto {
     color: white;
-    margin: 0px;
+    margin: 35px 0px 35px 0px;
+    @include flexbox (flex, column, center);
+    align-items: center;
     h4 {
         font-family: $fuentePrincipal;
         text-align: center;
-        font-size: 27px;
+        font-size: 28px;
     }
-    p {
+    div{
+        width: 400px;
         text-align: center;
         font-size: 18px;
+        p{
+            margin: 0;
+        }
         .redes {
-            padding: 20px 12px 10px 12px;
+            padding: 25px;
             cursor: pointer;
             font-size: 32px;
-            text-shadow: 0 0 20px #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.592);
+            text-align: center;
+            color: #fff;
             &:hover {
                 transform: scale(1.3, 1.3);
             }
         }
-        .facebook{
-            text-shadow: 0 0 20px #3a5795;
-        }
-        .twitter{
-            text-shadow: 0 0 20px #55acee;
-        }
-        .instagram{
-            text-shadow: 0 0 20px  #E1306C;
-        }
     }
 }
-
 /* -------------------- IFRAME ------------------------ */
 .mapa__contacto {
     @include flexbox(flex, row, center);
     align-items: center;
     width: 100%;
     height: 460px;
+    margin: 0px;
 
     .mapa {
         width: 800px;

@@ -4,16 +4,32 @@
         margin: 80px 40px;
     }
 }
+
+@media screen and (max-width: 1174px) {
+    .container__cartas div {
+    width: 330px;
+    }
+}
+
 @media screen and (max-width: 1128px) {
     .container__nuevosproductos {
         margin: 80px 6px;
     }
+    .container-article-aside{
+        margin: 6px;
+    }
+    .container__cartas {
+        margin: 50px 6px;
+    }
 }
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 1114px) {
+    .container__cartas div {
+        width: 290px;
+    }
+}
+@media screen and (max-width: 994px) {
     .header__navbar{
-        .header__nav{
-            display: none;
-        }
         .icono-cart{
             display: none;
         }
@@ -21,15 +37,36 @@
     .header__logo{
         margin: 0;
     }
-    
-}
-
-@media screen and (max-width: 824px) {
     .container__cartas div {
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+    .container-article-aside .article-aside img{
+        height: 400px;
     }
 }
 
+@media screen and (max-width: 942px) {
+    .container-article-aside .article-aside p {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 906px) {
+    .container__cartas div {
+        padding: 10px;
+        width: 255px;
+        .icono__carta {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        h5 {
+            font-size: 17px;
+            padding-bottom: 0px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
 @media screen and (max-width: 900px) {
     .carousel__index__container .carousel__index {
         .carousel__indexUno{
@@ -48,8 +85,67 @@
     .container__nuevosproductos {
         margin: 50px;
     }
+    .container-article-aside .article-aside{
+        h3 {
+            padding: 8px;
+            height: 48px;
+            font-size: 28px;
+        }
+        p {
+            font-size: 31px;
+            margin-top: 8px;
+        }
+        img {
+            height: 310px;
+        }
+    }
+    .container__cartas {
+        margin: 20px 6px 50px 6px;
+    }
 }
 
+@media screen and (max-width: 800px) {
+    .container__cartas div {
+        padding: 5px;
+        width: 340px;
+        height: 177px;
+        .icono__carta {
+            font-size: 42px;
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .carousel__index__container .carousel__index {
+        .carousel__indexDos{
+            background-position: center right;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .container-article-aside {
+        margin: 6px 70px;
+        aside{
+            p{
+                text-align: center;
+            }
+            .index-servicios {
+                height: 400px;
+                padding: 0px 125px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 704px) {
+    .container-article-aside aside .index-servicios {
+        height: 400px;
+        padding: 0px 90px;
+    }
+    .container__cartas div{
+        padding: 15px;
+    }
+}
 @media screen and (max-width: 675px) {
     .container__nuevosproductos {
         margin: 30px;
@@ -59,20 +155,31 @@
             height: 60px;
         }
     }
+    .carousel__index__container .carousel__index .carousel__indexTres h1 {
+        font-size: 50px;
+        width: 511px;
+    }
+}
+@media screen and (max-width: 630px){
+    .container-article-aside {
+        margin: 6px 50px;
+    }
 }
 @media screen and (max-width: 596px) {
     .container__nuevosproductos{
         @include flexbox(flex, column, space-between);
     }
 }
-
 @media screen and (max-width: 576px) {
+    .container-article-aside {
+        margin: 6px 10px;
+    }
     footer{
         padding: 15px;
         height: 150px;
         @include flexbox(flex, column, center);
         align-items: center;
-        
+
             .icono__footer{
             font-size: 18px;
             padding: 8px 0px 0px 8px ;
@@ -89,19 +196,24 @@
             }
         }
     }
-
 @media screen and (max-width: 500px) {
     .hero__index__container .hero__index{
         background-image: url(../multimedia/hero-mobile2.jpg);
         background-position: left center;
     }
+    .container-article-aside{
+        .article-aside p {
+            font-size: 27px;
+            margin-top: 8px;
+        }
+        aside .index-servicios {
+            height: 410px;
+            padding: 0px 50px;
+        }
+    }
     .container__cartas {
         margin: 10px;
         div{
-            width: 351px;
-            height: 200px;
-            padding: 10px;
-            margin-top: 6px;
                 h5{
                 font-size: 16px;
                 }
@@ -120,6 +232,18 @@
         width: 120px;
     }
 }
+@media screen and (max-width: 432px) {
+    .container-article-aside{
+        .article-aside h3 {
+            padding: 6px;
+            height: 40px;
+            font-size: 24px;
+        }
+        aside .index-servicios {
+            padding: 0px 20px;
+        }
+    } 
+}
 @media screen and (max-width: 428px) {
     .header__logo {
         width: 200px;
@@ -136,10 +260,28 @@
         margin-bottom: 3px;
     }
 }
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 378px) {
+    .container-article-aside{
+        .article-aside {
+            h3 {
+                font-size: 23px;
+            }
+            p {
+                font-size: 25px;
+                margin-top: 6px;
+            }
+        }
+        aside .index-servicios {
+            height: 350px;
+        }
+    }
+}
+@media screen and (max-width: 363px) {
     .container__nuevosproductos h3 {
         padding: 8px;
-        height: 71px;
+    }
+    .container-article-aside .article-aside .index-mobile{
+        height: 65px;
     }
 }
 @media screen and (max-width: 328px) {
@@ -155,25 +297,53 @@
             font-size: 14px;
         }
     }
+    .producto .card__producto a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .container-article-aside .article-aside img {
+        height: 267px;
+    }
+    .container-article-aside aside .index-servicios {
+        height: 290px;
+    }
 }
+
+
 /* COSMETICOS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1168px) {
+    .container__cosmeticos {
+        margin: 0px 10px 30px 10px;
+    }
+}
+@media screen and (max-width: 812px) {
+    .container__cosmeticos {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 769px) {
     .listaCategorias ul{
         display: flex;
         flex-flow: row wrap;
     }
     .listaCategorias li{
         margin: 15px;
-    
         a {
         font-size: 17px;
         }
     }
-
+    .ordenar {
+        width: 357px;
+        margin-left: 60px;
+    }
 }
 @media screen and (max-width: 700px) {
     .container__cosmeticos .ordenar{
         font-size: 15px
+    }
+    .container__cosmeticos .volver {
+        margin-left: 0px;
+        width: 600px;
     }
 }
 @media screen and (max-width: 675px) {
@@ -181,27 +351,23 @@
         margin: 10px;
         @include flexbox(flex, column, space-between);
         align-items: center;
-    
-        h3{
-        text-align: center;
-        }
-    
         .titulo__cosmeticos h3 {
-        margin: 0px;
+        margin-top: 70px;
         }
-        
         .ordenar{
         margin-top: 10px;
         }
     }
+    .container__cosmeticos .volver {
+        width: 262px;
+    }
 }
-
 @media screen and (max-width: 500px) {
     .hero__cosmeticos__container .hero__cosmeticos{
         background-image: url(../multimedia/hero-cosmeticos-mobile.jpg);
         background-size: cover;
         background-position: center center;
-        
+        height: 520px;
         h1{
         font-size: 29px;
         height: 60px;
@@ -209,15 +375,39 @@
         }
     }
 }
+@media screen and (max-width: 418px) {
+    .ordenar {
+        margin-left: 10px;
+        width: 250px;
+    }
+}
+
 
 /* ESCUELA */
+@media screen and (max-width: 1025px) {
+    .curso__container {
+        margin: 70px 0px;
+        .curso__programa {
+            width: 95%;
+        }
+        .volver {
+            margin-left: 0px;
+            width: 840px;
+        }
+    }
+    
+}
 @media screen and (max-width: 967px) {
     .curso__container .curso__programa .programa div h2 {
         font-size: 37px;
     }
-    .curso__container .curso__programa .programa div p {
-        overflow: auto;
-        height: 266px;
+    .listaCategorias{
+        li {
+            margin-top: 27px;
+        }
+        ul {
+            margin-top: 30px;
+        }
     }
 }
 @media screen and (max-width: 907px) {
@@ -225,8 +415,6 @@
         font-size: 33px;
     }
     .curso__container .curso__programa .programa div p {
-        overflow: auto;
-        height: 251px;
         font-size: 16px;
     }
     .curso__container .curso__programa .programa div button {
@@ -242,9 +430,6 @@
             padding: 0;
             h2 {
                 font-size: 27px;
-            }
-            p {
-                height: 110px;
             }
             button {
                 padding: 5px;
@@ -270,7 +455,76 @@
         font-size: 14px;
     }
 }
+
+
 /* NOSOTRAS */
+@media screen and (max-width: 1258px) {
+    .instagram__nosotras {
+        margin: 30px;
+    }
+    .instagram__nosotras .redesClick {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1184px) {
+    .instagram__nosotras .redesClick {
+        width: 230px;
+    }
+}
+@media screen and (max-width: 1134px) {
+    .instagram__nosotras{
+        .instagram__iframeUno {
+            width: 370px;
+            height: 501px;
+        }
+        .instagram__iframeDos {
+            width: 370px;
+            height: 571px;
+        }
+        .redesClick {
+            width: 217px;
+        }
+        .instagram__iframeTres {
+            width: 370px;
+            height: 571px;
+        }
+        .instagram__iframeCuatro {
+            width: 370px;
+            height: 571px;
+        }
+    }
+}
+@media screen and (max-width: 1075px) {
+    .instagram__nosotras{
+        .followUs{
+            h4 {
+                font-size: 65px;
+                span {
+                    font-size: 144px;
+                }
+            }
+            .click {
+                font-size: 40px;
+            }
+        }
+        .instagram__iframeUno {
+            width: 350px;
+            height: 481px;
+        }
+        .instagram__iframeDos {
+            width: 350px;
+            height: 546px;
+        }
+        .instagram__iframeTres {
+            width: 350px;
+            height: 543px;
+        }
+        .instagram__iframeCuatro {
+            width: 350px;
+            height: 544px;
+        }
+    }
+}
 @media screen and (max-width: 1116px) {
     .hero__nosotras__container .hero__nosotras h3 {
         font-size: 161px;
@@ -334,6 +588,8 @@
     }
     
 }
+
+
 /* CONTACTO */
 @media screen and (max-width: 1137px){
     .container__contacto .contacto {
@@ -376,6 +632,48 @@
         top: 10px;
         right: 0px;
     }
+    .container__contacto{
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 18px;
+        }
+        form {
+            width: 544px;
+        }
+    }
+    .info__contacto {
+        h4 {
+            font-size: 27px;
+        }
+        div {
+            font-size: 17px;
+        }
+    }
+}
+@media screen and (max-width: 590px) {
+    .container__contacto{
+        h1 {
+            font-size: 44px;
+        }
+        p {
+            font-size: 17px;
+        }
+        form {
+            width: 440px;
+            height: 446px;
+            padding: 30px 20px;
+        }
+    }
+    .info__contacto {
+        div {
+            font-size: 16px;
+        }
+        .redes {
+            font-size: 28px;
+        }
+    }
 }
 @media screen and (max-width: 530px) {
     .hero__contacto h3 {
@@ -408,5 +706,78 @@
     }
     .mapa__contacto {
         height: 387px;
+    }
+}
+@media screen and (max-width: 469px) {
+    .container__contacto {
+        h1 {
+            font-size: 34px;
+        }
+        form{
+            input {
+                font-size: 15px;
+            }
+            select {
+                font-size: 15px;
+            }
+            textarea {
+                font-size: 15px;
+            }
+        }
+        .enviarMensaje {
+            font-size: 17px;
+        }
+    }
+    .info__contacto div .redes {
+        font-size: 29px;
+    }
+}
+@media screen and (max-width: 427px) {
+    .hero__contacto {
+        h2 {
+            font-size: 22px;
+            width: 109px;
+        }
+        h3 {
+            font-size: 20px;
+            padding: 13px;
+            width: 383px;
+        }
+    } 
+}
+@media screen and (max-width: 355px) {
+    .hero__contacto h3 {
+        font-size: 17px;
+        padding: 13px;
+        width: 310px;
+    }
+    .container__contacto{
+        height: 563px;
+        h1 {
+            font-size: 27px;
+        }
+        p {
+            font-size: 16px;
+        }
+        form {
+            width: 315px;
+            height: 383px;
+            padding: 21px 14px;
+            .enviarMensaje {
+                font-size: 17px;
+            }
+        }
+    }
+    .info__contacto{
+        h4 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 15px;
+        }
+        div .redes {
+            padding: 15px;
+            font-size: 27px;
+        }
     }
 }

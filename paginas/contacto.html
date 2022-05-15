@@ -77,47 +77,40 @@
         <h1 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Contactate con nosotras</h1>
         <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">En Ella's estamos muy contentas de poder ayudarte. <br>
             Dejanos tu mensaje y en breve nos estaremos comunicando con vos.</p>
-        <div class="form__contacto col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <form>
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" placeholder="Nombre" name="nombre">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" placeholder="Apeliido" name="apellido">
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="nombre@gmail.com" name="email">
-                    <label for="whatsapp">WhatsApp:</label>
-                    <input type="text" name="whatsapp" placeholder="xxxx-xxxx">
-                </p>
-                <p>
-                    <textarea name="mensaje" cols="30" rows="4" placeholder="Deja tu mensaje aquí"
-                        class="mensaje"></textarea>
-                </p>
-                <p>
-                    <input type="submit" value="Enviar Mensaje" class="enviarMensaje">
-                </p>
-            </form>
-        </div>
+        <form class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <input type="text" placeholder="Nombre:" name="nombre" required>
+            <input type="text" placeholder="Apellido:" name="apellido" required>
+            <input type="email" placeholder="Email:" name="email" required>
+            <input type="text" name="whatsapp" placeholder="WhatsApp:">
+            <select name="categorias">
+                <option value="consulta">Consulta General</option>
+                <option value="cosmeticos">Compra de Cosméticos</option>
+                <option value="curso">Curso de Maquillaje</option>
+                <option value="taller">Taller Especial Novias</option>
+                <option value="mkt">Taller Marketing para Maquilladores</option>
+                <option value="novias">Servicio Maquillaje & Peinado para Novias </option>
+                <option value="eventos">Servicio Maquillaje & Peinado para Eventos</option>
+                <option value="moda">Maquillaje & Peinado para Moda & Producciones</option>
+            </select>
+            <textarea name="mensaje" cols="30" rows="4" placeholder="Deja tu mensaje aquí:"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="enviarMensaje">
+        </form>
     </section>
 
     <section class="row info__contacto">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h4>Encontranos en</h4>
-            <p>
-                Dirección: Av. 9 de Julio s/n, C1043 CABA <br>
-                Teléfono: 1234-5678 <br>
-                Email: info@ellas.com <br>
+            <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Encontranos en</h4>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>Dirección: Av. 9 de Julio, C1043 CABA</p>
+                <p>Teléfono: 1234-5678</p>
+                <p>Email: info@ellas.com</p>
                 <a href="https://www.instagram.com/" target="_BLANK"><i
-                        class="fa-brands fa-instagram icono__footer redes btn--instagram instagram"></i></a>
+                        class="fa-brands fa-instagram icono__footer redes"></i></a>
                 <a href="https://twitter.com/" target="_BLANK"><i
-                        class="fa-brands fa-twitter icono__footer redes btn--twitter twitter"></i></a>
+                        class="fa-brands fa-twitter icono__footer redes"></i></a>
                 <a href="https://www.facebook.com/" target="_BLANK"><i
-                        class="fa-brands fa-facebook-square icono__footer redes btn--facebook facebook"></i></a>
-
-            </p>
-        </div>
+                        class="fa-brands fa-facebook-square icono__footer redes"></i></a>
+                <a href="https://www.tiktok.com/" target="_BLANK"><i class="fa-brands fa-tiktok redes"></i></a>
+            </div>
     </section>
 
     <div class="row mapa__contacto">

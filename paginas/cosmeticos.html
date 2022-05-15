@@ -65,40 +65,85 @@
         </nav>
     </header>
 
-    <section class="row hero__cosmeticos__container">
+    <section class="row hero__cosmeticos__container" id="categorias">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero__cosmeticos">
             <h1>COSMÉTICOS</h1>
+            <p><span class="p-uno">PRODUCTOS DE</span><span class="p-dos">PRIMERA CALIDAD</span><span class="p-tres">24/7 con vos</span></p>
         </div>
     </section>
 
     <section class="row listaCategorias">
-        <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <ul class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <li><a href="#rostro">ROSTRO</a></li>
             <li><a href="#labios">LABIOS</a></li>
             <li><a href="#ojos">OJOS</a></li>
-            <li><a href="#rostro">ROSTRO</a></li>
-            <li><a href="#brochas">BROCHAS & ACCESORIOS</a></li>
-            <li><a href="#piel">PIEL</a></li>
         </ul>
+
+        <form class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ordenar">
+            <label for="secciones">Ordenar por:</label>
+            <select name="secciones">
+                <option value="vendidos">Más Vendidos</option>
+                <option value="precioMayor">Precio: Mayor a Menor</option>
+                <option value="precioMenor">Precio: Menor a Mayor</option>
+                <option value="a">A-Z</option>
+                <option value="z">Z-A</option>
+                <option value="nuevo">Más Nuevo al más Viejo</option>
+                <option value="viejo">Más Viejo al más Nuevo</option>
+            </select>
+        </form>
     </section>
 
-    <section class="row container__cosmeticos">
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 titulo__cosmeticos">
-            <h3>LABIOS</h3>
+    <!-- ------------ ROSTRO ------------ -->
+    <section class="row container__cosmeticos" id="rostro">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo__cosmeticos">
+            <h3>ROSTRO</h3>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ordenar">
-            <form>
-                <label for="secciones">Ordenar por:</label>
-                <select name="secciones">
-                    <option value="vendidos">Más Vendidos</option>
-                    <option value="precioMayor">Precio: Mayor a Menor</option>
-                    <option value="precioMenor">Precio: Menor a Mayor</option>
-                    <option value="a">A-Z</option>
-                    <option value="z">Z-A</option>
-                    <option value="nuevo">Más Nuevo al más Viejo</option>
-                    <option value="viejo">Más Viejo al más Nuevo</option>
-                </select>
-            </form>
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top rostroUno"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">MAKE HIM BLUSH BLUSH STICK</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top rostroDos"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">CUPID'S CRUSH BLUSH STICK</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top rostroTres"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">HEY SUGAR BLUSH STICK</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top rostroCuatro"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">HIGHLIGHTER</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 volver">
+            <a href="#categorias">↑ volver</a>
+        </div>
+    </section>
+
+    <!-- ------------LABIOS------------ -->
+    <section class="row container__cosmeticos" id="labios">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo__cosmeticos">
+            <h3>LABIOS</h3>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
@@ -172,8 +217,96 @@
                 <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
             </div>
         </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 volver">
+            <a href="#categorias">↑ volver</a>
+        </div>
     </section>
 
+
+    <!-- ------------ OJOS ------------ -->
+    <section class="row container__cosmeticos" id="ojos">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo__cosmeticos">
+            <h3>OJOS</h3>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoSeis"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">SHIMMERY BRONZE GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoSiete"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">SHIMMERY GREY GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoOcho"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">KYLINER BRUSH TIP LIQUID EYELINER PEN</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top productoD"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">SHIMMERY BLUE GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top productoE"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">SHIMMERY BLACK GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top productoF"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">SHIMMERY PURPLE GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top productoG"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">MATTE PLUM GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top productoH"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">MATTE GREEN GEL EYELINER PENCIL</h5>
+                <p class="card-text">$1000 <span>$1400</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 volver">
+            <a href="#categorias">↑ volver</a>
+        </div>
+    </section>
+        
     <div>
         <img src="../multimedia/whatsapp1.png" alt="icono-whatsapp" class="whatsapp__icono">
     </div>
