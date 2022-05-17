@@ -915,13 +915,13 @@ nav .header__nav .menu li .active__nav {
     p{
         @include p-hero;
         .p-uno{
-            @include p-hero-estilos ($colorSecundario, 28px, 233px, 127px, 508px)
+            @include p-hero-estilos ($colorSecundario, 28px, 233px, 130px, 508px)
         }
         .p-dos{
             @include p-hero-estilos( $colorPrincipal, 34px, 426px, 166px, 426px)
         }
         .p-tres{
-            @include p-hero-estilos( $colorSecundario, 28px, 121px, 210px, 565px)
+            @include p-hero-estilos( $colorSecundario, 28px, 121px, 208px, 565px)
         }
     }
 }
@@ -938,16 +938,17 @@ nav .header__nav .menu li .active__nav {
         padding: 0;
         height: 460px;
         .programa {
-            padding: 25px;
+            padding: 30px;
             div {
                 color: #fff;
+                padding: 0px;
                 h2 {
                     font-family: $fuentePrincipal;
-                    font-size: 40px;
+                    font-size: 38px;
                 }
                 .texto{
                     overflow: auto;
-                    height: 280px;
+                    height: 295px;
                     background-color: #282828;
                     padding: 25px;
                     p{
@@ -980,6 +981,7 @@ nav .header__nav .menu li .active__nav {
         font-size: 25px;
         margin-top: 20px;
         text-align: left;
+        padding: 0px 0px 0px 144px;
         a{
             text-decoration: none;
             color: white;
@@ -1009,7 +1011,7 @@ nav .header__nav .menu li .active__nav {
             @include cursoAnimacion;
         }
         .programa div .texto{
-            height: 230px;
+            height: 249px;
         }
     } 
 }
@@ -1053,6 +1055,8 @@ nav .header__nav .menu li .active__nav {
 /* -------------------- CATEGORIAS ------------------------ */
 .listaCategorias ul {
     flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 .listaCategorias li a {
@@ -1088,9 +1092,10 @@ nav .header__nav .menu li .active__nav {
 
         }
         .info {
-            padding: 15px 35px;
+            padding: 30px;
             div {
                 color: #fff;
+                padding: 0px;
                 h2 {
                     font-family: $fuentePrincipal;
                     font-size: 42px;
@@ -1104,7 +1109,7 @@ nav .header__nav .menu li .active__nav {
                     overflow: auto;
                     height: 280px;
                     background-color: #282828;
-                    padding: 22px;
+                    padding: 10px;
                     .intro{
                         text-align: center;
                     }
@@ -1120,7 +1125,6 @@ nav .header__nav .menu li .active__nav {
                     }
                 }
                 .texto-moda{
-                    overflow: none;
                     height: 260px;
                 }
                 button {
@@ -1144,9 +1148,9 @@ nav .header__nav .menu li .active__nav {
     .volver{
         font-family: $fuentePrincipal;
         font-size: 25px;
-        margin-top: 20px;
-        margin-left: 40px;
         text-align: left;
+        padding: 0px;
+        padding-left: 60px;
         a{
             text-decoration: none;
             color: white;
@@ -1210,7 +1214,7 @@ nav .header__nav .menu li .active__nav {
 
 .instagram__nosotras {
     margin: 40px;
-    display: flex;
+    @include flexbox (flex, row, center);
     .instagram__iframeUno{
         width: 400px;
         height: 533px;
@@ -1321,6 +1325,7 @@ nav .header__nav .menu li .active__nav {
         .enfasis{
             font-family: $fuentePrincipal;
             font-size: 28px;
+            line-height: 1;
         }
     }
 }

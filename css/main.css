@@ -938,7 +938,7 @@ nav .header__nav .menu li .active__nav {
       background-color: #0f0f0f;
       font-size: 28px;
       width: 233px;
-      top: 127px;
+      top: 130px;
       left: 508px; }
     .hero__escuela__container .hero__escuela p .p-dos {
       background-color: #dd0030;
@@ -950,7 +950,7 @@ nav .header__nav .menu li .active__nav {
       background-color: #0f0f0f;
       font-size: 28px;
       width: 121px;
-      top: 210px;
+      top: 208px;
       left: 565px; }
 
 /* -------------------- PROGRAMA ------------------------ */
@@ -965,15 +965,16 @@ nav .header__nav .menu li .active__nav {
     padding: 0;
     height: 460px; }
     .curso__container .curso__programa .programa {
-      padding: 25px; }
+      padding: 30px; }
       .curso__container .curso__programa .programa div {
-        color: #fff; }
+        color: #fff;
+        padding: 0px; }
         .curso__container .curso__programa .programa div h2 {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-          font-size: 40px; }
+          font-size: 38px; }
         .curso__container .curso__programa .programa div .texto {
           overflow: auto;
-          height: 280px;
+          height: 295px;
           background-color: #282828;
           padding: 25px; }
           .curso__container .curso__programa .programa div .texto p {
@@ -997,7 +998,8 @@ nav .header__nav .menu li .active__nav {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 25px;
     margin-top: 20px;
-    text-align: left; }
+    text-align: left;
+    padding: 0px 0px 0px 144px; }
     .curso__container .volver a {
       text-decoration: none;
       color: white; }
@@ -1027,7 +1029,7 @@ nav .header__nav .menu li .active__nav {
     animation-duration: 10s;
     animation-iteration-count: infinite; }
   .tallerMarketing .curso__programa .programa div .texto {
-    height: 230px; }
+    height: 249px; }
 
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
 /* -------------------- HERO ------------------------ */
@@ -1079,7 +1081,9 @@ nav .header__nav .menu li .active__nav {
 
 /* -------------------- CATEGORIAS ------------------------ */
 .listaCategorias ul {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-bottom: 0px; }
 
 .listaCategorias li a {
   padding: 10px 10px; }
@@ -1112,9 +1116,10 @@ nav .header__nav .menu li .active__nav {
       animation-duration: 20s;
       animation-iteration-count: infinite; }
     .servicios__container .servicios__info .info {
-      padding: 15px 35px; }
+      padding: 30px; }
       .servicios__container .servicios__info .info div {
-        color: #fff; }
+        color: #fff;
+        padding: 0px; }
         .servicios__container .servicios__info .info div h2 {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           font-size: 42px;
@@ -1126,7 +1131,7 @@ nav .header__nav .menu li .active__nav {
           overflow: auto;
           height: 280px;
           background-color: #282828;
-          padding: 22px; }
+          padding: 10px; }
           .servicios__container .servicios__info .info div .texto .intro {
             text-align: center; }
           .servicios__container .servicios__info .info div .texto p {
@@ -1137,7 +1142,6 @@ nav .header__nav .menu li .active__nav {
             font-weight: bold;
             text-decoration: underline; }
         .servicios__container .servicios__info .info div .texto-moda {
-          overflow: none;
           height: 260px; }
         .servicios__container .servicios__info .info div button {
           position: relative;
@@ -1155,9 +1159,9 @@ nav .header__nav .menu li .active__nav {
   .servicios__container .volver {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 25px;
-    margin-top: 20px;
-    margin-left: 40px;
-    text-align: left; }
+    text-align: left;
+    padding: 0px;
+    padding-left: 60px; }
     .servicios__container .volver a {
       text-decoration: none;
       color: white; }
@@ -1212,7 +1216,9 @@ nav .header__nav .menu li .active__nav {
 
 .instagram__nosotras {
   margin: 40px;
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
   .instagram__nosotras .instagram__iframeUno {
     width: 400px;
     height: 533px;
@@ -1309,7 +1315,8 @@ nav .header__nav .menu li .active__nav {
       background-color: #dd0030; }
     .container__ellas p .enfasis {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 28px; }
+      font-size: 28px;
+      line-height: 1; }
 
 /*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
 /* -------------------- HERO ------------------------ */
@@ -1678,11 +1685,50 @@ nav .header__nav .menu li .active__nav {
 /* COSMETICOS */
 @media screen and (max-width: 1168px) {
   .container__cosmeticos {
-    margin: 0px 10px 30px 10px; } }
+    margin: 0px 10px 30px 10px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    left: 608px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    left: 607px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    left: 642px; } }
+
+@media screen and (max-width: 1000px) {
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    left: 518px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    left: 519px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    left: 559px; } }
+
+@media screen and (max-width: 864px) {
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    left: 449px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    left: 450px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    left: 486px; } }
 
 @media screen and (max-width: 812px) {
   .container__cosmeticos {
     justify-content: space-around; } }
+
+@media screen and (max-width: 774px) {
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    font-size: 25px;
+    width: 184px;
+    left: 404px;
+    top: 106px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    font-size: 27px;
+    width: 233px;
+    top: 140px;
+    left: 405px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    font-size: 36px;
+    width: 217px;
+    top: 177px;
+    left: 431px; } }
 
 @media screen and (max-width: 769px) {
   .listaCategorias ul {
@@ -1715,7 +1761,40 @@ nav .header__nav .menu li .active__nav {
     .container__cosmeticos .ordenar {
       margin-top: 10px; }
   .container__cosmeticos .volver {
-    width: 262px; } }
+    width: 262px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    left: 355px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    left: 356px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    left: 362px; } }
+
+@media screen and (max-width: 606px) {
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    font-size: 22px;
+    width: 160px;
+    left: 320px;
+    top: 111px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    font-size: 24px;
+    width: 208px;
+    left: 321px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    font-size: 30px;
+    width: 181px;
+    top: 171px;
+    left: 325px; } }
+
+@media screen and (max-width: 544px) {
+  .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+    top: 335px;
+    left: 317px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+    top: 365px;
+    left: 269px; }
+  .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+    top: 398px;
+    left: 297px; } }
 
 @media screen and (max-width: 500px) {
   .hero__cosmeticos__container .hero__cosmeticos {
@@ -1726,7 +1805,16 @@ nav .header__nav .menu li .active__nav {
     .hero__cosmeticos__container .hero__cosmeticos h1 {
       font-size: 29px;
       height: 60px;
-      width: 196px; } }
+      width: 196px; }
+    .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
+      left: 10px;
+      top: 335px; }
+    .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
+      left: 10px;
+      top: 365px; }
+    .hero__cosmeticos__container .hero__cosmeticos p .p-tres {
+      top: 398px;
+      left: 10px; } }
 
 @media screen and (max-width: 418px) {
   .ordenar {
@@ -1735,54 +1823,403 @@ nav .header__nav .menu li .active__nav {
 
 /* ESCUELA */
 @media screen and (max-width: 1025px) {
-  .curso__container {
-    margin: 70px 0px; }
-    .curso__container .curso__programa {
-      width: 95%; }
-    .curso__container .volver {
-      margin-left: 0px;
-      width: 840px; } }
+  .curso__container .curso__programa {
+    width: 90%; }
+  .curso__container .volver {
+    padding-left: 65px; } }
 
-@media screen and (max-width: 967px) {
+@media screen and (max-width: 915px) {
+  .hero__escuela__container .hero__escuela p .p-uno {
+    left: 248px; }
+  .hero__escuela__container .hero__escuela p .p-dos {
+    left: 170px; }
+  .hero__escuela__container .hero__escuela p .p-tres {
+    left: 291px; }
   .curso__container .curso__programa .programa div h2 {
-    font-size: 37px; }
+    font-size: 36px; }
   .listaCategorias li {
     margin-top: 27px; }
   .listaCategorias ul {
     margin-top: 30px; } }
 
-@media screen and (max-width: 907px) {
-  .curso__container .curso__programa .programa div h2 {
-    font-size: 33px; }
-  .curso__container .curso__programa .programa div p {
-    font-size: 16px; }
-  .curso__container .curso__programa .programa div button {
-    position: relative;
-    left: 25%;
-    padding: 7px; } }
+@media screen and (max-width: 870px) {
+  .hero__escuela__container .hero__escuela {
+    height: 520px; }
+  .curso__container .curso__programa .programa {
+    padding: 20px; }
+    .curso__container .curso__programa .programa div h2 {
+      font-size: 33px; }
+    .curso__container .curso__programa .programa div p {
+      font-size: 15px; }
+    .curso__container .curso__programa .programa div button {
+      padding: 7px; }
+    .curso__container .curso__programa .programa div .texto {
+      height: 310px;
+      padding: 20px; }
+  .tallerMarketing .curso__programa .programa div .texto {
+    height: 270px;
+    padding: 20px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .hero__escuela__container .hero__escuela p .p-uno {
+    font-size: 27px;
+    width: 222px;
+    top: 314px;
+    left: 0px; }
+  .hero__escuela__container .hero__escuela p .p-dos {
+    font-size: 29px;
+    width: 363px;
+    top: 349px;
+    left: 0px; }
+  .hero__escuela__container .hero__escuela p .p-tres {
+    font-size: 27px;
+    width: 115px;
+    top: 385px;
+    left: 0px; }
+  .listaCategorias li {
+    margin-top: 7px; }
   .curso__container {
-    margin-top: 26px; }
-    .curso__container .curso__programa .programa div {
-      padding: 0; }
-      .curso__container .curso__programa .programa div h2 {
-        font-size: 27px; }
-      .curso__container .curso__programa .programa div button {
-        padding: 5px;
-        font-size: 15px; }
-  .curso__programa .curso__img {
-    height: 200px; }
+    margin: 25px 0px; }
+    .curso__container .curso__programa {
+      height: 863px; }
+      .curso__container .curso__programa .curso__img {
+        height: 430px;
+        width: 400px;
+        margin-left: 138px; }
+      .curso__container .curso__programa .programa div .texto {
+        height: 293px;
+        padding: 10px; }
+      .curso__container .curso__programa .programa div .texto__tablet {
+        height: 315px; }
+    .curso__container .volver {
+      padding-left: 49px;
+      margin-top: 0px;
+      margin-bottom: 20px; }
+    .curso__container .curso__programa__tablet {
+      height: 882px; }
   .tallerNovias .curso__programa .taller__img {
-    height: 200px; }
-  .tallerMarketing .curso__programa .marketing__img {
-    height: 200px; } }
+    height: 430px;
+    width: 400px;
+    margin-left: 138px; }
+  .tallerMarketing .curso__programa {
+    height: 1024px; }
+    .tallerMarketing .curso__programa .marketing__img {
+      height: 430px;
+      width: 400px;
+      margin-left: 138px; }
+    .tallerMarketing .curso__programa .programa div .texto {
+      height: 415px;
+      padding: 10px; } }
 
-@media screen and (max-width: 441px) {
-  .curso__container .curso__programa .programa div h2 {
-    font-size: 20px; }
+@media screen and (max-width: 659px) {
+  .curso__container .curso__programa .curso__img {
+    margin-left: 90px; }
+  .tallerNovias .curso__programa .taller__img {
+    margin-left: 90px; }
+  .tallerMarketing .curso__programa .marketing__img {
+    margin-left: 90px; } }
+
+@media screen and (max-width: 590px) {
+  .curso__container .curso__programa {
+    height: 782px; }
+    .curso__container .curso__programa .curso__img {
+      margin-left: 100px;
+      height: 360px;
+      width: 300px; }
+    .curso__container .curso__programa .programa div h2 {
+      font-size: 31px; }
+    .curso__container .curso__programa .programa div button {
+      padding: 7px;
+      font-size: 15px; }
+  .curso__container .curso__programa__tablet {
+    height: 809px; }
+  .tallerNovias .curso__programa .taller__img {
+    margin-left: 100px;
+    height: 360px;
+    width: 300px; }
+  .tallerMarketing .curso__programa {
+    height: 944px; }
+    .tallerMarketing .curso__programa .marketing__img {
+      margin-left: 100px;
+      height: 360px;
+      width: 300px; } }
+
+@media screen and (max-width: 495px) {
+  .curso__container .curso__programa .curso__img {
+    margin-left: 50px; }
+  .tallerNovias .curso__programa .taller__img {
+    margin-left: 50px; }
+  .tallerMarketing .curso__programa .marketing__img {
+    margin-left: 50px; }
   .curso__container .curso__programa .programa div button {
+    left: 25%; } }
+
+@media screen and (max-width: 465px) {
+  .hero__escuela__container .hero__escuela h1 {
+    font-size: 36px;
+    height: 64px;
+    width: 173px; }
+  .listaCategorias ul {
+    padding: 0px; }
+  .curso__container .curso__programa .programa div h2 {
+    font-size: 28px; }
+  .curso__container .curso__programa .curso__img {
+    margin-left: 0px;
+    height: 360px;
+    width: 100%; }
+  .tallerNovias .curso__programa .taller__img {
+    margin-left: 0px;
+    height: 360px;
+    width: 100%; }
+  .tallerMarketing .curso__programa .marketing__img {
+    margin-left: 0px;
+    height: 360px;
+    width: 100%; } }
+
+@media screen and (max-width: 427px) {
+  .hero__escuela__container .hero__escuela {
+    height: 500px; }
+    .hero__escuela__container .hero__escuela p .p-uno {
+      font-size: 25px;
+      width: 206px;
+      top: 316px; }
+    .hero__escuela__container .hero__escuela p .p-dos {
+      font-size: 26px;
+      width: 326px;
+      top: 349px; }
+    .hero__escuela__container .hero__escuela p .p-tres {
+      font-size: 25px;
+      width: 107px;
+      top: 383px; }
+  .listaCategorias li a {
+    font-size: 16px;
+    padding: 10px 5px; }
+  .curso__container .curso__programa .programa div h2 {
+    font-size: 24px; }
+  .curso__container .curso__programa .programa div p {
     font-size: 14px; } }
+
+@media screen and (max-width: 355px) {
+  .hero__escuela__container .hero__escuela {
+    height: 450px; }
+    .hero__escuela__container .hero__escuela h1 {
+      font-size: 33px;
+      height: 61px;
+      width: 161px; }
+    .hero__escuela__container .hero__escuela p .p-uno {
+      font-size: 22px;
+      width: 184px;
+      top: 280px; }
+    .hero__escuela__container .hero__escuela p .p-dos {
+      font-size: 23px;
+      width: 288px;
+      top: 310px; }
+    .hero__escuela__container .hero__escuela p .p-tres {
+      font-size: 22px;
+      width: 95px;
+      top: 340px; }
+  .listaCategorias li {
+    margin-top: 7px;
+    margin-right: 0px;
+    margin-left: 0px; }
+    .listaCategorias li a {
+      font-size: 15px; }
+  .curso__container .curso__programa {
+    height: 750px; }
+    .curso__container .curso__programa .programa div h2 {
+      font-size: 26px; }
+    .curso__container .curso__programa .programa div button {
+      left: 10%; }
+    .curso__container .curso__programa .curso__img {
+      margin-left: 0px;
+      height: 300px;
+      width: 100%; }
+  .tallerNovias .curso__programa .taller__img {
+    margin-left: 0px;
+    height: 300px;
+    width: 100%; }
+  .tallerMarketing .curso__programa {
+    height: 904px; }
+    .tallerMarketing .curso__programa .marketing__img {
+      margin-left: 0px;
+      height: 300px;
+      width: 100%; }
+  .curso__container .curso__programa__tablet {
+    height: 780px; } }
+
+/* SERVICIOS */
+@media screen and (max-width: 1178px) {
+  .hero__servicios__container .hero__servicios p .p-uno {
+    left: 123px; }
+  .hero__servicios__container .hero__servicios p .p-dos {
+    left: 314px; }
+  .hero__servicios__container .hero__servicios p .p-tres {
+    left: 91px; } }
+
+@media screen and (max-width: 1094px) {
+  .listaCategorias li {
+    margin-bottom: 25px; }
+  .servicios__container .servicios__info .info div .texto-moda {
+    height: 284px; } }
+
+@media screen and (max-width: 905px) {
+  .servicios__container .servicios__info .info {
+    padding: 20px; }
+  .servicios__container .servicios__info .info div .texto {
+    height: 303px;
+    padding: 10px; }
+  .servicios__container .servicios__info .info div .texto-moda {
+    height: 280px; } }
+
+@media screen and (max-width: 870px) {
+  .servicios__container .servicios__info .info div h2 {
+    font-size: 39px; }
+  .hero__servicios__container .hero__servicios p .p-uno {
+    font-size: 29px;
+    width: 255px;
+    top: 216px;
+    left: 10px; }
+  .hero__servicios__container .hero__servicios p .p-dos {
+    font-size: 24px;
+    width: 71px;
+    top: 252px;
+    left: 22px; }
+  .hero__servicios__container .hero__servicios p .p-tres {
+    font-size: 46px;
+    width: 293px;
+    top: 286px;
+    left: 10px; } }
+
+@media screen and (max-width: 816px) {
+  .servicios__container .servicios__info .info div h2 {
+    font-size: 36px; }
+  .servicios__container .servicios__info .info div h3 {
+    font-size: 31px; }
+  .hero__servicios__container .hero__servicios p .p-uno {
+    font-size: 27px;
+    width: 240px;
+    top: 216px; }
+  .hero__servicios__container .hero__servicios p .p-dos {
+    font-size: 22px;
+    width: 64px;
+    top: 250px; }
+  .hero__servicios__container .hero__servicios p .p-tres {
+    font-size: 43px;
+    width: 275px;
+    top: 281px; } }
+
+@media screen and (max-width: 767px) {
+  .listaCategorias li {
+    margin-top: 7px; }
+  .servicios__container {
+    margin: 25px 0px; }
+    .servicios__container .servicios__info {
+      height: 970px; }
+      .servicios__container .servicios__info .imagen .novias__img {
+        height: 430px;
+        width: 400px;
+        margin-left: 138px; }
+      .servicios__container .servicios__info .imagen .eventos__img {
+        height: 430px;
+        width: 400px;
+        margin-left: 138px; }
+      .servicios__container .servicios__info .imagen .moda__img {
+        height: 430px;
+        width: 400px;
+        margin-left: 138px; }
+      .servicios__container .servicios__info .info div .texto {
+        height: 350px;
+        padding: 10px; }
+      .servicios__container .servicios__info .info div .texto-moda {
+        height: 237px;
+        padding: 10px; }
+    .servicios__container .volver {
+      padding-left: 49px;
+      margin-top: 0px;
+      margin-bottom: 20px; }
+    .servicios__container .servicios__info__tablet {
+      height: 867px; } }
+
+@media screen and (max-width: 659px) {
+  .servicios__container .servicios__info .imagen .novias__img {
+    margin-left: 90px; }
+  .servicios__container .servicios__info .imagen .eventos__img {
+    margin-left: 90px; }
+  .servicios__container .servicios__info .imagen .moda__img {
+    margin-left: 90px; } }
+
+@media screen and (max-width: 590px) {
+  .servicios__container .servicios__info {
+    height: 900px; }
+    .servicios__container .servicios__info .imagen .novias__img {
+      margin-left: 100px;
+      height: 360px;
+      width: 300px; }
+    .servicios__container .servicios__info .imagen .eventos__img {
+      margin-left: 100px;
+      height: 360px;
+      width: 300px; }
+    .servicios__container .servicios__info .imagen .moda__img {
+      margin-left: 100px;
+      height: 360px;
+      width: 300px; }
+    .servicios__container .servicios__info .info div button {
+      left: 35%;
+      padding: 8px;
+      font-size: 15px; }
+    .servicios__container .servicios__info .info div h2 {
+      font-size: 34px; }
+    .servicios__container .servicios__info .info div h3 {
+      font-size: 30px; }
+  .servicios__container .servicios__info__tablet {
+    height: 789px; } }
+
+@media screen and (max-width: 495px) {
+  .servicios__container .servicios__info .imagen .novias__img {
+    margin-left: 50px; }
+  .servicios__container .servicios__info .imagen .eventos__img {
+    margin-left: 50px; }
+  .servicios__container .servicios__info .imagen .moda__img {
+    margin-left: 50px; }
+  .servicios__container .servicios__info div h2 {
+    font-size: 31px; }
+  .servicios__container .servicios__info div h3 {
+    font-size: 28px; }
+  .servicios__container .servicios__info__tablet {
+    height: 815px; } }
+
+@media screen and (max-width: 590px) {
+  .servicios__container {
+    /* .servicios__info__tablet {
+            height: 789px;
+        } */ }
+    .servicios__container .servicios__info {
+      /* height: 900px; */
+      /* .info div{
+                button {
+                    left: 35%;
+                    padding: 8px;
+                    font-size: 15px;
+                }
+                h2 {
+                    font-size: 34px;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+            } */ }
+      .servicios__container .servicios__info .imagen .novias__img {
+        margin-left: 0px;
+        height: 360px;
+        width: 100%; }
+      .servicios__container .servicios__info .imagen .eventos__img {
+        margin-left: 0px;
+        height: 360px;
+        width: 100%; }
+      .servicios__container .servicios__info .imagen .moda__img {
+        margin-left: 0px;
+        height: 360px;
+        width: 100%; } }
 
 /* NOSOTRAS */
 @media screen and (max-width: 1258px) {
@@ -1831,29 +2268,123 @@ nav .header__nav .menu li .active__nav {
     width: 350px;
     height: 544px; } }
 
-@media screen and (max-width: 1116px) {
-  .hero__nosotras__container .hero__nosotras h3 {
-    font-size: 161px; }
-  .nuestraMision__container .nuestraMision h3 {
-    font-size: 161px; } }
+@media screen and (max-width: 1034px) {
+  .instagram__nosotras .redesClick {
+    height: 498px; }
+  .instagram__nosotras .instagram__iframeUno {
+    width: 320px;
+    height: 448px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 320px;
+    height: 508px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 320px;
+    height: 508px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 320px;
+    height: 508px; } }
+
+@media screen and (max-width: 974px) {
+  .container__nosotras .container__nosotras h3 {
+    font-size: 75px; }
+  .container__nosotras p {
+    font-size: 17px; }
+  .instagram__nosotras .instagram__iframeUno {
+    width: 280px;
+    height: 406px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 280px;
+    height: 460px; }
+  .instagram__nosotras .redesClick {
+    height: 440px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 280px;
+    height: 458px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 280px;
+    height: 457px; }
+  .container__ellas h3 {
+    font-size: 75px; }
+  .container__ellas p {
+    font-size: 17px; } }
 
 @media screen and (max-width: 895px) {
-  .hero__nosotras__container .hero__nosotras h3 {
-    font-size: 130px; }
-  .nuestraMision__container .nuestraMision h3 {
-    font-size: 130px; }
+  .container__nosotras h3 {
+    font-size: 70px; }
   .container__nosotras p {
     width: 700px;
-    padding: 20px; }
+    padding: 0px;
+    padding-bottom: 10px; }
+  .container__ellas h3 {
+    font-size: 70px; }
   .container__ellas p {
-    padding: 20px;
-    width: 700px; } }
+    padding: 0px;
+    width: 700px;
+    padding-bottom: 10px; }
+  .instagram__nosotras .instagram__iframeUno {
+    width: 260px;
+    height: 410px;
+    padding: 0px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 260px;
+    height: 432px; }
+  .instagram__nosotras .redesClick {
+    height: 400px; }
+    .instagram__nosotras .redesClick .click {
+      font-size: 31px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 260px;
+    height: 464px;
+    padding: 0px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 260px;
+    height: 434px; } }
+
+@media screen and (max-width: 854px) {
+  .instagram__nosotras .instagram__iframeUno {
+    width: 215px;
+    height: 376px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 225px;
+    height: 390px; }
+  .instagram__nosotras .followUs {
+    padding-top: 125px; }
+    .instagram__nosotras .followUs h4 {
+      font-size: 62px; }
+    .instagram__nosotras .followUs .click {
+      left: 163px;
+      top: 223px;
+      font-size: 35px; }
+  .instagram__nosotras .redesClick {
+    height: 360px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 215px;
+    height: 410px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 225px;
+    height: 392px; } }
+
+@media screen and (max-width: 774px) {
+  .container__nosotras h3 {
+    font-size: 60px; }
+  .container__ellas h3 {
+    font-size: 60px; }
+  .instagram__nosotras {
+    margin: 10px; }
+    .instagram__nosotras .followUs {
+      width: 225px; }
+      .instagram__nosotras .followUs h4 {
+        font-size: 54px; }
+        .instagram__nosotras .followUs h4 span {
+          font-size: 111px; }
+      .instagram__nosotras .followUs .click {
+        left: 138px;
+        top: 211px;
+        font-size: 30px; } }
 
 @media screen and (max-width: 730px) {
-  .hero__nosotras__container .hero__nosotras h3 {
-    font-size: 100px; }
-  .nuestraMision__container .nuestraMision h3 {
-    font-size: 100px; }
+  .hero__nosotras__container .hero__nosotras {
+    height: 450px; }
   .container__nosotras p {
     width: 499px;
     font-size: 15px; }
@@ -1863,19 +2394,116 @@ nav .header__nav .menu li .active__nav {
   .hero__nosotras__container .hero__nosotras h2 {
     font-size: 30px; }
   .nuestraMision__container .nuestraMision h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .nuestraMision__container .nuestraMision {
+    height: 400px; }
+  .instagram__nosotras .instagram__iframeUno {
+    width: 180px;
+    height: 329px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 200px;
+    height: 357px; }
+  .instagram__nosotras .followUs {
+    width: 200px; }
+    .instagram__nosotras .followUs h4 {
+      font-size: 48px; }
+      .instagram__nosotras .followUs h4 span {
+        font-size: 101px; }
+    .instagram__nosotras .followUs .click {
+      left: 130px;
+      top: 200px;
+      font-size: 27px; }
+  .instagram__nosotras .redesClick {
+    width: 175px; }
+    .instagram__nosotras .redesClick .click {
+      font-size: 25px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 180px;
+    height: 364px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 200px;
+    height: 360px; } }
+
+@media screen and (max-width: 624px) {
+  .instagram__nosotras .instagram__iframeUno {
+    top: 0px;
+    width: 210px;
+    height: 357px; }
+  .instagram__nosotras .followUs {
+    padding-top: 40px;
+    padding-bottom: 20px; }
+    .instagram__nosotras .followUs .click {
+      left: 130px;
+      top: 114px;
+      font-size: 25px; }
+  .instagram__nosotras .redesClick {
+    width: 68px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    bottom: 0px; } }
+
+@media screen and (max-width: 516px) {
+  .container__nosotras h3 {
+    font-size: 54px; }
+  .container__nosotras p {
+    width: 412px; }
+  .container__ellas h3 {
+    font-size: 54px; }
+  .container__ellas p {
+    width: 412px; } }
+
+@media screen and (max-width: 492px) {
+  .instagram__nosotras .redesClick {
+    flex-direction: row;
+    width: 100%;
+    height: 60px; }
+  .instagram__nosotras .followUs {
+    padding-bottom: 0px; } }
+
+@media screen and (max-width: 454px) {
+  .instagram__nosotras .instagram__iframeUno {
+    width: 300px;
+    height: 451px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 300px;
+    height: 514px;
+    margin-top: 10px;
+    padding: 0px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 300px;
+    height: 515px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 300px;
+    height: 512px;
+    padding: 0px;
+    margin-top: 10px; } }
 
 @media screen and (max-width: 430px) {
-  .hero__nosotras__container .hero__nosotras h3 {
-    font-size: 72px; }
-  .nuestraMision__container .nuestraMision h3 {
-    font-size: 72px; }
+  .hero__nosotras__container .hero__nosotras {
+    height: 400px; }
+    .hero__nosotras__container .hero__nosotras h2 {
+      font-size: 28px; }
+  .nuestraMision__container .nuestraMision {
+    height: 350px; }
+    .nuestraMision__container .nuestraMision h2 {
+      font-size: 28px; }
   .container__nosotras p {
-    width: 345px;
+    width: 300px;
     font-size: 14px; }
   .container__ellas p {
-    width: 345px;
-    font-size: 14px; } }
+    width: 300px;
+    font-size: 14px; }
+  .instagram__nosotras .instagram__iframeUno {
+    width: 250px;
+    height: 399px; }
+  .instagram__nosotras .instagram__iframeDos {
+    width: 250px;
+    height: 450px; }
+  .instagram__nosotras .instagram__iframeTres {
+    width: 250px;
+    height: 449px; }
+  .instagram__nosotras .instagram__iframeCuatro {
+    width: 250px;
+    height: 449px; } }
 
 /* CONTACTO */
 @media screen and (max-width: 1137px) {
