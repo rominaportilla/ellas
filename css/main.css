@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes imagenCurso {
   0% {
     background-image: url(../multimedia/cursoMaquillaje3.jpg);
@@ -157,9 +156,7 @@ header {
   header nav {
     background-color: #0f0f0fe3;
     width: 100%;
-    border-bottom: 2px solid black;
-    /* height: 100%; */
-    /* ESTO ME SACÓ EL BACKGROUND DEL SUBMENU */ }
+    border-bottom: 2px solid black; }
 
 .header__logo {
   padding: 10px;
@@ -184,10 +181,7 @@ header {
     color: #dd0030; }
 
 .header__navbar .header__nav {
-  padding: 10px;
-  /* display: flex;
-    flex-flow: row nowrap; */
-  /* ESTO ME ROMPIO EL HEADER */ }
+  padding: 10px; }
   .header__navbar .header__nav .menu li a {
     color: white;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -563,7 +557,8 @@ footer {
   footer .icono__footer, footer div p {
     color: #fff;
     font-size: 14px;
-    padding: 10px 0px 0px 10px; }
+    padding: 10px 0px 0px 10px;
+    cursor: pointer; }
   footer div {
     padding-top: 20px; }
     footer div p {
@@ -903,7 +898,7 @@ nav .header__nav .menu li .active__nav {
       .container__cosmeticos .cosmetico .imagen__cosmeticoCuatro:hover {
         background-image: url(../multimedia/cosmetico-hover-cuatro.png); }
 
-/* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
+/*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
   background-image: url(../multimedia/studio-ellas.jpg);
@@ -1085,8 +1080,10 @@ nav .header__nav .menu li .active__nav {
   padding: 0px;
   margin-bottom: 0px; }
 
-.listaCategorias li a {
-  padding: 10px 10px; }
+.listaCategorias li {
+  text-align: center; }
+  .listaCategorias li a {
+    padding: 10px 10px; }
 
 /* -------------------- info ------------------------ */
 .servicios__container {
@@ -1513,17 +1510,51 @@ nav .header__nav .menu li .active__nav {
       font-size: 17px;
       padding-bottom: 0px; }
     .container__cartas div p {
-      font-size: 15px; } }
-
-@media screen and (max-width: 900px) {
+      font-size: 15px; }
   .carousel__index__container .carousel__index .carousel__indexUno {
     background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/hero-tablet.jpg);
     background-size: cover;
     background-position: center center; }
-  .carousel__index__container .carousel__index .carousel__indexDos {
-    background-position: center left; }
+    .carousel__index__container .carousel__index .carousel__indexUno h1 {
+      font-size: 73px;
+      margin-top: 181px;
+      margin-bottom: 0px;
+      margin-left: 22px; }
+    .carousel__index__container .carousel__index .carousel__indexUno p {
+      font-size: 24px;
+      margin-left: 25px;
+      margin-bottom: 5px; }
+    .carousel__index__container .carousel__index .carousel__indexUno button {
+      margin-left: 59px; }
+  .carousel__index__container .carousel__index .carousel__indexDos h1 {
+    font-size: 58px;
+    margin-top: 310px;
+    margin-left: 22px; }
+  .carousel__index__container .carousel__index .carousel__indexDos p {
+    font-size: 22px;
+    width: 300px;
+    margin-bottom: 5px;
+    margin-left: 22px; }
+  .carousel__index__container .carousel__index .carousel__indexDos button {
+    font-size: 17px;
+    width: 180px;
+    margin-left: 22px; }
   .carousel__index__container .carousel__index .carousel__indexTres {
     background-position: center right; }
+    .carousel__index__container .carousel__index .carousel__indexTres h1 {
+      font-size: 55px;
+      width: 523px;
+      margin-top: 41px;
+      margin-left: 22px; }
+    .carousel__index__container .carousel__index .carousel__indexTres p {
+      font-size: 24px;
+      margin-bottom: 5px;
+      margin-left: 22px; }
+    .carousel__index__container .carousel__index .carousel__indexTres button {
+      width: 140px;
+      margin-left: 22px; } }
+
+@media screen and (max-width: 900px) {
   .container__nuevosproductos {
     margin: 50px; }
   .container-article-aside .article-aside h3 {
@@ -1547,10 +1578,6 @@ nav .header__nav .menu li .active__nav {
       font-size: 42px;
       margin: 10px; } }
 
-@media screen and (max-width: 780px) {
-  .carousel__index__container .carousel__index .carousel__indexDos {
-    background-position: center right; } }
-
 @media screen and (max-width: 767px) {
   .container-article-aside {
     margin: 6px 70px; }
@@ -1573,9 +1600,42 @@ nav .header__nav .menu li .active__nav {
     align-items: center; }
     .container__nuevosproductos .titulo__nuevosproductos {
       height: 60px; }
+  .carousel__index__container .carousel__index .carousel__indexUno h1 {
+    font-size: 60px;
+    margin-top: 228px;
+    margin-left: 2px; }
+  .carousel__index__container .carousel__index .carousel__indexUno p {
+    font-size: 20px;
+    margin-left: 5px; }
+  .carousel__index__container .carousel__index .carousel__indexUno button {
+    font-size: 17px;
+    width: 166px;
+    margin-left: 54px;
+    padding: 8px 16px; }
+  .carousel__index__container .carousel__index .carousel__indexDos {
+    background-position: center center; }
+    .carousel__index__container .carousel__index .carousel__indexDos h1 {
+      font-size: 50px;
+      margin-top: 310px;
+      margin-left: 18px; }
+    .carousel__index__container .carousel__index .carousel__indexDos p {
+      font-size: 18px;
+      margin-left: 18px; }
+    .carousel__index__container .carousel__index .carousel__indexDos button {
+      font-size: 16px;
+      width: 150px;
+      margin-left: 18px; }
   .carousel__index__container .carousel__index .carousel__indexTres h1 {
     font-size: 50px;
-    width: 511px; } }
+    width: 259px;
+    margin-left: 18px; }
+  .carousel__index__container .carousel__index .carousel__indexTres p {
+    font-size: 20px;
+    margin-left: 18px; }
+  .carousel__index__container .carousel__index .carousel__indexTres button {
+    width: 112px;
+    margin-left: 18px;
+    padding: 6px 12px; } }
 
 @media screen and (max-width: 630px) {
   .container-article-aside {
@@ -1588,6 +1648,24 @@ nav .header__nav .menu li .active__nav {
     justify-content: space-between; } }
 
 @media screen and (max-width: 576px) {
+  .carousel__index__container .carousel__index .carousel__indexUno {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/hero-mobile2.jpg);
+    background-position: left center; }
+    .carousel__index__container .carousel__index .carousel__indexUno h1 {
+      font-size: 56px; }
+    .carousel__index__container .carousel__index .carousel__indexUno p {
+      font-size: 18px;
+      margin-left: 3px; }
+  .carousel__index__container .carousel__index .carousel__indexDos h1 {
+    font-size: 46px;
+    margin-bottom: 0px; }
+  .carousel__index__container .carousel__index .carousel__indexTres {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0678542) 53%, rgba(0, 0, 0, 0.723316) 81%), url(../multimedia/serviciohero-mobile.jpg);
+    background-size: cover;
+    background-position: center right; }
+    .carousel__index__container .carousel__index .carousel__indexTres h1 {
+      font-size: 45px;
+      margin-bottom: 0px; }
   .container-article-aside {
     margin: 6px 10px; }
   footer {
@@ -1608,9 +1686,6 @@ nav .header__nav .menu li .active__nav {
         text-align: center; } }
 
 @media screen and (max-width: 500px) {
-  .hero__index__container .hero__index {
-    background-image: url(../multimedia/hero-mobile2.jpg);
-    background-position: left center; }
   .container-article-aside .article-aside p {
     font-size: 27px;
     margin-top: 8px; }
@@ -1631,6 +1706,50 @@ nav .header__nav .menu li .active__nav {
     width: 120px; } }
 
 @media screen and (max-width: 432px) {
+  .carousel__index__container .carousel__index {
+    height: 550px; }
+    .carousel__index__container .carousel__index .carousel__indexUno {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../multimedia/hero-mobile2.jpg);
+      height: 550px; }
+      .carousel__index__container .carousel__index .carousel__indexUno h1 {
+        font-size: 77px;
+        margin: 130px 0px 0px 80px; }
+      .carousel__index__container .carousel__index .carousel__indexUno p {
+        font-size: 28px;
+        margin-left: 81px;
+        padding: 0px; }
+      .carousel__index__container .carousel__index .carousel__indexUno button {
+        font-size: 18px;
+        width: 169px;
+        margin-left: 129px; }
+    .carousel__index__container .carousel__index .carousel__indexDos {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../multimedia/floresAmarillas-mobile.jpg);
+      height: 550px; }
+      .carousel__index__container .carousel__index .carousel__indexDos h1 {
+        font-size: 58px;
+        margin: 211px 0px 0px 52px;
+        text-align: center;
+        width: 325px; }
+      .carousel__index__container .carousel__index .carousel__indexDos p {
+        font-size: 22px;
+        margin-left: 93px; }
+      .carousel__index__container .carousel__index .carousel__indexDos button {
+        font-size: 18px;
+        width: 166px;
+        margin-left: 126px; }
+    .carousel__index__container .carousel__index .carousel__indexTres {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../multimedia/serviciohero-mobile.jpg);
+      height: 550px; }
+      .carousel__index__container .carousel__index .carousel__indexTres h1 {
+        font-size: 56px;
+        margin: 236px 0px 0px 80px;
+        text-align: center; }
+      .carousel__index__container .carousel__index .carousel__indexTres p {
+        font-size: 22px;
+        margin-left: 125px; }
+      .carousel__index__container .carousel__index .carousel__indexTres button {
+        margin-left: 144px;
+        padding: 5px 12px; }
   .container-article-aside .article-aside h3 {
     padding: 6px;
     height: 40px;
@@ -1652,6 +1771,24 @@ nav .header__nav .menu li .active__nav {
     margin-bottom: 3px; } }
 
 @media screen and (max-width: 378px) {
+  .carousel__index__container .carousel__index .carousel__indexUno h1 {
+    margin: 130px 0px 0px 56px; }
+  .carousel__index__container .carousel__index .carousel__indexUno p {
+    margin-left: 57px; }
+  .carousel__index__container .carousel__index .carousel__indexUno button {
+    margin-left: 102px; }
+  .carousel__index__container .carousel__index .carousel__indexDos h1 {
+    margin: 211px 0px 0px 20px; }
+  .carousel__index__container .carousel__index .carousel__indexDos p {
+    margin-left: 60px; }
+  .carousel__index__container .carousel__index .carousel__indexDos button {
+    margin-left: 94px; }
+  .carousel__index__container .carousel__index .carousel__indexTres h1 {
+    margin: 236px 0px 0px 48px; }
+  .carousel__index__container .carousel__index .carousel__indexTres p {
+    margin-left: 88px; }
+  .carousel__index__container .carousel__index .carousel__indexTres button {
+    margin-left: 114px; }
   .container-article-aside .article-aside h3 {
     font-size: 23px; }
   .container-article-aside .article-aside p {
@@ -1664,7 +1801,32 @@ nav .header__nav .menu li .active__nav {
   .container__nuevosproductos h3 {
     padding: 8px; }
   .container-article-aside .article-aside .index-mobile {
-    height: 65px; } }
+    height: 65px; }
+  .carousel__index__container .carousel__index .carousel__indexUno h1 {
+    margin: 154px 0px 0px 37px;
+    font-size: 72px; }
+  .carousel__index__container .carousel__index .carousel__indexUno p {
+    margin-left: 39px;
+    font-size: 25px; }
+  .carousel__index__container .carousel__index .carousel__indexUno button {
+    margin-left: 87px; }
+  .carousel__index__container .carousel__index .carousel__indexDos h1 {
+    font-size: 48px;
+    margin: 213px 0px 0px 0px; }
+  .carousel__index__container .carousel__index .carousel__indexDos p {
+    margin-left: 55px;
+    font-size: 20px; }
+  .carousel__index__container .carousel__index .carousel__indexDos button {
+    margin-left: 76px; }
+  .carousel__index__container .carousel__index .carousel__indexTres {
+    background-position: center; }
+    .carousel__index__container .carousel__index .carousel__indexTres h1 {
+      margin: 236px 0px 0px 29px;
+      font-size: 54px; }
+    .carousel__index__container .carousel__index .carousel__indexTres p {
+      margin-left: 70px; }
+    .carousel__index__container .carousel__index .carousel__indexTres button {
+      margin-left: 93px; } }
 
 @media screen and (max-width: 328px) {
   .header__navbar {
@@ -1760,8 +1922,8 @@ nav .header__nav .menu li .active__nav {
       margin-top: 70px; }
     .container__cosmeticos .ordenar {
       margin-top: 10px; }
-  .container__cosmeticos .volver {
-    width: 262px; }
+    .container__cosmeticos .volver {
+      width: 262px; }
   .hero__cosmeticos__container .hero__cosmeticos p .p-uno {
     left: 355px; }
   .hero__cosmeticos__container .hero__cosmeticos p .p-dos {
@@ -2062,18 +2224,7 @@ nav .header__nav .menu li .active__nav {
   .servicios__container .servicios__info .info div .texto-moda {
     height: 284px; } }
 
-@media screen and (max-width: 905px) {
-  .servicios__container .servicios__info .info {
-    padding: 20px; }
-  .servicios__container .servicios__info .info div .texto {
-    height: 303px;
-    padding: 10px; }
-  .servicios__container .servicios__info .info div .texto-moda {
-    height: 280px; } }
-
-@media screen and (max-width: 870px) {
-  .servicios__container .servicios__info .info div h2 {
-    font-size: 39px; }
+@media screen and (max-width: 936px) {
   .hero__servicios__container .hero__servicios p .p-uno {
     font-size: 29px;
     width: 255px;
@@ -2090,7 +2241,16 @@ nav .header__nav .menu li .active__nav {
     top: 286px;
     left: 10px; } }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 905px) {
+  .servicios__container .servicios__info .info div h2 {
+    font-size: 39px; }
+  .servicios__container .servicios__info .info div .texto {
+    height: 303px;
+    padding: 10px; }
+  .servicios__container .servicios__info .info div .texto-moda {
+    height: 280px; } }
+
+@media screen and (max-width: 849px) {
   .servicios__container .servicios__info .info div h2 {
     font-size: 36px; }
   .servicios__container .servicios__info .info div h3 {
@@ -2107,6 +2267,13 @@ nav .header__nav .menu li .active__nav {
     font-size: 43px;
     width: 275px;
     top: 281px; } }
+
+@media screen and (max-width: 793px) {
+  .servicios__container .servicios__info .info div button {
+    top: 8px;
+    padding: 8px;
+    left: 35%;
+    font-size: 15px; } }
 
 @media screen and (max-width: 767px) {
   .listaCategorias li {
@@ -2138,7 +2305,15 @@ nav .header__nav .menu li .active__nav {
       margin-top: 0px;
       margin-bottom: 20px; }
     .servicios__container .servicios__info__tablet {
-      height: 867px; } }
+      height: 867px; }
+  .hero__servicios__container .hero__servicios p .p-uno {
+    top: 318px; }
+  .hero__servicios__container .hero__servicios p .p-dos {
+    top: 352px; }
+  .hero__servicios__container .hero__servicios p .p-tres {
+    font-size: 42px;
+    width: 266px;
+    top: 382px; } }
 
 @media screen and (max-width: 659px) {
   .servicios__container .servicios__info .imagen .novias__img {
@@ -2163,10 +2338,6 @@ nav .header__nav .menu li .active__nav {
       margin-left: 100px;
       height: 360px;
       width: 300px; }
-    .servicios__container .servicios__info .info div button {
-      left: 35%;
-      padding: 8px;
-      font-size: 15px; }
     .servicios__container .servicios__info .info div h2 {
       font-size: 34px; }
     .servicios__container .servicios__info .info div h3 {
@@ -2185,41 +2356,70 @@ nav .header__nav .menu li .active__nav {
     font-size: 31px; }
   .servicios__container .servicios__info div h3 {
     font-size: 28px; }
+  .servicios__container .servicios__info .info div .texto {
+    font-size: 15px; }
   .servicios__container .servicios__info__tablet {
-    height: 815px; } }
+    height: 815px; }
+  .servicios__container .volver {
+    padding-left: 27px;
+    font-size: 24px; } }
 
-@media screen and (max-width: 590px) {
-  .servicios__container {
-    /* .servicios__info__tablet {
-            height: 789px;
-        } */ }
-    .servicios__container .servicios__info {
-      /* height: 900px; */
-      /* .info div{
-                button {
-                    left: 35%;
-                    padding: 8px;
-                    font-size: 15px;
-                }
-                h2 {
-                    font-size: 34px;
-                }
-                h3 {
-                    font-size: 30px;
-                }
-            } */ }
-      .servicios__container .servicios__info .imagen .novias__img {
-        margin-left: 0px;
-        height: 360px;
-        width: 100%; }
-      .servicios__container .servicios__info .imagen .eventos__img {
-        margin-left: 0px;
-        height: 360px;
-        width: 100%; }
-      .servicios__container .servicios__info .imagen .moda__img {
-        margin-left: 0px;
-        height: 360px;
-        width: 100%; } }
+@media screen and (max-width: 465px) {
+  .servicios__container .servicios__info .imagen .novias__img {
+    margin-left: 0px;
+    height: 360px;
+    width: 100%; }
+  .servicios__container .servicios__info .imagen .eventos__img {
+    margin-left: 0px;
+    height: 360px;
+    width: 100%; }
+  .servicios__container .servicios__info .imagen .moda__img {
+    margin-left: 0px;
+    height: 360px;
+    width: 100%; } }
+
+@media screen and (max-width: 407px) {
+  .listaCategorias li {
+    margin-right: 0px;
+    margin-left: 0px; }
+  .hero__servicios__container .hero__servicios h1 {
+    font-size: 32px;
+    height: 58px;
+    width: 177px; }
+  .servicios__container .servicios__info {
+    height: 870px; }
+    .servicios__container .servicios__info .info div h2 {
+      font-size: 28px; }
+    .servicios__container .servicios__info .info div h3 {
+      font-size: 25px; }
+    .servicios__container .servicios__info .info div .texto {
+      font-size: 14px; }
+    .servicios__container .servicios__info .info div button {
+      left: 29%;
+      padding: 6px;
+      font-size: 14px; }
+  .servicios__container .servicios__info__tablet {
+    height: 791px; } }
+
+@media screen and (max-width: 355px) {
+  .hero__servicios__container .hero__servicios {
+    height: 500px; }
+    .hero__servicios__container .hero__servicios p .p-uno {
+      font-size: 22px;
+      width: 195px;
+      top: 306px; }
+    .hero__servicios__container .hero__servicios p .p-dos {
+      font-size: 22px;
+      width: 66px;
+      top: 335px; }
+    .hero__servicios__container .hero__servicios p .p-tres {
+      font-size: 31px;
+      width: 200px;
+      top: 366px; }
+  .servicios__container .servicios__info .info div h3 {
+    font-size: 20px; }
+  .servicios__container .servicios__info .info div button {
+    left: 18%; } }
 
 /* NOSOTRAS */
 @media screen and (max-width: 1258px) {
@@ -2385,18 +2585,18 @@ nav .header__nav .menu li .active__nav {
 @media screen and (max-width: 730px) {
   .hero__nosotras__container .hero__nosotras {
     height: 450px; }
+    .hero__nosotras__container .hero__nosotras h2 {
+      font-size: 30px; }
   .container__nosotras p {
     width: 499px;
     font-size: 15px; }
   .container__ellas p {
     width: 499px;
     font-size: 15px; }
-  .hero__nosotras__container .hero__nosotras h2 {
-    font-size: 30px; }
-  .nuestraMision__container .nuestraMision h2 {
-    font-size: 30px; }
   .nuestraMision__container .nuestraMision {
     height: 400px; }
+    .nuestraMision__container .nuestraMision h2 {
+      font-size: 30px; }
   .instagram__nosotras .instagram__iframeUno {
     width: 180px;
     height: 329px; }
@@ -2568,7 +2768,7 @@ nav .header__nav .menu li .active__nav {
     font-size: 24px;
     padding: 17px;
     width: 440px; }
-  .hero__contacto h2 {
+  .hero__contacto .hero__contacto h2 {
     font-size: 27px;
     padding: 8px;
     width: 130px; } }

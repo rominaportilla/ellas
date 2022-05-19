@@ -24,7 +24,6 @@ header {
         background-color: #0f0f0fe3;
         width: 100%;
         border-bottom: 2px solid black;
-        /* height: 100%; */ /* ESTO ME SACÓ EL BACKGROUND DEL SUBMENU */
     }
 }
 
@@ -61,8 +60,6 @@ header {
 
 .header__navbar .header__nav {
     padding: 10px;
-    /* display: flex;
-    flex-flow: row nowrap; */ /* ESTO ME ROMPIO EL HEADER */
 
     .menu li a {
         color: white;
@@ -413,41 +410,49 @@ header {
 
 .container-article-aside {
     margin: 40px;
+
     .article-aside{
         padding: 10px;
         text-align: right;
+
         h3{
             @include h3-index
         }
+
         p{
             font-family: $fuentePrincipal;
             font-size: 40px;
             color: #fff;
             line-height: 1;
             margin-top: 20px;
+
             span{
                 background-color: $colorPrincipal;
                 display: inline-block;
             }
         }
+
         img{
             width: 100%;
             height: 450px;
             margin: 0px 0px 15px 0px;
             filter:opacity(90%);
         }
+
         a{
             font-family: $fuentePrincipal;
             font-size: 25px;
             margin-top: 20px;
             text-decoration: none;
             color: white;
+
             &:hover{
                 text-shadow: 0 0 30px #fff;
             }
         }
     } 
 }
+
 /* -------------------- CARTAS ------------------------ */
 .container__cartas {
     @include flexbox(flex, row, space-evenly);
@@ -503,6 +508,7 @@ footer {
         color: #fff;
         font-size: 14px;
         padding: 10px 0px 0px 10px;
+        cursor: pointer;
     }
 
     div {
@@ -546,6 +552,7 @@ nav .header__nav .menu li .active__nav {
         height: 74px;
         width: 261px;
     }
+
     p{
         @include p-hero;
         .p-uno{
@@ -568,7 +575,6 @@ nav .header__nav .menu li .active__nav {
 
 .listaCategorias li {
     display: inline-block;
-    
 
     a {
         text-decoration: none;
@@ -588,13 +594,16 @@ nav .header__nav .menu li .active__nav {
 .ordenar {
     margin-top: 50px;
     color: #fff;
+
     select{
         font-weight: bold;
+
         option{
             @extend select
         }
     }
 }
+
 /* -------------------- PRODUCTOS ------------------------ */
 .container__cosmeticos {
     margin: 0px 60px 30px 60px;
@@ -617,10 +626,12 @@ nav .header__nav .menu li .active__nav {
         margin-left: 40px;
         text-align: left;
         width: 90%;
+
         a{
             text-decoration: none;
             color: white;
         }
+
         &:hover{
             text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
         }
@@ -799,7 +810,6 @@ nav .header__nav .menu li .active__nav {
                 background-image: url(../multimedia/producto-H.png);
             }
         }
-
     }
 
     .cosmetico {
@@ -887,7 +897,7 @@ nav .header__nav .menu li .active__nav {
     }
 }
 
-/* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
+/*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 /* -------------------- HERO ------------------------ */
 .hero__escuela__container .hero__escuela {
     background-image: url(../multimedia/studio-ellas.jpg);
@@ -932,32 +942,40 @@ nav .header__nav .menu li .active__nav {
     margin: 70px 0px;
     display: flex;
     justify-content: center;
+
     .curso__programa{
         width: 80%;
         background-color: $colorTerciario;
         padding: 0;
         height: 460px;
+
         .programa {
             padding: 30px;
+
             div {
                 color: #fff;
                 padding: 0px;
+
                 h2 {
                     font-family: $fuentePrincipal;
                     font-size: 38px;
                 }
+
                 .texto{
                     overflow: auto;
                     height: 295px;
                     background-color: #282828;
                     padding: 25px;
+
                     p{
                         font-weight: bold;
+
                         span{
                             background-color: rgba(255, 255, 41, 0.4);
                         }
                     }
                 }
+
                 button {
                     position: relative;
                     top: 10px;
@@ -968,6 +986,7 @@ nav .header__nav .menu li .active__nav {
                     font-weight: bold;
                     font-family: $fuentePrincipal;
                     cursor: pointer;
+
                     &:hover {
                         background-color: black;
                         color: white;
@@ -976,16 +995,19 @@ nav .header__nav .menu li .active__nav {
             }
         }
     }
+
     .volver{
         font-family: $fuentePrincipal;
         font-size: 25px;
         margin-top: 20px;
         text-align: left;
         padding: 0px 0px 0px 144px;
+
         a{
             text-decoration: none;
             color: white;
         }
+
         &:hover{
             text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
         }
@@ -997,6 +1019,7 @@ nav .header__nav .menu li .active__nav {
 }
 .tallerNovias{
     margin-top: 30px;
+
     .curso__programa .taller__img{
         animation-name: imagenTaller;
         @include cursoAnimacion;
@@ -1005,11 +1028,13 @@ nav .header__nav .menu li .active__nav {
 .tallerMarketing{
     margin-top: 30px;
     margin-bottom: 70px;
+
     .curso__programa{
         .marketing__img{
             animation-name: imagenMarketing;
             @include cursoAnimacion;
         }
+
         .programa div .texto{
             height: 249px;
         }
@@ -1059,9 +1084,12 @@ nav .header__nav .menu li .active__nav {
     margin-bottom: 0px;
 }
 
-.listaCategorias li a {
-    padding: 10px 10px;
-}
+.listaCategorias li{
+    text-align: center;
+    a {
+        padding: 10px 10px;
+    }
+} 
 
 /* -------------------- info ------------------------ */
 .servicios__container {
@@ -1070,11 +1098,13 @@ nav .header__nav .menu li .active__nav {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+
     .servicios__info{
         width: 90%;
         background-color: $colorTerciario;
         padding: 0;
         height: 500px;
+
         .imagen{
             
             .novias__img{
@@ -1089,44 +1119,54 @@ nav .header__nav .menu li .active__nav {
                 animation-name: imagenModa;
                 @include serviciosAnimacion;
             }
-
         }
+
         .info {
             padding: 30px;
+
             div {
                 color: #fff;
                 padding: 0px;
+
                 h2 {
                     font-family: $fuentePrincipal;
                     font-size: 42px;
                     margin-bottom: 0;
                 }
+
                 h3{
                     font-family: $fuentePrincipal;
                     font-size: 32px;
                 }
+
                 .texto{
                     overflow: auto;
                     height: 280px;
                     background-color: #282828;
                     padding: 10px;
+
                     .intro{
                         text-align: center;
                     }
+
                     p{
                         font-weight: bold;
+
                         span{
                             background-color:rgba(255, 255, 41, 0.4);
                         }
                     }
+
                     h6{
                         font-weight: bold;
                         text-decoration: underline;
                     }
                 }
+
                 .texto-moda{
                     height: 260px;
                 }
+
                 button {
                     position: relative;
                     top: 15px;
@@ -1137,6 +1177,7 @@ nav .header__nav .menu li .active__nav {
                     font-weight: bold;
                     font-family: $fuentePrincipal;
                     cursor: pointer;
+
                     &:hover {
                         background-color: black;
                         color: white;
@@ -1145,21 +1186,26 @@ nav .header__nav .menu li .active__nav {
             }
         }
     }
+
     .volver{
         font-family: $fuentePrincipal;
         font-size: 25px;
         text-align: left;
         padding: 0px;
         padding-left: 60px;
+
         a{
             text-decoration: none;
             color: white;
         }
+
         &:hover{
             text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
         }
     }
 }
+
+
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
 /* -------------------- NOSOTRAS ------------------------ */
 .hero__nosotras__container .hero__nosotras {
@@ -1186,6 +1232,7 @@ nav .header__nav .menu li .active__nav {
 
 .container__nosotras {
     @include flexbox(flex, row, center);
+
     h3{
         font-family: $fuentePrincipal;
         color: #fff;
@@ -1194,6 +1241,7 @@ nav .header__nav .menu li .active__nav {
         padding: 25px 0px 0px 0px;
         margin: 0;
     }
+
     p {
         width: 910px;
         text-align: center;
@@ -1202,9 +1250,11 @@ nav .header__nav .menu li .active__nav {
         color: #fff;
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
+
         .resaltar{
             background-color: $colorPrincipal;
         }
+
         .enfasis{
             font-family: $fuentePrincipal;
             font-size: 28px;
@@ -1215,42 +1265,50 @@ nav .header__nav .menu li .active__nav {
 .instagram__nosotras {
     margin: 40px;
     @include flexbox (flex, row, center);
+
     .instagram__iframeUno{
         width: 400px;
         height: 533px;
         position: relative;
         top: 37px;
     }
+
     .instagram__iframeDos{
         width: 400px;
         height: 610px;
     }
+
     .instagram__iframeTres{
         width: 400px;
         height: 609px;
     }
+
     .instagram__iframeCuatro{
         width: 400px;
         height: 609px;
         position: relative;
         bottom: 14px;
     }
+
     .followUs{
         padding-top: 213px;
         width: 250px;
         position: relative;
+
         h4{
             font-family: $fuentePrincipal;
             font-size: 72px;
             color: #fff;
             text-shadow: 0 0 20px #fff;
             line-height: 0.6;
+
             span{
                 font-size: 154px;
                 color: $colorPrincipal;
                 text-shadow: 0 0 20px $colorPrincipal;
             }
         }
+
         .click{
             font-size: 50px;
             color: #fff;
@@ -1260,16 +1318,19 @@ nav .header__nav .menu li .active__nav {
             top: 330px;
         }
     }
+
     .redesClick{
         @include flexbox(flex, column, space-evenly);
         align-items:center;
         width: 354px;
         height: 578px;
+
         .click{
             font-size: 36px;
             color: #fff;
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.592);
             cursor: pointer;
+
             &:hover{
                 transform: scale(1.5);
             }
@@ -1303,6 +1364,7 @@ nav .header__nav .menu li .active__nav {
 .container__ellas {
     @include flexbox(flex, row, center);
     margin-bottom: 70px;
+
     h3{
         font-family: $fuentePrincipal;
         color: #fff;
@@ -1311,6 +1373,7 @@ nav .header__nav .menu li .active__nav {
         padding: 25px 0px 0px 0px;
         margin: 0;
     }
+
     p {
         width: 910px;
         text-align: center;
@@ -1319,9 +1382,11 @@ nav .header__nav .menu li .active__nav {
         color: #fff;
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
+
         .resaltar{
             background-color: $colorPrincipal;
         }
+
         .enfasis{
             font-family: $fuentePrincipal;
             font-size: 28px;
@@ -1329,6 +1394,7 @@ nav .header__nav .menu li .active__nav {
         }
     }
 }
+
 
 /*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
 /* -------------------- HERO ------------------------ */
@@ -1384,6 +1450,7 @@ nav .header__nav .menu li .active__nav {
     margin-top: 10px;
     @include flexbox (flex, column, center);
     align-items: center;
+
         h1 {
             font-family: $fuentePrincipal;
             font-size: 54px;
@@ -1392,6 +1459,7 @@ nav .header__nav .menu li .active__nav {
             margin-top: 0px;
             margin-bottom: 10px;
         }
+
         p{
             color: #fff;
             font-family: 'Raleway', sans-serif;
@@ -1400,6 +1468,7 @@ nav .header__nav .menu li .active__nav {
             margin-bottom: 30px;
             line-height: 1.2;
         }
+
         form {
             @include flexbox(flex, column, space-evenly);
             height: 452px;
@@ -1407,6 +1476,7 @@ nav .header__nav .menu li .active__nav {
             padding: 42px 30px;
             border-radius: 20px;
             width: 633px;
+
             input{
                 font-size: 17px;
                 color: #fff;
@@ -1415,6 +1485,7 @@ nav .header__nav .menu li .active__nav {
                 font-family: "Roboto", sans-serif;
                 background-color: #80808017;
             }
+
             select{
                 font-size: 17px;
                 font-weight: bold;
@@ -1422,11 +1493,13 @@ nav .header__nav .menu li .active__nav {
                 font-family: "Roboto", sans-serif;
                 background-color: #80808017;
                 color: rgba(255, 255, 255, 0.45);
+
                 option{
                     color: #000;
                     font-weight: bold;
                 }
             }
+
             textarea{
                 font-size: 17px;
                 color: rgb(255, 255, 255);
@@ -1435,6 +1508,7 @@ nav .header__nav .menu li .active__nav {
                 font-family: "Roboto", sans-serif;
                 background-color: #80808017;
             }
+
             .enviarMensaje {
                 color: white;
                 background-color: $colorPrincipal;
@@ -1454,18 +1528,22 @@ nav .header__nav .menu li .active__nav {
     margin: 35px 0px 35px 0px;
     @include flexbox (flex, column, center);
     align-items: center;
+
     h4 {
         font-family: $fuentePrincipal;
         text-align: center;
         font-size: 28px;
     }
+
     div{
         width: 400px;
         text-align: center;
         font-size: 18px;
+
         p{
             margin: 0;
         }
+
         .redes {
             padding: 25px;
             cursor: pointer;
@@ -1473,12 +1551,14 @@ nav .header__nav .menu li .active__nav {
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.592);
             text-align: center;
             color: #fff;
+
             &:hover {
                 transform: scale(1.3, 1.3);
             }
         }
     }
 }
+
 /* -------------------- IFRAME ------------------------ */
 .mapa__contacto {
     @include flexbox(flex, row, center);
